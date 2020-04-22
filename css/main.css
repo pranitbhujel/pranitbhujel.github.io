@@ -6855,31 +6855,31 @@ button.close {
   }
 }
 .fa-rotate-90 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  /* -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)"; */
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 .fa-rotate-180 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  /* -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)"; */
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 .fa-rotate-270 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  /* -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)"; */
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
 }
 .fa-flip-horizontal {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  /* -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)"; */
   -webkit-transform: scale(-1, 1);
   -ms-transform: scale(-1, 1);
   transform: scale(-1, 1);
 }
 .fa-flip-vertical {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  /* -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)"; */
   -webkit-transform: scale(1, -1);
   -ms-transform: scale(1, -1);
   transform: scale(1, -1);
@@ -11930,7 +11930,7 @@ ul#help_menu li a i {
   -moz-osx-font-smoothing: grayscale;
   display: block;
   content: "\f0da";
-  float: right;
+  /* float: right; */
   color: #333333;
   margin-top: 2px;
   margin-right: -10px;
@@ -12618,10 +12618,10 @@ span.autosave_status {
 }
 .toolbar select,
 .toolbar label {
-  width: auto;
+  /* width: auto; */
   vertical-align: middle;
   margin-right: 2px;
-  margin-bottom: 0px;
+  /* margin-bottom: 0px; */
   display: inline;
   font-size: 92%;
   margin-left: 0.3em;
@@ -12933,9 +12933,7 @@ ul.typeahead-list  > li > a.pull-right {
   margin-top: 20px;
 }
 /*# sourceMappingURL=style.min.css.map */
-    </style>
-<style type="text/css">
-    .highlight .hll { background-color: #ffffcc }
+.highlight .hll { background-color: #ffffcc }
 .highlight  { background: #f8f8f8; }
 .highlight .c { color: #408080; font-style: italic } /* Comment */
 .highlight .err { border: 1px solid #FF0000 } /* Error */
@@ -13004,10 +13002,7 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
-    </style>
 
-
-<style type="text/css">
 /* Overrides of notebook CSS for static HTML export */
 body {
   overflow: visible;
