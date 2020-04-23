@@ -73,13 +73,12 @@
     .mobile a:not(:first-child) {display: none;}
     .mobile a.icon {
       float: right;
-      margin-right: 20px;
       display: block;
     }
     .mobile.responsive a.icon {
       position: inherit;
       right: 0;
-      bottom: 0;
+      /* bottom: 0; */
     }
     .mobile.responsive a {
       float: none;
