@@ -67,6 +67,7 @@
       .mobile{
         visibility: visible;
       }
+      
   }
   @media screen and (min-width: 1000px) {
     .sidebar{
