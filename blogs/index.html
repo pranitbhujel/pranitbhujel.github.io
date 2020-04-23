@@ -4,71 +4,90 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/sidenav.css">
+    <link rel="stylesheet" href="../css/mobile_nav.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <div class="sidebar">
-    <a href="#"><strong class="name">PRANIT</strong></a>
+    <div class="profile">
+      <img src="../images/me.png">
+      <h2>Pranit</h2>
+    </div>
     <a href="#home"><i class="fa fa-fw fa-home"></i> Home</a>
     <a href="#services"><i class="fa fa-fw fa-code"></i> Blogs</a>
     <a href="#clients"><i class="fa fa-fw fa-code-fork"></i> Projects</a>
     <a href="#contact"><i class="fa fa-fw fa-user"></i> About</a>
     <hr>
-      <li><a href="https://www.linkedin.com/in/pranit-bhujel-29107a15a/" class="fa fa-fw fa-linkedin"></a></p></li>
-      <li><a href="https://twitter.com/pranitbhujel" class="fa fa-fw fa-twitter"></a></p></li>
-      <li><a href="https://www.instagram.com/pranit_bhujel/" class="fa fa-fw fa-instagram"></a></p></li>
+      <li><a target="_blank" href="https://www.linkedin.com/in/pranit-bhujel-29107a15a/" class="fa fa-fw fa-linkedin"></a></p></li>
+      <li><a target="_blank" href="https://twitter.com/pranitbhujel" class="fa fa-fw fa-twitter"></a></p></li>
+      <li><a target="_blank" href="https://www.instagram.com/pranit_bhujel/" class="fa fa-fw fa-instagram"></a></p></li>
   </div>
+
+  <div class="mobile">
+    <a href="#home"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="#services"><i class="fa fa-fw fa-code"></i> Blogs</a>
+    <a href="#clients"><i class="fa fa-fw fa-code-fork"></i> Projects</a>
+    <a href="#contact"><i class="fa fa-fw fa-user"></i> About</a>
+  </div>
+  
   <div class='main'>
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="An-h1-header">An h1 header<a class="anchor-link" href="#An-h1-header">&#182;</a></h1><p>Paragraphs are separated by a blank line.</p>
-<p>2nd paragraph. <em>Italic</em>, <strong>bold</strong>, and <code>monospace</code>. Itemized lists
-look like:</p>
-<ul>
-<li>this one</li>
-<li>that one</li>
-<li>the other one</li>
-</ul>
-<p>Note that --- not considering the asterisk --- the actual text
-content starts at 4-columns in.</p>
-<blockquote><p>Block quotes are
-written like so.</p>
-<p>They can span multiple paragraphs,
-if you like.</p>
-</blockquote>
-<p>Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
-in chapters 12--14"). Three dots ... will be converted to an ellipsis.
-Unicode is supported. ☺</p>
-<h2 id="An-h2-header">An h2 header<a class="anchor-link" href="#An-h2-header">&#182;</a></h2><p>Here's a numbered list:</p>
-<ol>
-<li>first item</li>
-<li>second item</li>
-<li>third item</li>
-</ol>
-<p>Note again how the actual text starts at 4 columns in (4 characters
-from the left side). Here's a code sample:</p>
+    <div class="title">
+      <h3>Natural Language Processing</h3>
+      <p class="fa fa-fw fa-home">Posted on: 2020:04:21</p>
+      <hr>
+    </div>
+    <div class="text_cell_render border-box-sizing rendered_html">
+    <h1 id="An-h1-header">An h1 header<a class="anchor-link" href="#An-h1-header">&#182;</a></h1><p>Paragraphs are separated by a blank line.</p>
+    <p>2nd paragraph. <em>Italic</em>, <strong>bold</strong>, and <code>monospace</code>. Itemized lists
+    look like:</p>
+    <ul>
+    <li>this one</li>
+    <li>that one</li>
+    <li>the other one</li>
+    </ul>
+    <p>Note that --- not considering the asterisk --- the actual text
+    content starts at 4-columns in.</p>
+    <blockquote><p>Block quotes are
+    written like so.</p>
+    <p>They can span multiple paragraphs,
+    if you like.</p>
+    </blockquote>
+    <p>Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
+    in chapters 12--14"). Three dots ... will be converted to an ellipsis.
+    Unicode is supported. ☺</p>
+    <h2 id="An-h2-header">An h2 header<a class="anchor-link" href="#An-h2-header">&#182;</a></h2><p>Here's a numbered list:</p>
+    <ol>
+    <li>first item</li>
+    <li>second item</li>
+    <li>third item</li>
+    </ol>
+    <p>Note again how the actual text starts at 4 columns in (4 characters
+    from the left side). Here's a code sample:</p>
 
-<pre><code># Let me re-iterate ...
-for i in 1 .. 10 { do-something(i) }
+    <pre><code># Let me re-iterate ...
+    for i in 1 .. 10 { do-something(i) }
 
-</code></pre>
-<p>As you probably guessed, indented 4 spaces. By the way, instead of
-indenting the block, you can use delimited blocks, if you like:</p>
+    </code></pre>
+    <p>As you probably guessed, indented 4 spaces. By the way, instead of
+    indenting the block, you can use delimited blocks, if you like:</p>
 
-<pre><code>define foobar() {
-    print "Welcome to flavor country!";
-}</code></pre>
-<p>(which makes copying &amp; pasting easier). You can optionally mark the
-delimited block for Pandoc to syntax highlight it:</p>
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
-<span class="c1"># Quick, count to ten!</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
-    <span class="c1"># (but not *too* quick)</span>
-    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-</pre></div>
-
+    <pre><code>define foobar() {
+        print "Welcome to flavor country!";
+    }</code></pre>
+    <p>(which makes copying &amp; pasting easier). You can optionally mark the
+    delimited block for Pandoc to syntax highlight it:</p>
+    <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+    <span class="c1"># Quick, count to ten!</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+        <span class="c1"># (but not *too* quick)</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    </pre></div>
 </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </body>
 </html>

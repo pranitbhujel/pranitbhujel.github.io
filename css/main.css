@@ -3606,19 +3606,19 @@ tbody.collapse.in {
   left: auto;
 }
 .dropup .caret,
-.navbar-fixed-bottom .dropdown .caret {
+/* .navbar-fixed-bottom .dropdown .caret {
   border-top: 0;
   border-bottom: 4px dashed;
   border-bottom: 4px solid \9;
   content: "";
-}
+} */
 .dropup .dropdown-menu,
-.navbar-fixed-bottom .dropdown .dropdown-menu {
+/* .navbar-fixed-bottom .dropdown .dropdown-menu {
   top: auto;
   bottom: 100%;
   margin-bottom: 2px;
-}
-@media (min-width: 541px) {
+} */
+/* @media (min-width: 541px) {
   .navbar-right .dropdown-menu {
     left: auto;
     right: 0;
@@ -3627,7 +3627,7 @@ tbody.collapse.in {
     left: 0;
     right: auto;
   }
-}
+} */
 .btn-group,
 .btn-group-vertical {
   position: relative;

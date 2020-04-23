@@ -1,11 +1,11 @@
 .sidebar {
-    height: 55%;
+    height: 450px;
     width: 250px;
     position: fixed;
     z-index: 1;
-    top: 0;
+    top: 15%;
     left: 0;
-    background-color: #111;
+    background-color: white;
     overflow-x: hidden;
     padding-top: 15px;
   }
@@ -15,17 +15,25 @@
     text-decoration: none;
     font-size: 16px;
     display: block;
-    color: lightgrey;
+    color: black;
   }
   
-    .name{
-      margin: 10px;
-      font-size: 20px;
-      color: white;
-  }
 
   .sidebar a:hover {
+    color: #00ced1;
+  }
+
+  .sidebar h2{
+    background-color: black;
+    padding: 5px;
     color: white;
+    left: 0px;
+  }
+
+  .sidebar img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
   }
   
   .main {
@@ -42,7 +50,11 @@
 
     .profile{
         padding: 10px;
-        background-color: white;
+        text-align: center;
+    }
+
+    .mobile{
+      visibility: hidden;
     }
   @media screen and (max-width: 760px) {
       .sidebar{
@@ -50,6 +62,10 @@
       }
       .main{
           margin-left: 0px;
+          margin-bottom: 30pc;
+      }
+      .mobile{
+        visibility: visible;
       }
   }
   @media screen and (min-width: 1000px) {
