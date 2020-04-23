@@ -56,13 +56,13 @@
     .mobile{
       visibility: hidden;
     }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 1000px) {
       .sidebar{
           visibility: hidden;
       }
       .main{
           margin-left: 0px;
-          margin-bottom: 30pc;
+          margin-bottom: 40px;
       }
       .mobile{
         visibility: visible;
