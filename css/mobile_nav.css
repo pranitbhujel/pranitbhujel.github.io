@@ -33,3 +33,7 @@
   body{
       margin: 0;
   }
+
+  .mobile li{
+      display: inline-block;
+  }
