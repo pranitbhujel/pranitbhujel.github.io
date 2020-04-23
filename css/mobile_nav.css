@@ -6,7 +6,7 @@
     left: 0;
     width: 100%;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
   }
   
   .mobile a {
@@ -14,9 +14,9 @@
     display: block;
     color: white;
     text-align: center;
-    padding: 0px 10px;
+    padding: 14px 16px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
   }
   
   .mobile a:hover {
@@ -36,4 +36,7 @@
 
   .mobile li{
       display: inline-block;
+  }
+  .navbar .icon {
+    display: none;
   }

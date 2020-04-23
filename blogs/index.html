@@ -1,11 +1,13 @@
 
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Natural Language Processing">
-    <meta name="keywords" content="">
+    <meta name="description" content=" How you can process texts and all">
+    <meta name="keywords" content=" NLP,Natural Language, Automation">
     <meta name="author" content="Pranit Bhujel">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Natural Language Processing | Pranit Bhujel</title>
 
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/w3.css">
@@ -31,20 +33,26 @@
       <li><a target="_blank" href="https://www.instagram.com/pranit_bhujel/" class="fa fa-fw fa-instagram"></a></p></li>
   </div>
 
-  <div class="mobile w3-animate-bottom">
+  <div class="mobile w3-animate-zoom">
     <a href="#home"><i class="fa fa-fw fa-home"></i> Home</a>
     <a href="#services"><i class="fa fa-fw fa-code"></i> Blogs</a>
     <a href="#clients"><i class="fa fa-fw fa-code-fork"></i> Projects</a>
     <a href="#contact"><i class="fa fa-fw fa-user"></i> About</a>
-    </div>
+    <a href="javascript:void(0);" style="font-size:18px;margin-right: 20px;" class="icon" onclick="myFunction()">&#9776;</a>
+    
+  </div>
   
-  <div class='main w3-animate-zoom'>
+  <div class='main'>
     <div class="title">
-      <h3>Natural Language Processing</h3>
-      <p class="fa fa-fw fa-home">Posted on: 2020:04:21</p>
+      <h3> Natural Language Processing</h3>
+      <p>
+        <a><i class="fa fa-fw fa-paper-plane"></i> Posted on: 2020-04-23 | </a>
+        <a><i class="fa fa-fw fa-user-circle"></i> Author: Pranit Bhujel </a>
+      
+      </p>
       <hr>
     </div>
-    <div class="text_cell_render border-box-sizing rendered_html">
+<div class="text_cell_render border-box-sizing rendered_html">
     <h1 id="An-h1-header">An h1 header<a class="anchor-link" href="#An-h1-header">&#182;</a></h1><p>Paragraphs are separated by a blank line.</p>
     <p>2nd paragraph. <em>Italic</em>, <strong>bold</strong>, and <code>monospace</code>. Itemized lists
     look like:</p>
@@ -93,8 +101,19 @@
     </pre></div>
 </div>
 </div>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+<script>
+  function myFunction() {
+  var x = document.getElementById("myNavbar");
+  if (x.className === "mobile") {
+    x.className += " responsive";
+  } else {
+    x.className = "mobile";
+  }
+}
+</script>
 </body>
 </html>
+

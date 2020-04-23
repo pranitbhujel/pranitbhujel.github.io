@@ -67,6 +67,23 @@
       .mobile{
         visibility: visible;
       }
+      .mobile a {
+        display: none;
+      }
+      .mobile a.icon {
+        float: right;
+        display: block;
+      }
+      .mobile.responsive a.icon {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+      .mobile.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
       
   }
   @media screen and (min-width: 1000px) {
