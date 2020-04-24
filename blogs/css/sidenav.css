@@ -36,9 +36,15 @@
   border-radius: 50%;
 }
 
-.main {
+.full_blog{
   background-color: white;
   box-shadow: 0px 1px 1px 0px grey;
+}
+.blog{
+  padding-bottom: 10px;
+}
+
+.main {
   margin-left: 250px; /* Same as the width of the sidenav */
   padding: 0px 10px;
 }

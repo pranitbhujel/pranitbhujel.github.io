@@ -1,99 +1,100 @@
 .sidebar {
-    height: 450px;
-    width: 250px;
-    position: fixed;
-    z-index: 1;
-    top: 15%;
-    left: 0;
-    background-color: white;
-    overflow-x: hidden;
-    padding-top: 15px;
-  }
-  
-  .sidebar a {
-    padding: 14px 8px 6px 40px;
-    text-decoration: none;
-    font-size: 16px;
-    display: block;
-    color: black;
-  }
-  
+  height: 450px;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 15%;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 15px;
+}
 
-  .sidebar a:hover {
-    color: #00ced1;
+.sidebar a {
+  padding: 14px 8px 6px 40px;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  color: black;
+}
+
+
+.sidebar a:hover {
+  color: #00ced1;
+}
+
+.sidebar h2{
+  background-color: black;
+  padding: 5px;
+  color: white;
+  left: 0px;
+}
+
+.sidebar img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.main {
+  background-color: white;
+  box-shadow: 0px 1px 1px 0px grey;
+  margin-left: 250px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+  .sidebar li{
+      margin-left: 10px;
+      display: inline-block;
   }
 
-  .sidebar h2{
-    background-color: black;
-    padding: 5px;
-    color: white;
-    left: 0px;
+  .profile{
+      padding: 10px;
+      text-align: center;
   }
 
-  .sidebar img{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+  .mobile{
+    visibility: hidden;
   }
-  
-  .main {
-    background-color: white;
-    box-shadow: 0px 1px 1px 0px grey;
-    margin-left: 250px; /* Same as the width of the sidenav */
-    padding: 0px 10px;
-  }
-
-    .sidebar li{
-        margin-left: 10px;
-        display: inline-block;
-    }
-
-    .profile{
-        padding: 10px;
-        text-align: center;
-    }
-
-    .mobile{
-      visibility: hidden;
-    }
-  @media screen and (max-width: 1000px) {
-      .sidebar{
-          visibility: hidden;
-      }
-      .main{
-          margin-left: 0px;
-          margin-bottom: 40px;
-      }
-      .mobile{
-        visibility: visible;
-      }
-      .mobile a {
-        display: none;
-      }
-      .mobile a.icon {
-        float: right;
-        display: block;
-      }
-      .mobile.responsive a.icon {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-      }
-      .mobile.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-      }
-      
-  }
-  @media screen and (min-width: 1000px) {
+@media screen and (max-width: 1000px) {
     .sidebar{
-        width: 300px;
+        visibility: hidden;
     }
     .main{
-        margin-left: 300px;
+        margin-left: 0px;
+        margin-bottom: 40px;
     }
-    .sidebar a {
-        padding-left: 50px;
+    .mobile{
+      visibility: visible;
     }
+    .mobile a {
+      display: none;
+    }
+    .mobile a:not(:first-child) {display: none;}
+    .mobile a.icon {
+      float: right;
+      display: block;
+    }
+    .mobile.responsive a.icon {
+      position: inherit;
+      right: 0;
+      /* bottom: 0; */
+    }
+    .mobile.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+    
+}
+@media screen and (min-width: 1000px) {
+  .sidebar{
+      width: 300px;
+  }
+  .main{
+      margin-left: 300px;
+  }
+  .sidebar a {
+      padding-left: 50px;
+  }
 }

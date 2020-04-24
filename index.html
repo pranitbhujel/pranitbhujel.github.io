@@ -1,11 +1,90 @@
+
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content=" How you can process texts and all">
+    <meta name="keywords" content=" NLP,Natural Language, Automation">
+    <meta name="author" content="Pranit Bhujel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Natural Language Processing | Pranit Bhujel</title>
 
-    </head>
-    <body>
-        <div>
-            <p>Am I now visible? So telling my sister that I'm now visible</p>
-        </div>
-    </body>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/w3.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sidenav.css">
+    <link rel="stylesheet" href="./css/mobile_nav.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="sidebar w3-animate-zoom">
+    <div class="profile">
+      <img src="./images/me.png">
+      <h2>Pranit</h2>
+    </div>
+    <a href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="./blogs/index.html"><i class="fa fa-fw fa-code"></i> Blogs</a>
+    <a href="#clients"><i class="fa fa-fw fa-code-fork"></i> Projects</a>
+    <a href="#contact"><i class="fa fa-fw fa-user"></i> About</a>
+    <hr>
+      <li><a target="_blank" href="https://www.linkedin.com/in/pranit-bhujel-29107a15a/" class="fa fa-fw fa-linkedin"></a></p></li>
+      <li><a target="_blank" href="https://twitter.com/pranitbhujel" class="fa fa-fw fa-twitter"></a></p></li>
+      <li><a target="_blank" href="https://www.instagram.com/pranit_bhujel/" class="fa fa-fw fa-instagram"></a></p></li>
+  </div>
+
+  <div id="myNavbar" class="mobile w3-animate-zoom">
+    <a href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="./blogs/index.html"><i class="fa fa-fw fa-code"></i> Blogs</a>
+    <a href="#clients"><i class="fa fa-fw fa-code-fork"></i> Projects</a>
+    <a href="#contact"><i class="fa fa-fw fa-user"></i> About</a>
+    <a href="javascript:void(0);" style="margin-right: 30px;" class="icon fa fa-fw fa-bars" onclick="myFunction()"></a>
+    <li><a target="_blank" href="https://www.linkedin.com/in/pranit-bhujel-29107a15a/" class="fa fa-fw fa-linkedin"></a></p></li>
+    <li><a target="_blank" href="https://twitter.com/pranitbhujel" class="fa fa-fw fa-twitter"></a></p></li>
+    <li><a target="_blank" href="https://www.instagram.com/pranit_bhujel/" class="fa fa-fw fa-instagram"></a></p></li>
+ 
+  </div>
+  
+  <div class='main w3-margin-top w3-animate-zoom'>
+    <div class="title">
+      <h3> Natural Language Processing</h3>
+      <p>
+        <a><i class="fa fa-fw fa-paper-plane"></i> Posted on: 2020-04-23 | </a>
+        <a><i class="fa fa-fw fa-user-circle"></i> Author: Pranit Bhujel </a>
+      
+      </p>
+      <hr>
+    </div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="An-h1-header">An h1 header<a class="anchor-link" href="#An-h1-header">&#182;</a></h1><p>Paragraphs are separated by a blank line.</p>
+<p>2nd paragraph. <em>Italic</em>, <strong>bold</strong>, and <code>monospace</code>. Itemized lists
+look like:</p>
+<ul>
+<li>this one</li>
+<li>that one</li>
+<li>the other one</li>
+</ul>
+<p>Note that --- not considering the asterisk --- the actual text
+content starts at 4-columns in.</p>
+<blockquote><p>Block quotes are
+written like so.</p>
+<p>They can span multiple paragraphs,
+if you like.</p>
+</blockquote>
+</div>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+  function myFunction() {
+  var x = document.getElementById("myNavbar");
+  if (x.className === "mobile") {
+    x.className += " responsive";
+  } else {
+    x.className = "mobile";
+  }
+}
+</script>
+</body>
 </html>
+
