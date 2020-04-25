@@ -37,7 +37,7 @@
 }
 
 .main {
-  background-color: white;
+  /* background-color: white; */
   margin-left: 250px; /* Same as the width of the sidenav */
   padding: 0px 10px;
 }
@@ -84,7 +84,7 @@
       display: block;
       text-align: center;
     }
-    .project{
+    .title a{
       font-size: 10px;
     }
 }

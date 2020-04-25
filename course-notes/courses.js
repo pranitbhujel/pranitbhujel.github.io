@@ -1,2 +1,3 @@
-var courses = {"Image Segmentation in Python":{"title": "Image Segmentation in Python", "date": "2020-04-25", "description": "Showing my sister that the program now works.", "tags": "Image Classiffication, Python", "link": "./image-segmentation-in-python/index.html"},
+var courses = {"Web Scraping Fundamentals":{"title": "Web Scraping Fundamentals", "date": "2020-04-25", "description": "It's epic", "tags": "And fun", "link": "./web-scraping-fundamentals/index.html"},
+"Image Segmentation in Python":{"title": "Image Segmentation in Python", "date": "2020-04-25", "description": "Showing my sister that the program now works.", "tags": "Image Classiffication, Python", "link": "./image-segmentation-in-python/index.html"},
 }

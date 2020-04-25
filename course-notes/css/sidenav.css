@@ -91,6 +91,9 @@
       display: block;
       text-align: center;
     }
+    .title a{
+      font-size: 10px;
+    }
     
 }
 @media screen and (min-width: 1000px) {
