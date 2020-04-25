@@ -50,7 +50,7 @@
   <div class="projects">
 
     <div class="title">
-      <h3><b>Projects</b></h3>
+      <blockquote><h2><b>Projects</b></h2></blockquote>
       <hr>
     </div>
     <div id="project_body">
@@ -59,7 +59,7 @@
     
     <div class="blogs">
       <div class="title">
-        <h2><b>Blogs</b></h2>
+        <blockquote><h2><b>Blogs</b></h2></blockquote>
         <hr>
       </div>
       <div id="blog_body">
@@ -70,7 +70,7 @@
 
     <div class="courses">
       <div class="title">
-        <h2><b>Course Notes</b></h2>
+        <blockquote><h2><b>Course Notes</b></h2></blockquote>
         <hr>
       </div>
       <div id="course_notes">
@@ -102,7 +102,7 @@
 var blog_parent = document.getElementById('blog_body');
 for (each in blogs){
   var element = document.createElement('div');
-  element.setAttribute('class', 'project')
+  element.setAttribute('class', 'project ')
   var sub_nav = blogs[each]['title'].replace(/ /g, '-').toLowerCase()
 
   var intro =  `
