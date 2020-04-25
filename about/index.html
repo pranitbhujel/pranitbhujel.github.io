@@ -135,27 +135,12 @@
   <script>
     function myFunction() {
     var x = document.getElementById("myNavbar");
-    if (x.className === "mobile") {
+    if (x.className === "mobile w3-animate-zoom") {
       x.className += " responsive";
     } else {
-      x.className = "mobile";
+      x.className = "mobile w3-animate-zoom";
     }
   }
-
-var projects = document.getElementById('blog_body');
-for (each in data){
-  var element = document.createElement('div');
-  element.setAttribute('class', 'project')
-  var intro =  `
-              <h4><a href="./blogs/index.html">`+ data[each]['title'] + `</a></h4>
-              <p>
-                <a><i class="fa fa-fw fa-paper-plane"></i> Posted on: ` + data[each]['date']+ ` | </a>
-                <a><i class="fa fa-fw fa-user-circle"></i> Author: Pranit Bhujel</a>
-              </p>
-            `
-  element.innerHTML = intro;
-  projects.appendChild(element);
-}
 
   </script>
 </body>
