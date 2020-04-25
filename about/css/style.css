@@ -7,15 +7,19 @@ body {
   .title{
     padding: 5px;
     text-align: center; 
-    color: #838383;
+    color: #505050;
   }
   .project{
-    padding: 15px;
-    border-bottom: 1px dashed black;
+    padding: 5px;
+    border-bottom: 1px dashed grey;
   }
   .project a :hover{
     border-bottom: 1px dashed white;
   }
-  #parent{
-    color: #838383;
+  div.about{
+    line-height: 200%;
+  }
+  .projects{
+    padding-left: 10%;
+    padding-right: 40%;
   }

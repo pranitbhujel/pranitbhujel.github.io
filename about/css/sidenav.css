@@ -99,15 +99,7 @@
   }
   .projects{
     padding-left: 10%;
-    padding-right: 10%;
-  }
-  .courses{
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-  .blogs{
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-right: 40%;
   }
   .active{
     color: #00ced1;
