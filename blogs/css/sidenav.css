@@ -85,7 +85,10 @@
       text-align: center;
     }
     .title p{
-      font-size: 10px;
+      font-size: 11px;
+    }
+    .title h3{
+      font-size: 20px;
     }
 }
 @media screen and (min-width: 1000px) {
