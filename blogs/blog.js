@@ -1,3 +1,2 @@
-var data = {"Customer Analytics Python":{"title": "Customer Analytics Python", "date": "2020-04-24", "description": "With high gradient tools, see how you can make a change", "tags": "CAP, Python", "link": "./customer-analytics-python/index.html"},
-"Credit Risk Modeling":{"title": "Credit Risk Modeling", "date": "2020-04-24", "description": "See how you can use statistical tools to detect whether a borrower will defaullt or not.", "tags": "Credit Risk, Finance", "link": "./credit-risk-modeling/index.html"},
+var blogs = {"My first blog":{"title": "My first blog", "date": "2020-04-25", "description": "Trying out whether the automated script works, because if that does I've made a masterpiece for myself. It's gonna be awesome", "tags": "Blog", "link": "./my-first-blog/index.html"},
 }

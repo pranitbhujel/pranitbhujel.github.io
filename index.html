@@ -1,13 +1,12 @@
-
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content=" How you can process texts and all">
-    <meta name="keywords" content=" NLP,Natural Language, Automation">
+    <meta name="description" content="The journey of a Data Scientist to change the world for greater good.">
+    <meta name="keywords" content="Data Science | Data Scientist | Blogs">
     <meta name="author" content="Pranit Bhujel">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Natural Language Processing | Pranit Bhujel</title>
+    <title> Data Science Blog | Pranit Bhujel</title>
 
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/w3.css">
@@ -23,10 +22,11 @@
       <img src="./images/me.png">
       <h2>Pranit</h2>
     </div>
-    <a href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
     <a href="./blogs/index.html"><i class="fa fa-fw fa-code"></i> Blogs</a>
-    <a href="#clients"><i class="fa fa-fw fa-code-fork"></i> Projects</a>
-    <a href="#contact"><i class="fa fa-fw fa-user"></i> About</a>
+    <a href="./projects/index.html"><i class="fa fa-fw fa-code-fork"></i> Projects</a>
+    <a href="./course-notes/index.html"><i class="fa fa-fw fa-edit"></i> Course Notes</a>
+    <a href="./about/index.html"><i class="fa fa-fw fa-user"></i> About</a>
     <hr>
       <li><a target="_blank" href="https://www.linkedin.com/in/pranit-bhujel-29107a15a/" class="fa fa-fw fa-linkedin"></a></p></li>
       <li><a target="_blank" href="https://twitter.com/pranitbhujel" class="fa fa-fw fa-twitter"></a></p></li>
@@ -34,57 +34,120 @@
   </div>
 
   <div id="myNavbar" class="mobile w3-animate-zoom">
-    <a href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
     <a href="./blogs/index.html"><i class="fa fa-fw fa-code"></i> Blogs</a>
-    <a href="#clients"><i class="fa fa-fw fa-code-fork"></i> Projects</a>
-    <a href="#contact"><i class="fa fa-fw fa-user"></i> About</a>
+    <a href="./projects/index.html"><i class="fa fa-fw fa-code-fork"></i> Projects</a>
+    <a href="./course-notes/index.html"><i class="fa fa-fw fa-edit"></i> Course Notes</a>
+    <a href="./about/index.html"><i class="fa fa-fw fa-user"></i> About</a>
     <a href="javascript:void(0);" style="margin-right: 30px;" class="icon fa fa-fw fa-bars" onclick="myFunction()"></a>
     <li><a target="_blank" href="https://www.linkedin.com/in/pranit-bhujel-29107a15a/" class="fa fa-fw fa-linkedin"></a></p></li>
     <li><a target="_blank" href="https://twitter.com/pranitbhujel" class="fa fa-fw fa-twitter"></a></p></li>
     <li><a target="_blank" href="https://www.instagram.com/pranit_bhujel/" class="fa fa-fw fa-instagram"></a></p></li>
- 
   </div>
   
-  <div class='main w3-margin-top w3-animate-zoom'>
-    <div class="title">
-      <h3> Natural Language Processing</h3>
-      <p>
-        <a><i class="fa fa-fw fa-paper-plane"></i> Posted on: 2020-04-23 | </a>
-        <a><i class="fa fa-fw fa-user-circle"></i> Author: Pranit Bhujel </a>
-      
-      </p>
-      <hr>
-    </div>
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="An-h1-header">An h1 header<a class="anchor-link" href="#An-h1-header">&#182;</a></h1><p>Paragraphs are separated by a blank line.</p>
-<p>2nd paragraph. <em>Italic</em>, <strong>bold</strong>, and <code>monospace</code>. Itemized lists
-look like:</p>
-<ul>
-<li>this one</li>
-<li>that one</li>
-<li>the other one</li>
-</ul>
-<p>Note that --- not considering the asterisk --- the actual text
-content starts at 4-columns in.</p>
-<blockquote><p>Block quotes are
-written like so.</p>
-<p>They can span multiple paragraphs,
-if you like.</p>
-</blockquote>
-</div>
+  <div id="parent" class='main w3-animate-zoom w3-white' >
+  
+  <div class="projects">
 
+    <div class="title">
+      <h2><b>Projects</b></h2>
+      <hr>
+      </div>
+    <div id="project_body">
+    </div>
+    <br />
+    
+    <div class="blogs">
+      <div class="title">
+        <h2><b>Blogs</b></h2>
+        <hr>
+      </div>
+      <div id="blog_body">
+        
+      </div>
+    </div>     
+    <br />
+
+    <div class="courses">
+      <div class="title">
+        <h2><b>Course Notes</b></h2>
+        <hr>
+      </div>
+      <div id="course_notes">
+
+      </div>
+    </div>     
+    <br />
+  </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-  function myFunction() {
-  var x = document.getElementById("myNavbar");
-  if (x.className === "mobile") {
-    x.className += " responsive";
-  } else {
-    x.className = "mobile";
+  <br />
+  <br />
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./blogs/blog.js"></script>
+  <script src="./projects/projects.js"></script>
+  <script src="./course-notes/courses.js"></script>
+
+  <script>
+    function myFunction() {
+    var x = document.getElementById("myNavbar");
+    if (x.className === "mobile") {
+      x.className += " responsive";
+    } else {
+      x.className = "mobile";
+    }
   }
+
+var blog_parent = document.getElementById('blog_body');
+for (each in blogs){
+  var element = document.createElement('div');
+  element.setAttribute('class', 'project')
+  var sub_nav = blogs[each]['title'].replace(/ /g, '-').toLowerCase()
+
+  var intro =  `
+              <h4><a href="./blogs/` + sub_nav + `/index.html">`+ blogs[each]['title'] + `</a></h4>
+              <p>
+                <a><i class="fa fa-fw fa-paper-plane"></i> Posted on: ` + blogs[each]['date']+ ` | </a>
+                <a><i class="fa fa-fw fa-user-circle"></i> Author: Pranit Bhujel</a>
+              </p>
+            `
+  element.innerHTML = intro;
+  blog_parent.appendChild(element);
 }
-</script>
+
+var project_parent = document.getElementById('project_body');
+for (each in projects){
+  var pro = document.createElement('div');
+  pro.setAttribute('class', 'project')
+  var sub_nav = projects[each]['title'].replace(/ /g, '-').toLowerCase()
+  var intro =  `
+              <h4><a href="./projects/` + sub_nav + `/index.html">`+ projects[each]['title'] + `</a></h4>
+              <p>
+                <a><i class="fa fa-fw fa-paper-plane"></i> Posted on: ` + projects[each]['date']+ ` | </a>
+                <a><i class="fa fa-fw fa-user-circle"></i> Author: Pranit Bhujel</a>
+              </p>
+            `
+  pro.innerHTML = intro;
+  project_parent.appendChild(pro);
+}
+
+var course_parent = document.getElementById('course_notes');
+for (each in courses){
+  var course = document.createElement('div');
+  course.setAttribute('class', 'project')
+  var sub_nav = courses[each]['title'].replace(/ /g, '-').toLowerCase()
+  var intro =  `
+              <h4><a href="./course-notes/` + sub_nav + `/index.html">`+ courses[each]['title'] + `</a></h4>
+              <p>
+                <a><i class="fa fa-fw fa-paper-plane"></i> Posted on: ` + courses[each]['date']+ ` | </a>
+                <a><i class="fa fa-fw fa-user-circle"></i> Author: Pranit Bhujel</a>
+              </p>
+            `
+  course.innerHTML = intro;
+  course_parent.appendChild(course);
+}
+  </script>
 </body>
 </html>
 

@@ -1,0 +1,2 @@
+var courses = {"Image Segmentation in Python":{"title": "Image Segmentation in Python", "date": "2020-04-25", "description": "Showing my sister that the program now works.", "tags": "Image Classiffication, Python", "link": "./image-segmentation-in-python/index.html"},
+}

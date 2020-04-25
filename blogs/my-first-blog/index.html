@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content=" Trying out whether the automated script works, because if that does I've made a masterpiece for myself. It's gonna be awesome">
+    <meta name="keywords" content=" Blog">
+    <meta name="author" content="Pranit Bhujel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My first blog | Pranit Bhujel</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/w3.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sidenav.css">
+    <link rel="stylesheet" href="../css/mobile_nav.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+      .sidebar{
+        height: 300px;
+      }
+    </style>
+</head>
+<body>
+   <div class="sidebar w3-animate-zoom">
+    <div class="profile">
+      <img src="../images/me.png">
+      <h2>Pranit</h2>
+    </div>
+    <a href="../index.html"><i class="fa fa-fw fa-home"></i> Back</a>
+    <hr>
+      <li><a target="_blank" href="https://www.linkedin.com/in/pranit-bhujel-29107a15a/" class="fa fa-fw fa-linkedin"></a></p></li>
+      <li><a target="_blank" href="https://twitter.com/pranitbhujel" class="fa fa-fw fa-twitter"></a></p></li>
+      <li><a target="_blank" href="https://www.instagram.com/pranit_bhujel/" class="fa fa-fw fa-instagram"></a></p></li>
+  </div>
+
+  <div id="myNavbar" class="mobile w3-animate-zoom">
+    <a href="../index.html"><i class="fa fa-fw fa-home"></i> Back</a>
+    <a href="javascript:void(0);" style="margin-right: 30px;" class="icon fa fa-fw fa-bars" onclick="myFunction()"></a>
+    <li><a target="_blank" href="https://www.linkedin.com/in/pranit-bhujel-29107a15a/" class="fa fa-fw fa-linkedin"></a></p></li>
+    <li><a target="_blank" href="https://twitter.com/pranitbhujel" class="fa fa-fw fa-twitter"></a></p></li>
+    <li><a target="_blank" href="https://www.instagram.com/pranit_bhujel/" class="fa fa-fw fa-instagram"></a></p></li>
+  </div>
+  
+  <section id='parent' class='main full_blog'>
+    <div class="title">
+      <h3> My first blog</h3>
+      <p>
+        <a><i class="fa fa-fw fa-paper-plane"></i> Posted on: 2020-04-25 | </a>
+        <a><i class="fa fa-fw fa-user-circle"></i> Author: Pranit Bhujel </a>
+          <a><i class="fa fa-fw fa-tag"></i> Tags: <code>Blog</code> </a>
+      </p>
+      <hr>
+    </div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="An-h1-header">An h1 header<a class="anchor-link" href="#An-h1-header">&#182;</a></h1><p>Paragraphs are separated by a blank line.</p>
+<p>2nd paragraph. <em>Italic</em>, <strong>bold</strong>, and <code>monospace</code>. Itemized lists
+look like:</p>
+<ul>
+<li>this one</li>
+<li>that one</li>
+<li>the other one</li>
+</ul>
+<p>Note that --- not considering the asterisk --- the actual text
+content starts at 4-columns in.</p>
+<blockquote><p>Block quotes are
+written like so.</p>
+<p>They can span multiple paragraphs,
+if you like.</p>
+</blockquote>
+<p>Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
+in chapters 12--14"). Three dots ... will be converted to an ellipsis.
+Unicode is supported. ☺</p>
+<h2 id="An-h2-header">An h2 header<a class="anchor-link" href="#An-h2-header">&#182;</a></h2><p>Here's a numbered list:</p>
+<ol>
+<li>first item</li>
+<li>second item</li>
+<li>third item</li>
+</ol>
+<p>Note again how the actual text starts at 4 columns in (4 characters
+from the left side). Here's a code sample:</p>
+
+<pre><code># Let me re-iterate ...
+for i in 1 .. 10 { do-something(i) }
+
+</code></pre>
+<p>As you probably guessed, indented 4 spaces. By the way, instead of
+indenting the block, you can use delimited blocks, if you like:</p>
+
+<pre><code>define foobar() {
+    print "Welcome to flavor country!";
+}</code></pre>
+<p>(which makes copying &amp; pasting easier). You can optionally mark the
+delimited block for Pandoc to syntax highlight it:</p>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+<span class="c1"># Quick, count to ten!</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="c1"># (but not *too* quick)</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+<h3 id="An-h3-header">An h3 header<a class="anchor-link" href="#An-h3-header">&#182;</a></h3><p>Now a nested list:</p>
+<ol>
+<li><p>First, get these ingredients:</p>
+<ul>
+<li>carrots</li>
+<li>celery</li>
+<li>lentils</li>
+</ul>
+</li>
+<li><p>Boil some water.</p>
+</li>
+<li><p>Dump everything in the pot and follow
+this algorithm:</p>
+
+<pre><code>find wooden spoon
+uncover pot
+stir
+cover pot
+balance wooden spoon precariously on pot handle
+wait 10 minutes
+goto first step (or shut off burner when done)
+
+</code></pre>
+<p>Do not bump wooden spoon or it will fall.</p>
+</li>
+</ol>
+<p>Notice again how text always lines up on 4-space indents (including
+that last line which continues item 3 above).</p>
+<p>Here's a link to <a href="http://foo.bar">a website</a>, to a <a href="local-doc.html">local
+doc</a>, and to a <a href="#an-h2-header">section heading in the current
+doc</a>. Here's a footnote <sup class="footnote-ref" id="fnref-1"><a href="#fn-1">1</a></sup>.</p>
+<p>Tables can look like this:</p>
+<p>Name           Size  Material      Color</p>
+<hr>
+<p>All Business      9  leather       brown
+Roundabout       10  hemp canvas   natural
+Cinderella       11  glass         transparent</p>
+<p>Table: Shoes sizes, materials, and colors.</p>
+<p>(The above is the caption for the table.) Pandoc also supports
+multi-line tables:</p>
+<hr>
+<p>Keyword   Text</p>
+<hr>
+<p>red       Sunsets, apples, and
+          other red or reddish
+          things.</p>
+<p>green     Leaves, grass, frogs
+          and other things it's
+          not easy being.</p>
+<hr>
+<p>A horizontal rule follows.</p>
+<hr>
+<p>Here's a definition list:</p>
+<p>apples
+  : Good for making applesauce.</p>
+<p>oranges
+  : Citrus!</p>
+<p>tomatoes
+  : There's no "e" in tomatoe.</p>
+<p>Again, text is indented 4 spaces. (Put a blank line between each
+term and  its definition to spread things out more.)</p>
+<p>Here's a "line block" (note how whitespace is honored):</p>
+<p>| Line one
+|   Line too
+| Line tree</p>
+<p>and images can be specified like so:</p>
+<p><img src="example-image.jpg" alt="example image" title="An exemplary image"></p>
+<p>Inline math equation: $\omega = d\phi / dt$. Display
+math should get its own line like so:</p>
+$$I = \int \rho R^{2} dV$$<p>And note that you can backslash-escape any punctuation characters
+which you wish to be displayed literally, ex.: `foo`, *bar*, etc.</p>
+<div class="footnotes">
+<hr>
+<ol><li id="fn-1"><p>Some footnote text.<a href="#fnref-1" class="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+  function myFunction() {
+  var x = document.getElementById("myNavbar");
+  if (x.className === "mobile ") {
+    x.className += " responsive";
+  } else {
+    x.className = "mobile";
+  }
+}
+</script>
+</body>
+</html>

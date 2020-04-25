@@ -24,9 +24,9 @@
       <h2>Pranit</h2>
     </div>
     <a href="../index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-    <a class="active" href="#"><i class="fa fa-fw fa-code"></i> Blogs</a>
+    <a href="../blogs/index.html"><i class="fa fa-fw fa-code"></i> Blogs</a>
     <a href="../projects/index.html"><i class="fa fa-fw fa-code-fork"></i> Projects</a>
-    <a href="../course-notes/index.html"><i class="fa fa-fw fa-edit"></i> Course Notes</a>
+    <a class="active" href="#"><i class="fa fa-fw fa-edit"></i> Course Notes</a>
     <a href="../about/index.html"><i class="fa fa-fw fa-user"></i> About</a>
     <hr>
       <li><a target="_blank" href="https://www.linkedin.com/in/pranit-bhujel-29107a15a/" class="fa fa-fw fa-linkedin"></a></p></li>
@@ -36,11 +36,11 @@
 
   <div id="myNavbar" class="mobile w3-animate-zoom">
     <a href="../index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-    <a href="#"><i class="fa fa-fw fa-code"></i> Blogs</a>
+    <a href="../blogs/index.html"><i class="fa fa-fw fa-code"></i> Blogs</a>
     <a href="../projects/index.html"><i class="fa fa-fw fa-code-fork"></i> Projects</a>
-    <a href="../course-notes/index.html"><i class="fa fa-fw fa-edit"></i> Course Notes</a>
+    <a href="#"><i class="fa fa-fw fa-edit"></i> Course Notes</a>
     <a href="../about/index.html"><i class="fa fa-fw fa-user"></i> About</a>
-    <a href="javascript:void(0);" style="margin-right: 30px;" class="icon fa fa-fw fa-bars" onclick="myFunction()"></a>
+    <a href="javascript:void(0);" style="margin-right: 30px;" class="icon fa fa-fw fa-bars" onmouseover="myFunction()"></a>
     <li><a target="_blank" href="https://www.linkedin.com/in/pranit-bhujel-29107a15a/" class="fa fa-fw fa-linkedin"></a></p></li>
     <li><a target="_blank" href="https://twitter.com/pranitbhujel" class="fa fa-fw fa-twitter"></a></p></li>
     <li><a target="_blank" href="https://www.instagram.com/pranit_bhujel/" class="fa fa-fw fa-instagram"></a></p></li>
@@ -52,7 +52,7 @@
 </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript" src="blog.js"></script>
+<script type="text/javascript" src="../course-notes/courses.js"></script>
 <script>
   function myFunction() {
   var x = document.getElementById("myNavbar");
@@ -65,23 +65,23 @@
 
 // var data = JSON.parse(data);
 var parent = document.getElementById('parent');
-for (each in blogs){
+for (each in courses){
   var element = document.createElement('div');
   var intro =  `
     <div class='blog w3-white w3-margin-bottom w3-animate-zoom'>
       <div class="title">
-        <h3>` + blogs[each]['title'] + `</h3>
+        <h3>` + courses[each]['title'] + `</h3>
         <p>
-          <a><i class="fa fa-fw fa-paper-plane"></i> Posted on: ` + blogs[each]['date'] +` | </a>
+          <a><i class="fa fa-fw fa-paper-plane"></i> Posted on: ` + courses[each]['date'] +` | </a>
           <a><i class="fa fa-fw fa-user-circle"></i> Author: Pranit Bhujel | </a>
-          <a><i class="fa fa-fw fa-tag"></i> Tags: <code>`+blogs[each]['tags'] +`</code></a>
+          <a><i class="fa fa-fw fa-tag"></i> Tags: <code>`+courses[each]['tags'] +`</code></a>
         </p>
         <hr>
       </div>
       <div class = 'contents w3-center w3-padding'>
-          <p>`+ blogs[each]['description'] +`</p>
+          <p>`+ courses[each]['description'] +`</p>
           <br />
-          <a href="`+ blogs[each]['link'] +`" class=' w3-black w3-button'>Read more</a>
+          <a href="`+ courses[each]['link'] +`" class=' w3-black w3-button'>Read more</a>
       </div>
   </div>
 `
