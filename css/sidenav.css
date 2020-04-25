@@ -55,7 +55,7 @@
   .mobile{
     visibility: hidden;
   }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
     .sidebar{
         visibility: hidden;
     }
@@ -88,10 +88,13 @@
       font-size: 11px;
     }
     .title h2{
-      font-size: 25px;
+      font-size: 20px;
+    }
+    .project h4{
+      font-size: 16px;
     }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 900px) {
   .sidebar{
       width: 300px;
   }
