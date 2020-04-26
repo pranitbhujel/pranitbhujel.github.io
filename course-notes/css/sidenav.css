@@ -10,7 +10,7 @@
   padding-top: 15px;
 }
 
-.sidebar a {
+.sidebara a {
   padding: 14px 8px 6px 40px;
   text-decoration: none;
   font-size: 16px;
@@ -36,23 +36,16 @@
   border-radius: 50%;
 }
 
-.full_blog{
-  background-color: white;
-  box-shadow: 0px 1px 1px 0px grey;
-}
-.blog{
-  padding-bottom: 10px;
-}
-
 .main {
+  background-color: white;
   margin-left: 250px; /* Same as the width of the sidenav */
-  padding: 0px 10px;
+  padding: 5px 10px;
 }
 
-  .sidebar li{
+.sidebar li{
       margin-left: 10px;
       display: inline-block;
-  }
+}
 
   .profile{
       padding: 10px;
@@ -62,13 +55,13 @@
   .mobile{
     visibility: hidden;
   }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
     .sidebar{
         visibility: hidden;
     }
     .main{
         margin-left: 0px;
-        margin-bottom: 40px;
+        margin-bottom: 10%;
     }
     .mobile{
       visibility: visible;
@@ -91,24 +84,35 @@
       display: block;
       text-align: center;
     }
-    .title a{
+    .project{
       font-size: 11px;
     }
-    .title h3{
+    .title h2{
       font-size: 20px;
     }
+    .project h4{
+      font-size: 16px;
+    }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 900px) {
   .sidebar{
       width: 300px;
   }
   .main{
       margin-left: 300px;
   }
-  .sidebar a {
+  .sidebara a {
       padding-left: 50px;
+  }
+  .sidebar li{
+    font-size: 16px;
+    padding-left: 30px;
+  }
+  .projects{
+    padding-left: 10%;
+    padding-right: 10%;
   }
   .active{
     color: #00ced1;
-  }
+  } 
 }
