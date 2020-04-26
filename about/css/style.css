@@ -10,7 +10,7 @@ body {
     color: #505050;
   }
   .project{
-    padding: 5px;
+    padding: 10px;
     border-bottom: 1px dashed grey;
   }
   .project a :hover{

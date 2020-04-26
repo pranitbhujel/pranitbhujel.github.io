@@ -59,6 +59,13 @@
     .sidebar{
         visibility: hidden;
     }
+    .projects{
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+    .projects li{
+      font-size: 14px;
+    }
     .main{
         margin-left: 0px;
         margin-bottom: 10%;
