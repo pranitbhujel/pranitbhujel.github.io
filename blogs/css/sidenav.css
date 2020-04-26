@@ -35,9 +35,11 @@
   height: 80px;
   border-radius: 50%;
 }
+.full_blog{
+  background-color: white;
+}
 
 .main {
-  background-color: white;
   margin-left: 250px; /* Same as the width of the sidenav */
   padding: 5px 10px;
 }
@@ -47,52 +49,53 @@
       display: inline-block;
 }
 
-  .profile{
+.profile{
       padding: 10px;
       text-align: center;
-  }
+}
 
-  .mobile{
+.mobile{
+    visibility: hidden;
+}
+
+@media screen and (max-width: 900px) {
+.sidebar{
     visibility: hidden;
   }
-@media screen and (max-width: 900px) {
-    .sidebar{
-        visibility: hidden;
-    }
-    .main{
-        margin-left: 0px;
-        margin-bottom: 10%;
-    }
-    .mobile{
-      visibility: visible;
-    }
-    .mobile a {
-      display: none;
-    }
-    .mobile a:not(:first-child) {display: none;}
-    .mobile a.icon {
-      float: right;
-      display: block;
-    }
-    .mobile.responsive a.icon {
-      position: inherit;
-      right: 0;
+.main{
+    margin-left: 0px;
+    margin-bottom: 10%;
+  }
+.mobile{
+    visibility: visible;
+  }
+.mobile a {
+    display: none;
+  }
+.mobile a:not(:first-child) {display: none;}
+.mobile a.icon {
+    float: right;
+    display: block;
+  }
+.mobile.responsive a.icon {
+    position: inherit;
+    right: 0;
       /* bottom: 0; */
-    }
-    .mobile.responsive a {
-      float: none;
-      display: block;
-      text-align: center;
-    }
-    .project{
-      font-size: 11px;
-    }
-    .title h2{
-      font-size: 20px;
-    }
-    .project h4{
-      font-size: 16px;
-    }
+  }
+.mobile.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+.project{
+    font-size: 11px;
+  }
+.title h2{
+    font-size: 20px;
+  }
+.project h4{
+    font-size: 16px;
+  }
 }
 @media screen and (min-width: 900px) {
   .sidebar{
