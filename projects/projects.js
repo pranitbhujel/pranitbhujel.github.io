@@ -1,3 +1,3 @@
-var projects = {"New P":{"title": "New Project", "date": "2020-04-25", "description": "Creating a new project to upload the site in github", "tags": "Wollah", "link": "./new-project/index.html"},
+var projects = {"Image Classifier":{"title": "Image Classifier", "date": "2020-04-27", "description": "Classification of image based on parameters involving a lot of stuff.", "tags": "Classifier, Python", "link": "./image-classifier/index.html"},
 "New Project":{"title": "New Project", "date": "2020-04-25", "description": "Creating a new project to upload the site in github", "tags": "Wollah", "link": "./new-project/index.html"},
 }
