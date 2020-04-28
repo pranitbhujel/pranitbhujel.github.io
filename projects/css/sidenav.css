@@ -59,6 +59,9 @@
     visibility: hidden;
   }
 @media screen and (max-width: 900px) {
+  .title a{
+    font-size: 12px;
+  }
     .sidebar{
         visibility: hidden;
     }

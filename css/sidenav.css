@@ -56,6 +56,9 @@
     visibility: hidden;
   }
 @media screen and (max-width: 900px) {
+  .projects b{
+    font-size: 14px;
+  }
   .sidebar{
         visibility: hidden;
     }
@@ -85,10 +88,11 @@
       text-align: center;
     }
     .project{
-      font-size: 11px;
+      font-size: 12px;
     }
     .title h2{
       font-size: 20px;
+      color: #363636;
     }
     .project h4{
       font-size: 16px;
