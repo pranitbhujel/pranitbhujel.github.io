@@ -1,4 +1,4 @@
-var blogs = {"An approach to Data Science Problems":{"title": "An approach to Data Science Problems", "date": "2020-04-28", "description": "The use of modern tools and techniques that help us to quantify the data and find insights in them", "tags": "Data Science Workflow", "link": "./an-approach-to-data-science-problems/index.html"},
-"Another blog":{"title": "Another blog", "date": "2020-04-25", "description": "For measuring errors", "tags": "Let's see", "link": "./another-blog/index.html"},
-"My first blog":{"title": "My first blog", "date": "2020-04-25", "description": "Trying out whether the automated script works, because if that does I've made a masterpiece for myself. It's gonna be awesome", "tags": "Blog", "link": "./my-first-blog/index.html"},
+var blogs = {
+"Functional Dependency":{"title": "Functional Dependency", "date": "2020-04-29", "description": "Man", "tags": "Functions", "link": "./functional-dependency/index.html"},
+"An approach to Data Science Problems":{"title": "An approach to Data Science Problems", "date": "2020-04-28", "description": "The use of modern tools and techniques that help us to quantify the data and find insights in them", "tags": "Data Science Workflow", "link": "./an-approach-to-data-science-problems/index.html"}
 }
