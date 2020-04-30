@@ -11,7 +11,7 @@ body {
   }
   .project{
     padding: 15px;
-    border-bottom: 1px dashed black;
+    border-bottom: 1px dashed grey;
   }
   .project a :hover{
     border-bottom: 1px dashed white;
