@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content=" new">
+    <meta name="keywords" content=" new">
+    <meta name="author" content="Pranit Bhujel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=False">
+    <title> New | Pranit Bhujel</title>
+
+    <link rel="icon" href="../images/icon.PNG">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/w3.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sidenav.css">
+    <link rel="stylesheet" href="../css/mobile_nav.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+      .sidebar{
+        height: 300px;
+      }
+    </style>
+</head>
+<body>
+   <div class="sidebar w3-animate-zoom">
+   <div class="sidebara">
+    <div class="profile">
+      <img src="../images/me.png">
+      <h2>Pranit</h2>
+    </div>
+    <a href="../index.html"><i class="fa fa-fw fa-home"></i> Back</a>
+    </div>
+    <hr>
+      <li><a target="_blank" href="https://www.linkedin.com/in/pranit-bhujel-29107a15a/" class="fa fa-fw fa-linkedin"></a></p></li>
+      <li><a target="_blank" href="https://twitter.com/pranitbhujel" class="fa fa-fw fa-twitter"></a></p></li>
+      <li><a target="_blank" href="https://www.kaggle.com/pranitbhujel/" class="fa fa-fw"><b style="font-family: Quicksand">K</b></a></p></li>
+      <li><a target="_blank" href="https://www.instagram.com/pranit_bhujel/" class="fa fa-fw fa-instagram"></a></p></li>
+  </div>
+
+  <div id="myNavbar" class="mobile w3-animate-zoom">
+    <a href="../index.html"><i class="fa fa-fw fa-home"></i></a>
+    <a href="javascript:void(0);" style="margin-right: 30px;" class="icon fa fa-fw fa-bars" onclick="myFunction()"></a>
+    <li><a target="_blank" href="https://www.linkedin.com/in/pranit-bhujel-29107a15a/" class="fa fa-fw fa-linkedin"></a></p></li>
+    <li><a target="_blank" href="https://twitter.com/pranitbhujel" class="fa fa-fw fa-twitter"></a></p></li>
+    <li><a target="_blank" href="https://www.kaggle.com/pranitbhujel/" class="fa fa-fw"><b style="font-family: Quicksand">K</b></a></p></li>
+    <li><a target="_blank" href="https://www.instagram.com/pranit_bhujel/" class="fa fa-fw fa-instagram"></a></p></li>
+  </div>
+  
+  <section id='parent' class='main full_blog'>
+    <div class="title">
+      <h3> New</h3>
+      <p>
+        <a><i class="fa fa-fw fa-paper-plane"></i> Posted on: 2020-05-13 | </a>
+        <a><i class="fa fa-fw fa-user-circle"></i> Author: Pranit Bhujel </a>
+          <a><i class="fa fa-fw fa-tag"></i> Tags: <code>new</code> </a>
+      </p>
+      <hr>
+    </div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Man</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">isPrime</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">False</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
+    <span class="k">while</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">n</span> <span class="o">%</span><span class="k">x</span> == 0 :
+            <span class="k">return</span> <span class="kc">False</span>
+        <span class="n">x</span> <span class="o">+=</span> <span class="mi">2</span>
+    <span class="k">return</span> <span class="kc">True</span>
+
+<span class="k">def</span> <span class="nf">answer</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">ret_str</span> <span class="o">=</span> <span class="s2">&quot;2&quot;</span>
+    <span class="n">no</span> <span class="o">=</span> <span class="mi">3</span>
+    <span class="n">index</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">dig</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">den</span> <span class="o">=</span> <span class="mi">10</span>
+    <span class="k">while</span> <span class="n">index</span> <span class="o">&lt;=</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">4</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">isPrime</span><span class="p">(</span><span class="n">no</span><span class="p">):</span>
+            <span class="n">index</span> <span class="o">+=</span> <span class="n">dig</span>
+            <span class="n">ret_str</span> <span class="o">+=</span> <span class="nb">str</span><span class="p">(</span><span class="n">no</span><span class="p">)</span>
+        <span class="n">no</span> <span class="o">+=</span> <span class="mi">2</span>
+        <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">no</span> <span class="o">/</span> <span class="n">den</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">den</span> <span class="o">*=</span> <span class="mi">10</span>
+            <span class="n">dig</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">ret_str</span><span class="p">[</span><span class="n">n</span><span class="p">:</span><span class="n">n</span><span class="o">+</span><span class="mi">5</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+      function myFunction() {
+    var x = document.getElementById("myNavbar");
+    if (x.className === "mobile w3-animate-zoom") {
+      x.className += " responsive";
+    } else {
+      x.className = "mobile w3-animate-zoom";
+    }
+  }
+</script>
+</body>
+</html>
