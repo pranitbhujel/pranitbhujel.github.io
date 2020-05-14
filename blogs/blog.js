@@ -1,4 +1,5 @@
-var blogs = {"New":{"title": "New", "date": "2020-05-13", "description": "new", "tags": "new", "link": "./new/index.html"},
+var blogs = {"Treat garbages in your dataset":{"title": "Treat garbages in your dataset", "date": "2020-05-14", "description": "This blog summarizes various techniques of dealing with the garbages in a dataset, collected from multiple data sources. ", "tags": "Data Cleaning | Data Science", "link": "./treat-garbages-in-your-dataset/index.html"},
+"New":{"title": "New", "date": "2020-05-13", "description": "new", "tags": "new", "link": "./new/index.html"},
 "Machine Learning with Scikit-Learn":{"title": "Machine Learning with Scikit-Learn", "date": "2020-04-30", "description": "Basic step by step introduction to various Machine Learning concepts, and implementing a Supervised Learning using Scikit Learn. This can also be used as a hands-on training for learning the basic concepts behind the modeling mechanism of Scikit Learn.", "tags": "Scikit Learn, IRIS Dataset, Machine Learning", "link": "./machine-learning-with-scikit-learn/index.html"},
 "m":{"title": "m", "date": "2020-04-29", "description": "m", "tags": "m", "link": "./m/index.html"},
 "Functional Dependency":{"title": "Functional Dependency", "date": "2020-04-29", "description": "Man", "tags": "Functions", "link": "./functional-dependency/index.html"},
