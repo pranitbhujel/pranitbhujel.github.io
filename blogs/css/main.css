@@ -9594,7 +9594,7 @@ div.inner_cell {
 div.input_area {
   font-size: 12px;
   border: 1px solid #cfcfcf;
-  border-radius: 2px;
+  border-radius: 3px;
   background: #272822;
   line-height: 1.21429em;
   padding: 10px;
@@ -11625,7 +11625,7 @@ ul.typeahead-list > li > a {
 .highlight .gs { font-weight: bold } /* Generic.Strong */
 .highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
 .highlight .gt { color: #0044DD } /* Generic.Traceback */
-.highlight .kc { color: #ffffff; font-weight: bold } /* Keyword.Constant */
+.highlight .kc { color: #0bbaf0; font-weight: bold } /* Keyword.Constant */
 .highlight .kd { color: #03b9f0; font-weight: bold } /* Keyword.Declaration */
 .highlight .kn { color: #03b9f0; font-weight: bold } /* Keyword.Namespace */
 .highlight .kp { color: #03b9f0 } /* Keyword.Pseudo */
@@ -11647,11 +11647,11 @@ ul.typeahead-list > li > a {
 .highlight .nv { color: #ffffff } /* Name.Variable */
 .highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
 .highlight .w { color: #bbbbbb } /* Text.Whitespace */
-.highlight .mb { color: #666666 } /* Literal.Number.Bin */
-.highlight .mf { color: #A16BFF } /* Literal.Number.Float */
-.highlight .mh { color: #A16BFF } /* Literal.Number.Hex */
-.highlight .mi { color: #A16BFF } /* Literal.Number.Integer */
-.highlight .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight .mb { color: rgb(29, 245, 191) } /* Literal.Number.Bin */
+.highlight .mf { color: rgb(29, 245, 191) } /* Literal.Number.Float */
+.highlight .mh { color: rgb(29, 245, 191) } /* Literal.Number.Hex */
+.highlight .mi { color: rgb(29, 245, 191) } /* Literal.Number.Integer */
+.highlight .mo { color: rgb(29, 245, 191) } /* Literal.Number.Oct */
 .highlight .sa { color: #BA2121 } /* Literal.String.Affix */
 .highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
 .highlight .sc { color: #BA2121 } /* Literal.String.Char */
@@ -11663,7 +11663,7 @@ ul.typeahead-list > li > a {
 .highlight .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
 .highlight .sx { color: #008000 } /* Literal.String.Other */
 .highlight .sr { color: #BB6688 } /* Literal.String.Regex */
-.highlight .s1 { color: #BA2121 } /* Literal.String.Single */
+.highlight .s1 { color: #E6DB74 } /* Literal.String.Single */
 .highlight .ss { color: #19177C } /* Literal.String.Symbol */
 .highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
 .highlight .fm { color: #0000FF } /* Name.Function.Magic */
