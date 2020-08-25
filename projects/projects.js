@@ -1,2 +1,0 @@
-var projects = {"Coin Classification using Python":{"title": "Coin Classification using Python", "date": "2020-04-30", "description": "Object Detection and Computer Vision always has been famous among ML enthusiast and Python fans, but in this approach I use simple Edge Detection mechanism called \"Hough Circle Detection\". This allows us to detect edges and classify our coins based on it's radius. Do check out to learn how it's done. :)", "tags": "Image Classification, Python", "link": "./coin-classification-using-python/index.html"},
-}

@@ -1,22 +1,12 @@
-    /*!
-*
-* Twitter Bootstrap
-*
-*/
-/*!
- * Bootstrap v3.3.7 (http://getbootstrap.com)
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 
 body {
   margin: 0;
+  background-color: white;
 }
 article,
 aside,
@@ -2272,6 +2262,9 @@ th {
 .table > thead > tr > th {
   vertical-align: bottom;
   border-bottom: 2px solid #ddd;
+}
+.dataframe{
+  font-size: 13px;
 }
 .table > caption + thead > tr:first-child > th,
 .table > colgroup + thead > tr:first-child > th,
@@ -9543,6 +9536,7 @@ div.cell.selected.jupyter-soft-selected {
   }
 }
 .prompt {
+  display: none;
   /* This needs to be wide enough for 3 digit prompt numbers: In[100]: */
   min-width: 14ex;
   /* This padding is tuned to match the padding on the CodeMirror editor. */
@@ -9689,6 +9683,7 @@ div.input {
 div.input_prompt {
   color: #303F9F;
   border-top: 1px solid transparent;
+  display: none;
 }
 div.input_area > div.highlight {
   margin: 0.4em;
@@ -9957,7 +9952,8 @@ div.out_prompt_overlay:hover {
   background: rgba(240, 240, 240, 0.5);
 }
 div.output_prompt {
-  color: #D84315;
+  color: #fdc306;
+  display: None;
 }
 /* This class is the outer container of all output sections. */
 div.output_area {
@@ -11608,12 +11604,12 @@ ul.typeahead-list > li > a {
 .highlight .k { color: #66D9EF } /* Keyword */
 .highlight .n { color: #ffffff } /* variable */
 .highlight .p { color: #ffffff } /* variable */
-.highlight .o { color: #ee0667 } /* Operator */
+.highlight .o { color: #00f8f8 } /* Operator */
 .highlight .ch { color: #f3d00a; font-style: italic } /* Comment.Hashbang */
 .highlight .cm { color: #a8adaf; font-style: italic } /* Comment.Multiline */
 .highlight .cp { color: #BC7A00 } /* Comment.Preproc */
 .highlight .cpf { color: #f3d00a; font-style: italic } /* Comment.PreprocFile */
-.highlight .c1 { color: #a8adaf; font-style: italic } /* Comment.Single */
+.highlight .c1 { color: #c7c7c7; font-style: italic } /* Comment.Single */
 .highlight .cs { color: #a8adaf; font-style: italic } /* Comment.Special */
 .highlight .gd { color: #A00000 } /* Generic.Deleted */
 .highlight .ge { font-style: italic } /* Generic.Emph */
@@ -11656,14 +11652,14 @@ ul.typeahead-list > li > a {
 .highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
 .highlight .sc { color: #BA2121 } /* Literal.String.Char */
 .highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
-.highlight .sd { color: #a8adaf; font-size: 12px; } /* Literal.String.Doc */
-.highlight .s2 { color: #E6DB74 } /* Literal.String.Double */
+.highlight .sd { color: #c7c7c7; font-size: 12px; } /* Literal.String.Doc */
+.highlight .s2 { color: #0584fc } /* Literal.String.Double */
 .highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
 .highlight .sh { color: #BA2121 } /* Literal.String.Heredoc */
 .highlight .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
 .highlight .sx { color: #008000 } /* Literal.String.Other */
 .highlight .sr { color: #BB6688 } /* Literal.String.Regex */
-.highlight .s1 { color: #BA2121 } /* Literal.String.Single */
+.highlight .s1 { color: #ffc404 } /* Literal.String.Single */
 .highlight .ss { color: #19177C } /* Literal.String.Symbol */
 .highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
 .highlight .fm { color: #0000FF } /* Name.Function.Magic */

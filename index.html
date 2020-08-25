@@ -1,181 +1,242 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="The journey of a Data Scientist to change the world for greater good.">
-    <meta name="keywords" content="Data Science | Data Scientist | Blogs">
-    <meta name="author" content="Pranit Bhujel">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=False">
-    <title>Pranit Bhujel</title>
-    
-    <link rel="icon" href="./images/icon.png">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/w3.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/sidenav.css">
-    <link rel="stylesheet" href="https://drive.google.com/file/d/1XaYcOq6Ud140RhMddhzd_Bjcp78KWcaX/view?usp=sharing">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <!-- Meta data -->
+         <meta charset="UTF-8">
+         <meta name="description" content="The journey of a Data Scientist to change the world for greater good.">
+         <meta name="keywords" content="Data Science | Data Scientist | Blogs">
+         <meta name="author" content="Pranit Bhujel">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+         <title>Pranit Bhujel</title>
+         
+         <!-- Google Tag Manager -->
+         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+         })(window,document,'script','dataLayer','GTM-M9GPJ6H');</script>
+         <!-- End Google Tag Manager -->
+     
+         <!-- Global site tag (gtag.js) - Google Analytics -->
+         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173941283-1"></script>
+         <script>
+           window.dataLayer = window.dataLayer || [];
+           function gtag(){dataLayer.push(arguments);}
+           gtag('js', new Date());
+     
+           gtag('config', 'UA-173941283-1');
+         </script>
+
+  <!-- Favicons -->
+  <link href="images/icon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/w3.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+  <link href="css/style.css" rel="stylesheet">
+
 </head>
+
 <body>
-  <div class="sidebar w3-animate-zoom">
-    <div class="sidebara">
-    <div class="profile">
-      <img src="./images/me.png">
-      <h2>Pranit</h2>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M9GPJ6H"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Nav Bar -->
+  <div>
+    <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll" href="#">Pranit Bhujel</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+          aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link js-scroll" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll" href="#blogs">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+<!-- Intro Section -->
+  <div id="home" class="intro route bg-image" style="background-image:url(images/me.jpeg)">
+    <div class="overlay-itro"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <h1 class="intro-title mb-4">I am Pranit Bhujel</h1>
+          <p class="intro-subtitle"><span class="text-slider-items">A Full Stack Data Scientist, Future Sherlock Holmes of Data Science</span><strong class="text-slider"></strong><span class="typed-cursor" style="animation-iteration-count: 0;"></span></p>
+        </div>
+      </div>
     </div>
-    <a href="#javascript::void()"><i class="fa fa-fw fa-home"></i> Home</a>
-    <a href="./blogs/index.html"><i class="fa fa-fw fa-code"></i> Blogs</a>
-    <a href="./projects/index.html"><i class="fa fa-fw fa-code-fork"></i> Projects</a>
-    <a href="./course-notes/index.html"><i class="fa fa-fw fa-edit"></i> Course Notes</a>
-    </div><hr>
-      <li><a target="_blank" href="https://www.linkedin.com/in/pranit-bhujel-29107a15a/" class="fa fa-fw fa-linkedin"></a></p></li>
-      <li><a target="_blank" href="https://twitter.com/pranitbhujel" class="fa fa-fw fa-twitter"></a></p></li>
-    <li><a target="_blank" href="https://www.kaggle.com/pranitbhujel/" class="fa fa-fw"><b style="font-family: Quicksand">K</b></a></p></li>
-      <li><a target="_blank" href="https://www.instagram.com/pranit_bhujel/" class="fa fa-fw fa-instagram"></a></p></li>
   </div>
 
-  <div id="myNavbar" class="mobile w3-animate-zoom">
-    <a href="#javascript::void()"><i class="fa fa-fw fa-home"></i> </a>
-    <a href="./blogs/index.html"><i class="fa fa-fw fa-code"></i> Blogs</a>
-    <a href="./projects/index.html"><i class="fa fa-fw fa-code-fork"></i> Projects</a>
-    <a href="./course-notes/index.html"><i class="fa fa-fw fa-edit"></i> Course Notes</a>
-    <a href="javascript:void(0);" style="margin-right: 30px;" class="icon fa fa-fw fa-bars" onclick="myFunction()"></a>
-    <li><a target="_blank" href="https://www.linkedin.com/in/pranit-bhujel-29107a15a/" class="fa fa-fw fa-linkedin"></a></p></li>
-    <li><a target="_blank" href="https://twitter.com/pranitbhujel" class="fa fa-fw fa-twitter"></a></p></li>
-    <li><a target="_blank" href="https://www.kaggle.com/pranitbhujel/" class="fa fa-fw"><b style="font-family: Quicksand">K</b></a></p></li>
-    <li><a target="_blank" href="https://www.instagram.com/pranit_bhujel/" class="fa fa-fw fa-instagram"></a></p></li>
-  </div>
-  
-  <div id="parent" class='main w3-animate-zoom w3-card-2' >
-  <div class="title">
-    <h3>Welcome to Pranit's Website</h3>
-    <hr>
-  </div>
-  <h5><b>About Me</b></h5>
-  <hr>
-  <div class="about">
-    <!-- Introduction -->
-    <p>Hello World! This is <b>Pranit Bhujel</b>. I'm currently a final year undergrad student under MAKAUT.</p>
-    <p>
-      I'm a Data Science enthusiast and I have never been passionate about anything as I am about Data Science. I love to automate stuff and explore various aspects of Machine Learning. I'm a highly focused intellectual and a terrific learner. Having a strong foundation in <b>Probability Theory</b> and <b>Statistics</b>, I find myself interpreting large datasets with ease.
-    </p>
-    <p><b>I am currently actively searching for full-time opportunities related to Data Analytics.</b></p>
-    <br />
+<!-- About Section -->
+  <section id="about" class="about-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="box-shadow-full">
+            <div class="row">
 
-    <!-- Experience -->
-    <p>I'm experienced in the following domains</p>
-    <ul>
-      <li><b>Languages</b><i> Python, SQL, JavaScript, Java, C</i></li>
-      <li><b>Data Mining:</b><i> Beautiful Soup, Web Scraping, Urllib, </i></li>
-      <li><b>Data Munging:</b><i> Advanced Excel, Pandas, Numpy, </i></li>
-      <li><b>Data Visualization:</b><i> Tableau, Matplotlib, Seaborn, Folium</i></li>
-      <li><b>Databases:</b><i> MYSQL, SQL Server</i></li>
-      <li><b>Machine Learning:</b><i> Scikit Learn, Regression, Classification, Decision Tree, Random Forests, Clustering, Dimensionality Reduction</i></li>
-      <li><b>Web Development:</b><i> HTML, CSS, JQuery, JSON, Bootstrap, AJAX</i></li>
-      
-    </ul>
-    <br />
+              <div class="col-md-5">
+                <div class="title-box-2">
+                  <h5 class="title-left">About me</h5>
+                </div>
+                <div class=" w3-center"><img src="images/me.png" class="img-fluid w3-circle" alt="profile">
+                </div>
+              </div>
 
-    <!-- Projects -->
-    <h5><b>My Projects</b></h5>
-    <hr>
-    <p>Listed below are some of the challenging projects that I've worked with. They've all been a huge source of knowledge for me and I've gained many things in the process.</p>
-    <div id="project_body" class="projects">
+              <div class="col-md-7">
+                <div class="about-mf pt-4 pt-md-0">
+                  <br>
+                  <br>
 
+                  <p class="lead">Hello World! This is Pranit Bhujel. I'm currently a final year undergrad student under MAKAUT.</p>
+
+                  <p class="lead">I'm a Data Science enthusiast and I have never been passionate about anything as I am about Data Science. I love automation and to explore various aspects of Machine Learning. I'm a highly focused intellectual and a terrific learner. Having a strong foundation in Probability Theory and Statistics, I find myself interpreting large datasets with ease.</p>
+                    
+                  <p class="lead">I am currently actively searching for full-time opportunities related to Data Analytics.</p>
+                  
+                  <p class="lead">See my resume!</p>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Projects Section -->
+  <section id="projects" class="portfolio-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">PROJECTS</h3>
+            <p class="subtitle-a">Some of the challenging problems that I've worked with.</p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div id="parent_project" class="row">
+
+      </div>
+      <div id="projectslider" class="w3-center w3-container w3-section w3-large w3-text-white" style="width:100%">
+        <div class="w3-left w3-text-grey w3-hover-text-blue" onclick="plusDivs(-1)">&#10094;</div>
+        <div class="w3-right w3-text-grey w3-hover-text-blue" onclick="plusDivs(1)">&#10095;</div>
+        
+
+      </div>
     </div>
     <br />
     <br />
+  </section>
 
-    <!-- Blogs -->
-    <h5><b>My Blogs</b></h5>
-    <hr>
-    <p>As I go on learning, I find myself looking at not one but many resources. So with the combined knowledge from all the resources, I write comprehensive blogs to help people gain more insight.</p>
-    <div id="blog_body" class="projects">
+  <!-- Blogs Section -->
+  <section id="blogs" class="blog-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">Blog</h3>
+            <p class="subtitle-a">Sharing my experience to the world.</p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div id="parent_blog" class="row">
 
+      </div>
+      <div id="blogslider" class="w3-center w3-container w3-section w3-large w3-text-white" style="width:100%">
+        <div class="w3-left w3-text-grey w3-hover-text-blue" onclick="dotInc(-1)">&#10094;</div>
+        <div class="w3-right w3-text-grey w3-hover-text-blue" onclick="dotInc(1)">&#10095;</div>
+        
+
+      </div>
+      <br />
+      <br />
     </div>
-    <br />
-    <br />
+  </section>
 
-    <h5><b>Course Notes</b></h5>
-    <hr>
-    <p>Not many are privileged to get same kind of education like all. In this section, I share the notes and articles of the courses that I've taken through multiple platforms.</p>
-    <div id="courses_body" class="projects">
+<!--/ Footer Section /-->
+  <section class="parallax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(images/on-02.jpg)">
+    <div class="overlay-mf"></div>
+    <footer>
+      <div class="container">
+      <hr>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="copyright-box">
+              <p class="copyright">Created with <span style="font-size: 20px;">&hearts;</span> by<strong> Pranit Bhujel</strong></p>
+              <div class="credits">
+                <p>Stay Connected:     
+                  <a target="_blank" href="https://www.linkedin.com/in/pranit-bhujel-29107a15a/" class="fa fa-linkedin"></a>
+                  <a target="_blank" href="https://twitter.com/pranitbhujel" class="fa fa-twitter"></a>
+                <a target="_blank" href="https://www.kaggle.com/pranitbhujel/" class="fa"><b style="font-family: Quicksand">K</b></a>
+                <a target="_blank" href="https://www.instagram.com/pranit_bhujel/" class="fa fa-instagram"></a>
+              
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
 
-    </div>
-    <br />
-    <br />
+<!-- Back to top -->
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- <div id="preloader"></div> -->
 
-    <!-- <h5><b>Quarantine Visualizations</b></h5> -->
-    <hr>
-    <p></p>
-    <!-- <div>
-      <div class='tableauPlaceholder' id='viz1587834683640' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CO&#47;COVID19_DeathToll&#47;COVID19_Death_Toll&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='COVID19_DeathToll&#47;COVID19_Death_Toll' /><param name='tabs' value='no' /><param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CO&#47;COVID19_DeathToll&#47;COVID19_Death_Toll&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='useGuest' value='true' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1587834683640');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-    </div> -->
-  
-  </div>
-  </div>
-  <br />
-  <br />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="./projects/projects.js"></script>
-  <script src="./blogs/blog.js"></script>
-  <script src="./course-notes/courses.js"></script>
+<!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
 
-  <script>
-    function myFunction() {
-    var x = document.getElementById("myNavbar");
-    if (x.className === "mobile w3-animate-zoom") {
-      x.className += " responsive";
-    } else {
-      x.className = "mobile w3-animate-zoom";
-    }
-  }
+<!-- Main Javascript File -->
+  <script src="js/main.js"></script>
+  <script src="js/blog.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/fetchall.js"></script>
+  <script src="js/projectslider.js"></script>
+  <script src="js/blogslider.js"></script>
 
-  // Adding projects 
-var project_parent = document.getElementById('project_body');
-for (each in projects){
-  var pro = document.createElement('div');
-  pro.setAttribute('class', 'project')
-  var sub_nav = projects[each]['title'].replace(/ /g, '-').toLowerCase()
-  var intro =  `
-            <li><b><a href="./projects/` + sub_nav + `/index.html">`+ projects[each]['title'] + `</a></b>
-            <p><a><i class="fa fa-fw fa-paper-plane"></i> Posted on: ` + projects[each]['date']+ `</a></p></li>
-            `
-  pro.innerHTML = intro;
-  project_parent.appendChild(pro);
-}
-
-// Adding blogs 
-var blog_parent = document.getElementById('blog_body');
-for (each in blogs){
-  var blog = document.createElement('div');
-  blog.setAttribute('class', 'project')
-  var sub_nav = blogs[each]['title'].replace(/ /g, '-').toLowerCase() 
-  var intro =  `
-              <li><b><a href="./blogs/` + sub_nav + `/index.html">`+ blogs[each]['title'] + `</a></b>
-            <p><a><i class="fa fa-fw fa-paper-plane"></i> Posted on: ` + blogs[each]['date']+ `</a></p></li>
-            `
-  blog.innerHTML = intro;
-  blog_parent.appendChild(blog);
-}
-
-// Adding course notes
-var course_parent = document.getElementById('courses_body');
-for (each in courses){
-  var course = document.createElement('div');
-  course.setAttribute('class', 'project')
-  var sub_nav = courses[each]['title'].replace(/ /g, '-').toLowerCase()
-  var intro =  `
-              <li><b><a href="./course-notes/` + sub_nav + `/index.html">`+ courses[each]['title'] + `</a></b>
-            <p><a><i class="fa fa-fw fa-paper-plane"></i> Posted on: ` + courses[each]['date']+ `</a></p></li>
-            `
-  course.innerHTML = intro;
-  course_parent.appendChild(course);
-}
-
-</script>
 </body>
 </html>
+
 

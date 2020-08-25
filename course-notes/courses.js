@@ -1,3 +1,0 @@
-var courses = {"Applied Machine Learning with Python, Week-1":{"title": "Applied Machine Learning with Python, Week-1 (University of Michigan)", "date": "2020-04-30", "description": "The first week discusses various aspects of Machine Learning, ranging from Supervised, Unsupervised to Reinforcement Learning. We also explore basic ML using Scikit-Learn and thus implement a K-Nearest Neighbor Classifier to detect a cancer being 'Malignant' or 'Benign'.", "tags": "Classifier, Machine Learning, Python", "link": "./applied-machine-learning-with-python,-week-1/index.html"},
-"Web Scraping Fundamentals":{"title": "Web Scraping Fundamentals", "date": "2020-04-25", "description": "It's epic", "tags": "And fun", "link": "./web-scraping-fundamentals/index.html"},
-}
