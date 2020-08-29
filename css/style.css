@@ -2,12 +2,16 @@ body {
   color: #4e4e4e;
   font-family: Quicksand;
 }
+.ghostblog {
+  background-color: #333;
+  color: white;
+}
 #projects{
   background-color: #fafafa;
 }
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:14px;width:14px;padding:5px;}
-.avatar{border-bottom: 2px solid #0078ff;border-top: 2px solid #0078ff;}
+/* .avatar{margin: 2px; border-bottom: 2px solid #0078ff;border-top: 2px solid #0078ff;} */
 h1,
 h2,
 h3,
@@ -972,6 +976,7 @@ a:hover {
 ======================================*/
 .card-footer{
   font-size: 14px;
+  background-color: #fff;
 }
 .burn{
   cursor: pointer;
@@ -1148,7 +1153,7 @@ footer .credits {
   margin-bottom: 0;
 }
 
-footer .credits a {
+footer .credits a{
   color: #fff;
   display: inline-block;
   border-radius: 30px;
@@ -1156,7 +1161,6 @@ footer .credits a {
   padding: 0.6em 0.7em;
   margin: 2px;
 }
-
 /*======================================
 //--//-->   CONtaCT FORM
 ======================================*/

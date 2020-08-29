@@ -5,7 +5,7 @@ var element = document.createElement('div');
 element.setAttribute("class", "col-md-4");
 var intro =  `
         <div class="card card-blog">
-          <div class="card-img"><a href="` + blogs[each]['link'] + `"><img src="images/` + blogs[each]['image_url'] + `" alt="website template image" class="img-fluid"></a></div>
+          <div class="card-img"><a href="` + blogs[each]['link'] + `"><img src="images/` + blogs[each]['image_url'] + `" alt="blog images" class="img-fluid" style={max-height:300px;}></a></div>
           <div class="card-body">
             <div class="card-category-box">
               <div class="card-category">
@@ -13,7 +13,6 @@ var intro =  `
               </div>
             </div>
             <h3 class="card-title"><a href=" ` + blogs[each]['link'] + `"> ` + blogs[each]['title'] + `</a></h3>
-            <p class="card-description">`+ blogs[each]['description']+`</p>
           </div>
           <div class="card-footer">
             <div class="post-author"><a><img src="images/me.png" alt="image" class="avatar rounded-circle"> <span class="author">` + blogs[each]['date'] + `</span></a></div>

@@ -1,3 +1,18 @@
+var dark = 0
+function darkmode() {
+	if ((dark += 1)%2 !=0){
+		var inabout = document.getElementById('innerabout');
+		var about = document.getElementById('about');
+		var projects = document.getElementById('projects');
+		var blogs = document.getElementById('blogs');
+		about.classList.add("dark-mode");
+		inabout.classList.add("dark-mode");
+		blogs.classList.add("ghostblog");
+		inabout.classList.add("dark-mode");
+	}
+
+}
+
 (function ($) {
 	"use strict";
 	var nav = $('nav');
