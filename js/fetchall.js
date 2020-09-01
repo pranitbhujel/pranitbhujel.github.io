@@ -4,20 +4,20 @@ for (each in blogs){
 var element = document.createElement('div');
 element.setAttribute("class", "col-md-4");
 var intro =  `
-        <div class="card card-blog">
-          <div class="card-img"><a href="` + blogs[each]['link'] + `"><img src="images/` + blogs[each]['image_url'] + `" alt="blog images" class="img-fluid" style={max-height:300px;}></a></div>
-          <div class="card-body">
-            <div class="card-category-box">
-              <div class="card-category">
-                <h6 class="category">` + blogs[each]['category'] + `</h6>
-              </div>
-            </div>
-            <h3 class="card-title"><a href=" ` + blogs[each]['link'] + `"> ` + blogs[each]['title'] + `</a></h3>
-          </div>
-          <div class="card-footer">
-            <div class="post-author"><a><img src="images/me.png" alt="image" class="avatar rounded-circle"> <span class="author">` + blogs[each]['date'] + `</span></a></div>
+    <div class="card card-blog">
+      <div class="card-img"><a href="` + blogs[each]['link'] + `"><img src="images/` + blogs[each]['image_url'] + `" alt="blog images" class="img-fluid" style={max-height:300px;}></a></div>
+      <div class="card-body">
+        <div class="card-category-box">
+          <div class="card-category">
+            <h6 class="category">` + blogs[each]['category'] + `</h6>
           </div>
         </div>
+        <h3 class="card-title"><a href=" ` + blogs[each]['link'] + `"> ` + blogs[each]['title'] + `</a></h3>
+      </div>
+      <div class="card-footer">
+        <div class="post-author"><a><img src="images/me.png" alt="image" class="avatar rounded-circle"> <span class="author">` + blogs[each]['date'] + `</span></a></div>
+      </div>
+    </div>
 `
 element.innerHTML = intro;
 parent_blog.appendChild(element);

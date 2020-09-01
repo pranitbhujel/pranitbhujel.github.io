@@ -6,6 +6,12 @@ body {
   background-color: #333;
   color: white;
 }
+.close-animatedModal{
+  background-color:white;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+}
 #projects{
   background-color: #fafafa;
 }
@@ -400,8 +406,8 @@ a:hover {
 .navbar-b {
   transition: all .5s ease-in-out;
   background-color: transparent;
-  padding-top: 1.563rem;
-  padding-bottom: 1.563rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .navbar-b.navbar-reduce {
@@ -475,6 +481,13 @@ a:hover {
   background-color: #fff;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+@media (max-width: 768px){
+  .navbar-b.navbar-reduce {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 .navbar-b.navbar-reduce .nav-link {
