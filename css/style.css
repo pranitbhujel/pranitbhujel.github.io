@@ -2,6 +2,9 @@ body {
   color: #4e4e4e;
   font-family: Quicksand;
 }
+img {
+  pointer-events: none;
+}
 .ghostblog {
   background-color: #333;
   color: white;
