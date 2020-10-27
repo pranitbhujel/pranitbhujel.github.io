@@ -19,14 +19,14 @@ self.addEventListener('install', function (e) {
   e.waitUntil(
     caches.open('fox-store').then(function (cache) {
       return cache.addAll([
-        '/',
-        '/index.html',
-        '/index.js',
-        '/style.css',
-        '/images/fox1.jpg',
-        '/images/fox2.jpg',
-        '/images/fox3.jpg',
-        '/images/fox4.jpg'
+        '/pranit-bhujel.github.io/a2hs/',
+        '/pranit-bhujel.github.io/a2hs/index.html',
+        '/pranit-bhujel.github.io/a2hs/index.js',
+        '/pranit-bhujel.github.io/a2hs/style.css',
+        '/pranit-bhujel.github.io/a2hs/images/fox1.jpg',
+        '/pranit-bhujel.github.io/a2hs/images/fox2.jpg',
+        '/pranit-bhujel.github.io/a2hs/images/fox3.jpg',
+        '/pranit-bhujel.github.io/a2hs/images/fox4.jpg'
       ]);
     })
   );
