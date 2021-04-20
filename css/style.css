@@ -18,9 +18,15 @@ img {
 #projects{
   background-color: #fafafa;
 }
+.leftarrow, .rightarrow{
+  cursor: pointer;
+  padding: 0px 20px;
+  font-size: larger;
+  font-weight: bold;
+}
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:14px;width:14px;padding:5px;}
-/* .avatar{margin: 2px; border-bottom: 2px solid #0078ff;border-top: 2px solid #0078ff;} */
+/* .avatar{margin: 2px; border-bottom: 2px solid #444;border-top: 2px solid #444;} */
 h1,
 h2,
 h3,
@@ -36,7 +42,7 @@ a {
 }
 
 a:hover {
-  color: #0078ff;
+  color: #444;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
@@ -45,7 +51,7 @@ a:hover {
 }
 
 .color-a {
-  color: #0078ff;
+  color: #444;
 }
 
 .color-d {
@@ -162,7 +168,7 @@ a:hover {
 .line-mf {
   width: 40px;
   height: 5px;
-  background-color: #0078ff;
+  background-color: #444;
   margin: 0 auto;
 }
 
@@ -181,7 +187,7 @@ a:hover {
   content: '';
   position: absolute;
   height: 3px;
-  background-color: #0078ff;
+  background-color: #444;
   width: 100px;
   bottom: -12px;
 }
@@ -218,12 +224,12 @@ a:hover {
   border-radius: 50%;
   line-height: 1.4;
   margin: 0 15px 0 0;
-  box-shadow: 0 0 0 3px #0078ff;
+  box-shadow: 0 0 0 3px #444;
   transition: all 500ms ease;
 }
 
 .socials .ico-circle:hover {
-  background-color: #0078ff;
+  background-color: #444;
   color: #fff;
   box-shadow: 0 0 0 3px #cde1f8;
   transition: all 500ms ease;
@@ -248,7 +254,7 @@ a:hover {
 }
 
 .list-ico span {
-  color: #0078ff;
+  color: #444;
   margin-right: 10px;
 }
 
@@ -262,7 +268,7 @@ a:hover {
   line-height: 1.55;
   margin: 0 auto;
   text-align: center;
-  box-shadow: 0 0 0 10px #0078ff;
+  box-shadow: 0 0 0 10px #444;
   display: block;
 }
 
@@ -309,7 +315,7 @@ a:hover {
   position: fixed;
   width: 42px;
   height: 42px;
-  background-color: #0078ff;
+  background-color: #444;
   opacity: .7;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -328,7 +334,7 @@ a:hover {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #0078ff;
+  background: #555;
   color: #fff;
   width: 44px;
   height: 44px;
@@ -366,7 +372,7 @@ a:hover {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #f2f2f2;
-  border-top: 6px solid #0078ff;
+  border-top: 6px solid #444;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -490,26 +496,26 @@ a:hover {
 }
 
 .navbar-b.navbar-reduce .nav-link {
-  color: #0078ff;
+  color: #444;
 }
 
 .navbar-b.navbar-reduce .nav-link:before {
-  background-color: #0078ff;
+  background-color: #444;
 }
 
 .navbar-b.navbar-reduce .nav-link:hover {
-  color: #0078ff;
+  color: #444;
 }
 
 .navbar-b.navbar-reduce .show > .nav-link,
 .navbar-b.navbar-reduce .active > .nav-link,
 .navbar-b.navbar-reduce .nav-link.show,
 .navbar-b.navbar-reduce .nav-link.active {
-  color: #0078ff;
+  color: #444;
 }
 
 .navbar-b.navbar-reduce .navbar-brand {
-  color: #0078ff;
+  color: #444;
 }
 
 .navbar-b.navbar-reduce .navbar-toggler span {
@@ -541,13 +547,13 @@ a:hover {
 }
 
 .navbar-b .dropdown-menu .dropdown-item:hover {
-  background-color: #0078ff;
+  background-color: #444;
   color: #fff;
   transition: all 500ms ease;
 }
 
 .navbar-b .dropdown-menu .dropdown-item.active {
-  background-color: #0078ff;
+  background-color: #444;
 }
 
 /*--/ Hamburger Navbar /--*/
@@ -621,7 +627,7 @@ a:hover {
 }
 
 .intro .overlay-itro {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   top: 0;
   left: 0px;
@@ -661,7 +667,7 @@ a:hover {
 
 .intro-single .breadcrumb {
   background-color: transparent;
-  color: #0078ff;
+  color: #444;
 }
 
 .intro-single .breadcrumb .breadcrumb-item:before {
@@ -684,17 +690,19 @@ a:hover {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
-
+.post-date a{font-size: 18px;margin-left: 3px;}
 .about-mf .about-img {
   margin-bottom: 2rem;
 }
 
 .about-mf .about-img img {
   margin-left: 10px;
+  width: 250px;
 }
 
 .about-mf p{
     font-size: 16px;
+    text-align: justify;
 }
 /*======================================
 //--//-->   SERVICES
@@ -710,7 +718,7 @@ a:hover {
 .service-box:hover .ico-circle {
   transition: all 500ms ease;
   color: #fff;
-  background-color: #0078ff;
+  background-color: #444;
   box-shadow: 0 0 0 10px #cde1f8;
 }
 
@@ -825,7 +833,7 @@ a:hover {
   opacity:0
 }
 .data a:hover,.card:hover h2{
-  color:#38c
+  color:#444
 }
 .work-box {
   margin-bottom: 3rem;
@@ -859,17 +867,17 @@ a:hover {
 }
 
 .work-content .w-more .w-category {
-  color: #0078ff;
+  color: #444;
 }
 
 .work-content .w-like {
   font-size: 2.5rem;
-  color: #0078ff;
+  color: #444;
   float: right;
 }
 
 .work-content .w-like a {
-  color: #0078ff;
+  color: #444;
 }
 
 .work-content .w-like .num-like {
@@ -878,6 +886,9 @@ a:hover {
 
 .w-title {
   font-size: 1.2rem;
+  font-family: Quicksand;
+  font-weight: bold;
+  color: #333;
 }
 
 /*======================================
@@ -893,7 +904,7 @@ a:hover {
   text-align: center;
 }
 .date{
-  color: #0078ff;
+  color: #444;
 }
 .testimonial-box .author-test {
   margin-top: 1rem;
@@ -904,7 +915,7 @@ a:hover {
 }
 
 .testimonial-box .author {
-  color: #0078ff;
+  color: #444;
   text-transform: uppercase;
   font-weight: 600;
   margin: 1rem 0;
@@ -914,7 +925,7 @@ a:hover {
 
 .testimonial-box .comit {
   font-size: 2rem;
-  color: #0078ff;
+  color: #444;
   background-color: #fff;
   width: 52px;
   height: 52px;
@@ -933,6 +944,7 @@ a:hover {
 
 .card-blog .card-body {
   position: relative;
+  border: none;
 }
 
 
@@ -951,7 +963,7 @@ a:hover {
   color: #fff;
   padding: 0 15px 5px;
   overflow: hidden;
-  background-color: #0078ff;
+  background-color: rgb(0, 0, 0);
   border-radius: 30px;
 }
 
@@ -1021,7 +1033,7 @@ after_burn{
 }
 
 .blog-wrapper .post-meta ul {
-  border-left: 4px solid #0078ff;
+  border-left: 4px solid #444;
   margin-top: 1rem;
 }
 
@@ -1031,7 +1043,7 @@ after_burn{
 }
 
 .blog-wrapper .post-meta ul a {
-  color: #0078ff;
+  color: #444;
 }
 
 .blog-wrapper .post-meta ul span {
@@ -1039,7 +1051,7 @@ after_burn{
 }
 
 .blog-wrapper .blockquote {
-  border-left: 4px solid #0078ff;
+  border-left: 4px solid #444;
   padding: 18px;
   font-style: italic;
 }
@@ -1071,7 +1083,7 @@ after_burn{
 }
 
 .box-comments .list-comments a {
-  color: #0078ff;
+  color: #444;
 }
 
 .box-comments .list-comments span {
@@ -1088,7 +1100,7 @@ after_burn{
 .widget-sidebar .sidebar-title {
   font-size: 1.6rem;
   font-weight: 600;
-  border-left: 5px solid #0078ff;
+  border-left: 5px solid #444;
   padding-left: 15px;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
@@ -1105,7 +1117,7 @@ after_burn{
   width: 10px;
   height: 1px;
   left: 0;
-  background-color: #0078ff;
+  background-color: #444;
   top: 20px;
 }
 
@@ -1116,8 +1128,8 @@ after_burn{
 }
 
 .sidebar-search .btn-search {
-  background-color: #0078ff;
-  border-color: #0078ff;
+  background-color: #444;
+  border-color: #444;
   border-radius: 0;
   padding-left: 20px;
   padding-right: 20px;
@@ -1125,7 +1137,7 @@ after_burn{
 
 .widget-tags ul li {
   display: inline-block;
-  background-color: #0078ff;
+  background-color: #444;
   padding: .2rem .6rem;
   margin-bottom: .5rem;
   border-radius: 15px;
@@ -1159,6 +1171,7 @@ footer {
 
 footer .copyright {
   margin-bottom: .3rem;
+  padding: 10px;
 }
 
 footer .credits {
@@ -1178,8 +1191,8 @@ footer .credits a{
 ======================================*/
 
 #sendmessage {
-  color: #0078ff;
-  border: 1px solid #0078ff;
+  color: #444;
+  border: 1px solid #444;
   display: none;
   text-align: center;
   padding: 15px;
@@ -1236,13 +1249,13 @@ footer .credits a{
 }
 
 .button:hover {
-  background-color: #0062d3;
+  background-color: grey;
   color: #fff;
   transition: all 500ms ease;
 }
 
 .button-a {
-  background-color: #0078ff;
+  background-color: #444;
   color: #fff;
   border-color: #cde1f8;
 }

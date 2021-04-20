@@ -15,7 +15,7 @@ function getWidth() {
   
   for (each in projects){
       var element = document.createElement('span');
-      element.setAttribute("class", "w3-margin-right w3-badge projectdots w3-border w3-transparent w3-hover-blue");
+      element.setAttribute("class", "w3-margin-right w3-badge projectdots w3-border w3-transparent w3-hover-grey");
       var div = `currentDiv(`+ _dot +`)`;
       element.setAttribute( "onclick",div);
       _dot += 1;
@@ -46,7 +46,7 @@ function getWidth() {
   
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none";  
-      dots[i].className = dots[i].className.replace(" w3-blue", "");
+      dots[i].className = dots[i].className.replace(" w3-grey", "");
       x[i].className = x[i].className.replace(" w3-border", "");
     }
     if (getWidth() < 750){
@@ -117,6 +117,6 @@ function getWidth() {
       }
       }
       x[slideIndex-1].className += " w3-border";
-      dots[slideIndex-1].className += " w3-blue";
+      dots[slideIndex-1].className += " w3-grey";
     }
   

@@ -13,15 +13,15 @@ function getWidth() {
   var _bdot = 1;
   var span = document.createElement("span");
   
-  for (each in blogs){
-      var new_dot = document.createElement('span');
-      new_dot.setAttribute("class", "w3-margin-right w3-badge blogdots w3-border w3-transparent w3-hover-blue");
-      var div = `currentDot(`+ _bdot +`)`;
-      new_dot.setAttribute( "onclick",div);
-      _bdot += 1;
-      span.appendChild(new_dot);
-  }
-  blog_dots_parent.appendChild(span);
+  // for (each in blogs){
+  //     var new_dot = document.createElement('span');
+  //     new_dot.setAttribute("class", "w3-margin-right w3-badge blogdots w3-border w3-transparent w3-hover-grey");
+  //     var div = `currentDot(`+ _bdot +`)`;
+  //     new_dot.setAttribute( "onclick",div);
+  //     _bdot += 1;
+  //     span.appendChild(new_dot);
+  // }
+  // blog_dots_parent.appendChild(span);
   
   var dotIndex = 1;
   showdot(dotIndex);
@@ -46,7 +46,7 @@ function getWidth() {
   
     for (i = 0; i < m.length; i++) {
       m[i].style.display = "none";  
-      blogdot[i].className = blogdot[i].className.replace(" w3-blue", "");
+      // blogdot[i].className = blogdot[i].className.replace(" w3-grey", "");
       m[i].className = m[i].className.replace(" w3-border", "");
     }
     if (getWidth() < 750){
@@ -117,6 +117,6 @@ function getWidth() {
       }
       }
       m[dotIndex-1].className += " w3-border";
-      blogdot[dotIndex-1].className += " w3-blue";
+      // blogdot[dotIndex-1].className += " w3-grey";
     }
   

@@ -1,3 +1,7 @@
+
+body{font-family:Lora; font-size:16px;margin-top:80px;color: #333;}h1,h3,h4,h5,h6{font-weight: bold; font-family: 'Quicksand';color:#333;}h2{color:#333;}@media(min-width:767px){body{font-size:18px; padding:0px 25%;}}#navbar{background-color:#fff;position:fixed;top:0;left:0;width:100%;transition:top 0.3s;z-index:1000;border-bottom:1px solid #333;}#navbar a{float:left;display:block;color:white;text-align:center;padding:12px;margin-left:10px;text-decoration:none;}.w3-tag{background-color:#333;}.title{margin-left:10px;font-family: 'Quicksand';}.post-date{margin-right:10px;margin-top:10px;}.author{text-decoration:underline;}.overlay-mf{background-color:#333;bottom:0;left:0;width:100%;}.nav img{width:25px;height: 23px;}.top{width: 100%;} .fontq{font-family: 'Quicksand'; font-size: 16px;}
+
+
 html {
   /* font-family: sans-serif; */
   -ms-text-size-adjust: 100%;
