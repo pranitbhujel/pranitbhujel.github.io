@@ -701,7 +701,8 @@ a:hover {
 }
 
 .about-mf p{
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: 200;
     text-align: justify;
 }
 /*======================================
