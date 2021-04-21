@@ -1,0 +1,16 @@
+{
+    "background_color": "black",
+    "theme_color": "black",
+    "description": "Personal Portfolio of Pranit Bhujel",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "images/icon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "name": "Pranit Bhujel\nFuture Sherlock Holmes of Data Science!",
+    "short_name": "Pranit Bhujel",
+    "start_url": "index.html"
+}
