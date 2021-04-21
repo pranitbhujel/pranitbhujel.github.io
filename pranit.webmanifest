@@ -5,8 +5,8 @@
     "display": "standalone",
     "icons": [
         {
-            "src": "images/b_icon.png",
-            "sizes": "192x192",
+            "src": "images/app_icon.png",
+            "sizes": "200*200",
             "type": "image/png"
         }
     ],
