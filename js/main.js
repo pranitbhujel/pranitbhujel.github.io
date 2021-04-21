@@ -1,3 +1,19 @@
+// Quotes Section 
+var quote = document.getElementsByClassName('quote');
+var author = document.getElementsByClassName('quote-author');
+
+for (i = 0; i < quote.length; i++) {
+	quote_new = ` <div class="w3-panel w3-light-grey w3-margin-top">
+                      <span style="font-size:120px;line-height:0.6em;opacity:0.2">❝</span>
+                      <p class="w3-large" style="text-align: center; margin-top: -25px">` + quote[i].innerHTML + `</p>
+                      <p style="text-align: right;font-size:14px;"> - ` + author[i].innerHTML + ` </p>
+                    </div>
+                  `;
+
+	quote[i].innerHTML = quote_new;
+	author[i].innerHTML = "";
+}
+
 var dark = 0
 function darkmode() {
 	if ((dark += 1)%2 !=0){
@@ -79,10 +95,10 @@ function darkmode() {
 	});
 
 	// Activate scrollspy to add active class to navbar items on scroll
-	$('body').scrollspy({
-		target: '#mainNav',
-		offset: navHeight
-	});
+	// $('body').scrollspy({
+	// 	target: '#mainNav',
+	// 	offset: navHeight
+	// });
 	/*--/ End Scrolling nav /--*/
 
 	/*--/ Navbar Menu Reduce /--*/

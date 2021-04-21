@@ -1,0 +1,186 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta lang="en">
+            <meta charset="UTF-8">
+            <meta name="description" content= "Multi-line statements play an important role in the readability of the python code">
+            <meta name="author" content="Pranit Bhujel">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+            <meta keywords=""
+            content="Pranit Bhujel, Pranit, Bhujel, Data Science Blogs, Data Scientist from Darjeeling, Data Science, Statistics, Probability, Python, Machine Learning, Natural Language Processing, Interview Questions logical line vs physical line in python, logical line in python, physical line in python">
+            <meta name="robots" content="index, follow">
+            <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+            <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+            
+            <title> Multi Line Statements in Python | Pranit Bhujel</title>
+
+            <link rel="icon" href="../../images/icon.PNG">
+            <link rel="stylesheet" href="../../css/main.css">
+            <link rel="stylesheet" href="../../css/w3.css">
+            <link rel="stylesheet" href="../../css/style.css">
+            <link rel="stylesheet" href="../../css/individual_blog.css">
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Lora&family=Quicksand&display=swap" rel="stylesheet">
+
+            <!-- Load mathjax -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
+            <!-- MathJax configuration -->
+            <script type="text/x-mathjax-config">
+                MathJax.Hub.Config({
+                    tex2jax: {
+                        inlineMath: [ ['$','$'], ["\(","\)"] ],
+                        displayMath: [ ['$$','$$'], ["\[","\]"] ],
+                        processEscapes: true,
+                        processEnvironments: true
+                    },
+                    // Center justify equations in code and markdown cells. Elsewhere
+                    // we use CSS to left justify single line equations in code cells.
+                    displayAlign: 'center',
+                    "HTML-CSS": {
+                        styles: {'.MathJax_Display': {"margin": 0}},
+                        linebreaks: { automatic: true }
+                    }
+                });
+            </script>
+        </head>
+
+        <body>
+        <div class="main_body">
+        <div>
+            <div class="100 nav w3-card-2" id="navbar">
+            <h5><a href="../../"><img src="../../images/b_icon.png "></a></h5>
+            </div>
+
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+            <div id="preloader"></div> 
+
+        <div id='parent' class='main full_blog'>
+
+            <div class="title">
+            <h2>Multi Line Statements in Python</h2>
+            <p class="top_description">"Multi-line statements play an important role in the readability of the python code"</p>
+            <hr>
+            <div class="card-footer">
+                <div class="post-author">
+                <img src="../../images/me.png" alt="image" class="avatar w3-circle"> <span class="author fontq">Apr 21, 2021</span>
+
+                <span class="w3-right post-date fontq">
+                <a target="_blank" href="https://www.linkedin.com/in/pranit-bhujel-29107a15a/" class="fa fa-fw fa-linkedin"></a>
+                <a target="_blank" href="https://github.com/pranitbhujel/" class="fa fa-fw fa-github"></a>
+                <a target="_blank" href="https://twitter.com/pranitbhujel" class="fa fa-fw fa-twitter"></a>
+                <a target="_blank" href="https://www.instagram.com/pranit_bhujel/" class="fa fa-fw fa-instagram"></a>
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100009008454021" class="fa fa-fw fa-facebook"></a></span>
+            </div>
+            </div>
+            </div>
+            <hr>
+            <div class="w3-center">
+                <img class="top" src="../../images/multi.JPG">
+                <p class="w3-center fontq">Photo by Author</p>
+                <br>
+            </div>
+    <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Some-facts">Some Facts<a class="anchor-link" href="#Some-facts">&#182;</a></h3><blockquote><p><strong>math</strong> is the standard library for floats</p>
+<p><strong>cmath</strong> is the standard library for complex numbers</p>
+<p>Every objects have a boolean value attached with it, and in python every thing is an object.</p>
+<p>Booleans are actually numeric</p>
+<p>Strings and comments are not the same thing, comment are simply ignored by the pthon interpreter however it parses the string. Multiline comments are strings and not actually comments..</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Python-Type-Hierarchy">Python Type Hierarchy<a class="anchor-link" href="#Python-Type-Hierarchy">&#182;</a></h3><p><strong>Numbers</strong></p>
+<ul>
+<li>Integral - <em>Integers, Booleans</em></li>
+<li>Non-Integral - <em>Floats, Complex, Decimals, Fractions</em></li>
+</ul>
+<p><strong>Collections</strong></p>
+<ul>
+<li><p>Sequences</p>
+<ul>
+<li>Mutable - <em>Lists</em></li>
+<li>Immutable - <em>Tuples, Strings</em></li>
+</ul>
+</li>
+<li><p>Sets</p>
+<ul>
+<li>Mutable - <em>Sets</em></li>
+<li>Immutable - <em>Frozen Sets</em></li>
+</ul>
+</li>
+<li><p>Mappings</p>
+<ul>
+<li><em>Dictionaries</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>Callables</strong></p>
+<ul>
+<li>User-Defined Functions</li>
+<li>Generators</li>
+<li>Classes</li>
+<li>Instance Methods</li>
+<li>Class Instances (<strong>call</strong>())</li>
+<li>Built-in Functions (e.g. len(), open())</li>
+<li>Built-in Methods (e.g. my_list.append(x))</li>
+</ul>
+<p><strong>Singletons</strong></p>
+<ul>
+<li>None</li>
+<li>NotImplemented</li>
+<li>Ellipsis(...)</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Multi-Line-Statements-and-Strings">Multi-Line Statements and Strings<a class="anchor-link" href="#Multi-Line-Statements-and-Strings">&#182;</a></h3><p>Understanding Multi-Line statements definitely makes us a better developer. Multi-Line statements/strings are generally used for improving the readability of the code.</p>
+<p>First, we need to understand the difference between physical newline character and logical newline token.</p>
+<p><strong>Physical Newline Character:</strong> <a href="#">'\n'</a> The character which is passed onto the program while we press enter to write a statement in the newline.</p>
+<p><strong>Logical Newline Token:</strong> Once we execute the program, the python compiler breaks the program into logical lines of code and they are tokenized. These tokens/lgical lines end with a logical newline token, which is then used by the python interpreter to execute the code.</p>
+<quote>Sometimes, physical newlines  are ignored in order to combine multiple physical lines terminated by a logical newline token.</quote><p>Now that we know what physical and logical newlines are, we can move forward to converting physical newlines to logical newlines.</p>
+<p>Conversion can be <strong>implicit</strong> or <strong>explicit</strong>. Implicit is when the compiler automatically converts to logical and Explicit is when we explicitly define</p>
+
+</div>
+</div>
+</div>
+    </div>
+  </div>
+
+        <hr>
+            <p class="fontq social">
+                    <a target="_blank" href="https://www.linkedin.com/in/pranit-bhujel-29107a15a/" class="fa fa-fw fa-linkedin"></a>
+                    <a target="_blank" href="https://github.com/pranitbhujel/" class="fa fa-fw fa-github"></a>
+                    <a target="_blank" href="https://twitter.com/pranitbhujel" class="fa fa-fw fa-twitter"></a>
+                    <a target="_blank" href="https://www.instagram.com/pranit_bhujel/" class="fa fa-fw fa-instagram"></a>
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100009008454021" class="fa fa-fw fa-facebook"></a>
+            </p>
+        <hr>
+        <hr>
+        </div>
+        </body>
+        
+        <script src="../../lib/jquery/jquery.min.js"></script>
+        <script src="../../js/navbar_scroll.js"></script>
+        <script src="../../lib/easing/easing.min.js"></script>
+        <script src="../../lib/counterup/jquery.counterup.js"></script>
+        <script src="../../lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="../../js/main.js"></script>
+    </html>
+    
