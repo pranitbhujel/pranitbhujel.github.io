@@ -6,7 +6,7 @@
     "icons": [
         {
             "src": "images/app_icon.png",
-            "sizes": "200*200",
+            "sizes": "400x400",
             "type": "image/png"
         }
     ],

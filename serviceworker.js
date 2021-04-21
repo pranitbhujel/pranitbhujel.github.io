@@ -8,11 +8,11 @@ self.addEventListener('install', function (e) {
     );
 });
 
-self.addEventListener('fetch', function (e) {
-    fetch(e.request);
-    e.respondWith(
-        caches.match(e.request).then(function (response) {
-            return response || fetch(e.request);
-        })
-    );
-});
+// self.addEventListener('fetch', function (e) {
+//     fetch(e.request);
+//     e.respondWith(
+//         caches.match(e.request).then(function (response) {
+//             return response || fetch(e.request);
+//         })
+//     );
+// });
