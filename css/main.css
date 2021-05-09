@@ -1523,11 +1523,11 @@ samp {
   font-family: monospace;
 }
 code {
-  padding: 2px 4px;
+  padding: 2px 5px;
   font-size: 90%;
   color: #c7254e;
-  background-color: #f9f2f4;
-  border-radius: 2px;
+  background-color: rgba(209, 208, 208, 0.5);
+  border-radius: 3px;
 }
 kbd {
   padding: 2px 4px;
@@ -8419,6 +8419,7 @@ button.close {
 }
 code {
   color: #000;
+  background-color: #222;
 }
 pre {
   font-size: inherit;
@@ -10250,9 +10251,9 @@ div.output_unrecognized a:hover {
 .rendered_html pre,
 .rendered_html code {
   border: 0;
-  background-color: #fff;
+  background-color: rgba(209, 208, 208, 0.5);
   color: #000;
-  font-size: 100%;
+  font-size: 90%;
   padding: 0px;
 }
 .rendered_html blockquote {
