@@ -1,0 +1,2308 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta lang="en">
+    <meta charset="UTF-8">
+    <meta name="description" content= "The fundamentals of Python covering objects, memory references, naming conventions and much more.">
+    <meta name="author" content="Pranit Bhujel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="keywords"
+    content="Pranit Bhujel, Pranit, Bhujel, Data Science Blogs, Data Scientist from Darjeeling, Data Science, Statistics, Probability, Python, Machine Learning, Natural Language Processing, Interview Questions ">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+            
+    <title> Python Redefined - All the basics that you need to know! | Pranit Bhujel</title>
+
+    <link rel="icon" href="../../images/icon.PNG">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/w3.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/individual_blog.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Lora&family=Quicksand&display=swap" rel="stylesheet">
+
+    <!-- Load mathjax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
+    <!-- MathJax configuration -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+        inlineMath: [ ['$','$'], ["\(","\)"] ],
+        displayMath: [ ['$$','$$'], ["\[","\]"] ],
+        processEscapes: true,
+        processEnvironments: true
+    },
+    // Center justify equations in code and markdown cells. Elsewhere
+    // we use CSS to left justify single line equations in code cells.
+    displayAlign: 'center',
+    "HTML-CSS": {
+    styles: {'.MathJax_Display': {"margin": 0}},
+    linebreaks: { automatic: true }
+    }
+    });
+</script>
+           
+<!-- manifest file -->
+<link rel="manifest" href="../../pranit.webmanifest">
+</head>
+
+<body>
+<div class="main_body">
+<div>
+    <div class="100 nav w3-card-2" id="navbar">
+        <h5><a href="../../"><img src="../../images/b_icon.png "></a></h5>
+
+        <span style="margin-right: 50px;" class="w3-right">
+        <a target="_blank" href="https://www.linkedin.com/in/pranit-bhujel-29107a15a/" class="fa fa-fw fa-linkedin"></a>
+        <a target="_blank" href="https://github.com/pranitbhujel/" class="fa fa-fw fa-github"></a>
+        <a target="_blank" href="https://twitter.com/pranitbhujel" class="fa fa-fw fa-twitter"></a>
+        <a target="_blank" href="https://www.instagram.com/pranit_bhujel/" class="fa fa-fw fa-instagram"></a>
+        <a target="_blank" href="https://in.pinterest.com/pranitbhujel" class="fa fa-fw fa-pinterest"></a>
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=100009008454021"
+            class="fa fa-fw fa-facebook"></a>
+        </span>
+    </div>
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <div id="preloader"></div> 
+
+    <div id='parent' class='main full_blog'>
+
+    <div class="title">
+    <h2>Python Redefined - All the basics that you need to know!</h2>
+    <p class="top_description">"The fundamentals of Python covering objects, memory references, naming conventions and much more."</p>
+    <hr>
+    <div class="card-footer">
+                <div class="post-author">
+                <img src="../../images/me.png" alt="image" class="avatar w3-circle"> <span class="author fontq">May 17, 2021</span>
+
+                <span class="w3-right post-date fontq">
+                <a target="_blank" href="https://www.linkedin.com/in/pranit-bhujel-29107a15a/" class="fa fa-fw fa-linkedin"></a>
+                <a target="_blank" href="https://github.com/pranitbhujel/" class="fa fa-fw fa-github"></a>
+                <a target="_blank" href="https://twitter.com/pranitbhujel" class="fa fa-fw fa-twitter"></a>
+                <a target="_blank" href="https://www.instagram.com/pranit_bhujel/" class="fa fa-fw fa-instagram"></a>
+                <a target="_blank" href="https://in.pinterest.com/pranitbhujel" class="fa fa-fw fa-pinterest"></a>
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100009008454021" class="fa fa-fw fa-facebook"></a></span>
+            </div>
+            </div>
+            </div>
+            <hr>
+            <div class="w3-center">
+                <img class="top" src="../../images/blogs.jpg">
+                <p class="w3-center fontq">Photo by Author</p>
+            </div>
+    <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Python-Basics---Unfolded!">Python Basics - Unfolded!<a class="anchor-link" href="#Python-Basics---Unfolded!">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">10</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>5 10
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{a}</span><span class="s1"> : </span><span class="si">{b}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>5 : 10
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{0}</span><span class="s1"> - </span><span class="si">{1}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>5 - 10
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Iterable">Iterable<a class="anchor-link" href="#Iterable">&#182;</a></h4><p>It is an object capable of returning values one at a time.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="For-Loops">For Loops<a class="anchor-link" href="#For-Loops">&#182;</a></h4><p>In Python, the for loops are not exactly what we think it is. For loops here are something called as iterables.  When we write the for, the <code>range() function</code> that we define is an iterable, and so every time it runs, it just prints the next element.</p>
+<p>This must be clear in the upcoming classes!</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Monkey-Patching">Monkey Patching<a class="anchor-link" href="#Monkey-Patching">&#182;</a></h4><p>This is when we're trying to access a variable which is not defined inside of a class and yet we're able to get and set the variable. Have to learn more about it.</p>
+<p>Something like this: say the variable declared inside of a class is <code>_width</code> and we access a variable like this <code>obj.width</code>. It'll still work and not throw any error!</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Classes">Classes<a class="anchor-link" href="#Classes">&#182;</a></h4><p>Let's first define a class. And we'll see some tiny details that happens inside of a class.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># This is how you define a class</span>
+<span class="k">class</span> <span class="nc">Rectangle</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">width</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="n">height</span>
+        
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Rectangle(width = </span><span class="si">{self.width}</span><span class="s1">, height = </span><span class="si">{self.height}</span><span class="s1">)&#39;</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="s1">&#39;Rectangle(</span><span class="si">{0}</span><span class="s1">, </span><span class="si">{1}</span><span class="s1">)&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">width</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">height</span><span class="p">))</span>
+    
+    <span class="k">def</span> <span class="fm">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">another</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="o">==</span> <span class="n">another</span><span class="o">.</span><span class="n">width</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">height</span> <span class="o">==</span> <span class="n">another</span><span class="o">.</span><span class="n">height</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="fm">__lt__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">another</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">height</span> <span class="o">&lt;</span> <span class="n">another</span><span class="o">.</span><span class="n">width</span> <span class="o">*</span> <span class="n">another</span><span class="o">.</span><span class="n">height</span><span class="p">)</span>
+    
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This is how we initialize a class in Python</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can access the parameters of the class using the object coupled with the parameter name by a dot notation.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r</span><span class="o">.</span><span class="n">height</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[44]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>20</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r</span><span class="o">.</span><span class="n">width</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[45]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>10</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><h4 id="Representation">Representation<a class="anchor-link" href="#Representation">&#182;</a></h4><p>For other data types and variables, we can just type their name and the value that we've initialized for them comes up as the way we defined it.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">l</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+
+<span class="n">l</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[46]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[1, 2, 3, 4, 5]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="n">m</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[47]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>10</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In case of classes we should define this special function called <code>__repr__</code> that allows us to set how the function will be represented if only called by their name!</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="s1">&#39;Rectangle(</span><span class="si">{0}</span><span class="s1">, </span><span class="si">{1}</span><span class="s1">)&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">width</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">height</span><span class="p">))</span>
+</pre></div>
+<p>This allows us to achieve the following</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[48]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Rectangle(10, 20)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><h4 id="String-Representation">String Representation<a class="anchor-link" href="#String-Representation">&#182;</a></h4><p>If we try to print the normal string version of the object, then the program will just return the object's memory address and some giberish hex code.</p>
+<p>So, if we want to make it presentable, then we use this special function again called <code>__str()__</code> that allows us to make the function presentable while printing it as a string.</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Rectangle(width = </span><span class="si">{self.width}</span><span class="s1">, height = </span><span class="si">{self.height}</span><span class="s1">)&#39;</span><span class="p">)</span>
+</pre></div>
+<p>This is what it gives as an output when we run the <code>str()</code> in that Rectangle object.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">str</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[51]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;Rectangle(width = 10, height = 20)&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><h4 id="Comparing-Objects">Comparing Objects<a class="anchor-link" href="#Comparing-Objects">&#182;</a></h4><p>So, what if we wanted to compare two or more objects with each other? In this case what we can do is to define a lot of special functions: equal: <code>__eq__()</code>, less than: <code>__lt()__</code>, greater than: <code>__gt()__</code>, greater than equal: <code>__gte()__</code>, less than equal: <code>__lte()__</code> and then we can define our logic inside of those functions.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r2</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r2</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[38]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Rectangle(10, 50)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r</span> <span class="o">==</span> <span class="n">r2</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[15]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>False</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r</span> <span class="o">&lt;</span> <span class="n">r2</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[16]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>True</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r</span> <span class="o">&gt;</span> <span class="n">r2</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[17]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>False</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This again must be surprising as we only defined less than and not greater than so how is it working? It's working only because the python interpreter flips both the object to check if <strong>r2</strong> is less than <strong>r</strong>, and since we're already defined that so it's working quite well.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&#39;&#39;&#39;This one doesn&#39;t work as we haven&#39;t defined the function for less than equal to.&#39;&#39;&#39;</span>
+
+<span class="n">r</span> <span class="o">&lt;=</span> <span class="n">r2</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">TypeError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-52-e34ef41b9717&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">      1</span> <span class="ansi-blue-intense-fg ansi-bold">&#39;&#39;&#39;This one doesn&#39;t work as we haven&#39;t defined the function for less than equal to.&#39;&#39;&#39;</span>
+<span class="ansi-green-fg">      2</span> 
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 3</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>r <span class="ansi-yellow-intense-fg ansi-bold">&lt;=</span> r2
+
+<span class="ansi-red-intense-fg ansi-bold">TypeError</span>: &#39;&lt;=&#39; not supported between instances of &#39;Rectangle&#39; and &#39;Rectangle&#39;</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><h4 id="Getter-and-Setter-methods">Getter and Setter methods<a class="anchor-link" href="#Getter-and-Setter-methods">&#182;</a></h4><p>The purpose of getter and setter methods is to restrict the access to the variables directly. Languages like Java make it compuslory for us to write the methods, while Python gives us the flexibility of writing these methods whenever we want to do so.</p>
+<p>Explicitly writing getter and setter can be done as well but the approach involving decorators is recommended in Python. While not using the decorators, the problem of backward compatibility occurs. Let's see how it happens.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Rectangle</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">width</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="n">height</span>
+        
+    <span class="k">def</span> <span class="nf">get_width</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">width</span>
+    
+    <span class="k">def</span> <span class="nf">set_width</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">width</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">width</span>
+    
+    <span class="k">def</span> <span class="nf">get_height</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">height</span>
+    
+    <span class="k">def</span> <span class="nf">set_height</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">height</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+
+<span class="n">r</span><span class="o">.</span><span class="n">get_height</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[54]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>20</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r</span><span class="o">.</span><span class="n">height</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[55]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>20</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This one works well, but people will also be able to use the <code>obj.height</code> to access the variable. Since python doesn't mandate the getter and setter, so this solution will not work.</p>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><p>We also know that the variable that has single underscore in the front is supposed to be a private variable, but it is only to warn the user that the variable is private. It doesn't actually restrict the user from not using the variable to modify it directly. Also, if we change the variable to say <code>_width</code>, then people having written their program as <code>self.width</code> will face issues.</p>
+<p>So what do we have now? <strong>Decorators to the rescue!</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Rectangle</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_width</span> <span class="o">=</span> <span class="n">width</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_height</span> <span class="o">=</span> <span class="n">height</span>
+        
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">width</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_width</span>
+    
+    <span class="nd">@width</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">width</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">width</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">width</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;Width must be greater than 0.&#39;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_width</span> <span class="o">=</span> <span class="n">width</span>
+    
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">height</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_height</span>
+    
+    <span class="nd">@height</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">height</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">height</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;Height must be greater than 0.&#39;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_height</span> <span class="o">=</span> <span class="n">height</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+
+<span class="n">r</span><span class="o">.</span><span class="n">width</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[2]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>10</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>So while using decorators, we can see that we did not have to use the parenthesis after the end of the width, which now is actually a function!</p>
+<p>Also since the name is simply width and no underscores upfront or no parenthesis at the back, backwards compatibility is ensured as well. We just have to get or set it using <code>.width</code>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><p>If you wish to give me a feedback, feel free to message me anywhere in the given social media links.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Multi-Line-Statements-and-Strings">Multi-Line Statements and Strings<a class="anchor-link" href="#Multi-Line-Statements-and-Strings">&#182;</a></h3><hr>
+<p>Understanding Multi-Line statements definitely makes us a better developer. Multi-Line statements/strings are generally used for improving the readability of the code. The interpreter doesn't bother if the given program is cramped in one line or extended to multiple lines, as long as the syntax is right.</p>
+<p>First, we need to understand the difference between physical newline character and logical newline token.</p>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><p><strong>Physical Newline Character:</strong> '\n' The character which is passed onto the program while we press enter to write a statement in the newline.</p>
+<p><strong>Logical Newline Token:</strong> Once we execute the program, the python interpreter breaks the program into logical lines of code and they are tokenized. These tokens/logical lines end with a logical newline token, which is then used by the python interpreter to execute the code.</p>
+<p>Sometimes, physical newlines  are ignored in order to combine multiple physical lines terminated by a logical newline token.</p>
+<p>Now that we know what physical and logical newlines are, we can move forward to ways, the compiler converts physical newlines to logical newlines.</p>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><p>Conversion can be <strong>implicit</strong> or <strong>explicit</strong>. Implicit is when the compiler automatically converts to logical and Explicit is when we explicitly put '\' character to tell the compiler</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Implicit-Conversion">Implicit Conversion<a class="anchor-link" href="#Implicit-Conversion">&#182;</a></h3><hr>
+<p>This kind of situation is automatically handled by the python interpreter. The following examples depict scenarios where we can use them.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Writing list/tuple/dictionary/set/function arguments over multiple lines.</span>
+
+<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span>
+           <span class="mi">2</span><span class="p">,</span>
+           <span class="mi">3</span><span class="p">]</span>
+
+<span class="n">my_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span>
+            <span class="mi">2</span><span class="p">,</span>
+            <span class="mi">3</span><span class="p">)</span>
+
+<span class="n">my_dictionary</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="s2">&quot;c&quot;</span><span class="p">:</span> <span class="mi">3</span>
+<span class="p">}</span>
+
+<span class="n">my_set</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span>
+          <span class="mi">2</span><span class="p">,</span>
+          <span class="mi">3</span><span class="p">}</span>
+
+<span class="n">my_func</span><span class="p">(</span><span class="n">arg1</span><span class="p">,</span>
+        <span class="n">arg2</span><span class="p">,</span>
+        <span class="n">arg3</span><span class="o">...</span><span class="p">)</span>
+
+<span class="n">my_dictionary</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[1]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{&#39;a&#39;: 1, &#39;b&#39;: 2, &#39;c&#39;: 3}</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can also pass arguments while writing across multiple lines. These are calles <strong>inline comments</strong> which are again only possible where implicit conversion is possible.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="c1">#item1</span>
+           <span class="mi">2</span><span class="p">,</span> <span class="c1">#item2</span>
+           <span class="mi">3</span><span class="p">]</span>
+
+<span class="n">my_list</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[3]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[1, 2, 3]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Explicit-Conversion">Explicit Conversion<a class="anchor-link" href="#Explicit-Conversion">&#182;</a></h3><hr>
+<p>This is where the multi-line statements are not implicitly converted to a single logical line, and that is why we use explicit character <strong>'\'</strong> to make the statements as a multi-line statement.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Example</span>
+
+<span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">x</span> <span class="o">&gt;=</span> <span class="n">y</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="n">y</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">x</span> <span class="o">==</span> <span class="n">y</span>
+
+<span class="k">if</span> <span class="n">a</span> \
+   <span class="ow">or</span> <span class="n">b</span> \
+   <span class="ow">or</span> <span class="n">c</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Explicit it is!&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Explicit it is!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Explicit Conversion doesn't support inline comments.</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><p><em>All this is fine, but why would we write simple lists over multiple lines?</em></p>
+<ul>
+<li>To increase the readability of the code.</li>
+<li>In cases where we have nested lists, dictionaries it makes much more sense to have a readable structure than just a continuous single line.</li>
+<li>Also in scenarios when we have to write multiple conditions in a single if statement.</li>
+<li>And many more...</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Multi-line-Strings">Multi-line Strings<a class="anchor-link" href="#Multi-line-Strings">&#182;</a></h3><hr>
+<p>Multi-line strings can be written using three ' or " characters, both at the beginning and at the end. These strings retain the whitespaces and every other formatting used.</p>
+<p><em>Basically, anything that you write and the way you write is printed as it is.</em> So, they are mainly used for something called as <strong>docstrings.</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a_string</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;This is just an </span>
+<span class="s1">example of </span>
+<span class="s1">a multi-line</span>
+<span class="s1">string!&#39;&#39;&#39;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">a_string</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>This is just an 
+example of 
+a multi-line
+string!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p class="quote">Multi-line strings and comments are different things, in a way that comments are stripped off and ignored during the program execution, but multi-line strings are parsed!</p>
+<p class="quote-author"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="The-General-Notion:">The General Notion:<a class="anchor-link" href="#The-General-Notion:">&#182;</a></h3><hr>
+<p class="quote">Variables/Identifiers are case sensitive and can have letters, _, and digits. It can begin with letters and _, but not with a digit.</p>
+<p class="quote-author"></p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Single-Underscore-in-the-Front">Single Underscore in the Front<a class="anchor-link" href="#Single-Underscore-in-the-Front">&#182;</a></h3><hr>
+<p>This is a convention to indicate that the identifier is to be used for <strong>internal use</strong> or <strong>private objects</strong>. This kind of objects will not get imported by an import statement such as <code>from module import *</code>.</p>
+<p>However there are other ways of accessing it.</p>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Double-Underscore-in-the-Front">Double Underscore in the Front<a class="anchor-link" href="#Double-Underscore-in-the-Front">&#182;</a></h3><hr>
+<p>This convention is primarily used for something called as <strong>Name Mangling</strong>. Name Mangling is a process in which an identifier with a double underscore in the front <code>__name</code> is replaced with <code>_ClassName__name</code>, and we can access the variable using that name.</p>
+<p>It allows us to access the class variables outside the class (in sub-classes), mostly used in inheritance.</p>
+<p>To know more about the Name Mangling, <a href="https://www.geeksforgeeks.org/name-mangling-in-python/," title="Name Mangling">Click here</a></p>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Double-Underscore-in-the-Front-and-the-Back">Double Underscore in the Front and the Back<a class="anchor-link" href="#Double-Underscore-in-the-Front-and-the-Back">&#182;</a></h3><hr>
+<p>This convention is used for system-defined names that have a special meaning to the interpreter. For an example <code>__init__</code> or <code>__main__</code>. Defining your own name may confuse the interpreter to cause unncecessary errors and should avoid doing that.</p>
+<p>Sticking to the ones pre-defined by Python is certainly a good idea!</p>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Other-Naming-Conventions">Other Naming Conventions<a class="anchor-link" href="#Other-Naming-Conventions">&#182;</a></h3><hr>
+<p><strong>Packages:</strong> short, all-lowercase names, preferably no underscores. <em>Eg:</em> <code>package</code></p>
+<p><strong>Modules:</strong> short, all-lowercase names, can have underscores. <em>Eg:</em> <code>a_module amodule</code></p>
+<p><strong>Classes:</strong> CapWords (upper camel case) convention. <em>Eg:</em> <code>BankAccount</code></p>
+<p><strong>Functions:</strong> lowercase, words separated by underscores (snake_case) <em>Eg:</em>  <code>open_account</code></p>
+<p><strong>Variables:</strong> lowercase, words separated by underscores (snake_case) <em>Eg:</em>  <code>my_name, _name, _</code></p>
+<p><strong>Constants:</strong> all-uppercase, words separated by underscores <em>Eg:</em>  <code>NEW_CONSTANT</code></p>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>All the above naming conventions has been taken from the <a href="https://www.python.org/dev/peps/pep-0008/">PEP 8 -- Standard Style Guide for Python</a></p>
+<p class="quote">A foolish consistency is the hobgoblin of little minds</p>
+<p class="quote-author">Emerson</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Variables">Variables<a class="anchor-link" href="#Variables">&#182;</a></h3><hr>
+<p>Variables are actually memory references. When an object is stored in the memory, it may occupy more space or less depending on the type of the variable. <strong>Python Memory Manager</strong> handles the object creation in the heap memory.</p>
+<p>We can always find the memory address that the variable is pointing at by using <code>id()</code> function. The hex code of the memory address can be found using <code>hex(id(var_name))</code></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><h3 id="Reference-Counting">Reference Counting<a class="anchor-link" href="#Reference-Counting">&#182;</a></h3><hr>
+<p>How many pointers are pointing to or referencing a particular memory address? This is something called as reference count. For a particular memory address, the total number of variables pointing to it will be stored as counts.</p>
+<p>There are two ways to find out the reference count for a particular variable/memory address. Also to remember that a varibale is just a pointer to the memory address.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&#39;&#39;&#39;This method adds one extra value to the reference count&#39;&#39;&#39;</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="s1">&#39;10&#39;</span>
+
+<span class="n">sys</span><span class="o">.</span><span class="n">getrefcount</span><span class="p">(</span><span class="n">var</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[17]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>5</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&#39;&#39;&#39;Adding a few more references&#39;&#39;&#39;</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">var</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">var</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&#39;&#39;&#39;This method gives the exact reference count, but actually takes the address directly than the variable name&#39;&#39;&#39;</span>
+<span class="kn">import</span> <span class="nn">ctypes</span>
+
+<span class="n">ctypes</span><span class="o">.</span><span class="n">c_long</span><span class="o">.</span><span class="n">from_address</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">var</span><span class="p">))</span><span class="o">.</span><span class="n">value</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[10]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>6</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>So, what's the main role played by reference counting? The answer is to keep track of the active objects, so as an when the reference falls down to 0, the Python Memory Manager sweeps the object to free the space!</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><h3 id="Garbage-Collection">Garbage Collection<a class="anchor-link" href="#Garbage-Collection">&#182;</a></h3><hr>
+<p><strong>Circular Reference:</strong> When there's a circular reference that keeps the reference count greater than 0 and so the reference count mechanism is not always suitable to free the unused objects. In this case the garbage collector does it work.</p>
+<p>It is not recommended to use Python V3.4 and before, as the python interpreter gets confused over this criteria; If <code>__del()__</code> destructor is defined in the class of the object that is stuck in the circular reference, the <strong>gc</strong> would get confused as in what sequence should it follow to destroy those objects and hence would not be able to destroy!</p>
+<p>This causes the object to be marked as <strong>uncollectable</strong> and the objects in the circular reference are not cleaned up - a term called <strong>Memory Leak.</strong></p>
+<p>It was however solved in the later python versions. Now, garbage collector runs periodically to sweep extra objects which are not necessary for the program and hence consumes a good chunk of computational power.</p>
+<p>Also, the garbage collector can be disabled using the gc module in python. However, it is not recommended as the memory allocation is pretty unpredictable, so it should not be disabled unless you're absolutely certain of what you're doing! By default the garbage collector is turned on.</p>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Statically-Typed-vs-Dynamically-Typed">Statically Typed vs Dynamically Typed<a class="anchor-link" href="#Statically-Typed-vs-Dynamically-Typed">&#182;</a></h3><hr>
+<p>If we look at some programming languages like C, C++ and Java, we'll notice that the variable declaration has three parts:</p>
+<p><em>Statically Typed:</em></p>
+<div class="highlight"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+</pre></div>
+<p>Now, if we look into Python we just have to write</p>
+<p><em>Dynamically Typed:</em></p>
+<div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
+</pre></div>
+<p>So the only difference is that, in statically typed languages, we explicitly define the variable to be of a certain type. Hence if we try to  allocate a value other than that particular data type, it will throw an error.</p>
+<p>However in dynamically typed language, the variable is merely a reference to the memory location and hence we can change it to point to any other memory location and it won't throw an error!</p>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Variable-Re-assignment">Variable Re-assignment<a class="anchor-link" href="#Variable-Re-assignment">&#182;</a></h3><hr>
+<p>When we reassign a value to a variable, then in python we'll see that the variable will now reference to a different object in the heap memory rather than updating the new value in the previous memory location.</p>
+<p>This involves a concept called object mutability and immutability which we'll see further down in the article. Let's see how variable reassignment works.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="nb">hex</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[11]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;0x1d668096a50&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&#39;&#39;&#39;when we update a, it points to a different object in the memory now.&#39;&#39;&#39;</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">1</span>
+
+<span class="nb">hex</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[14]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;0x1d668096b10&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">15</span>
+
+<span class="nb">hex</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[12]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;0x1d668096af0&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="mi">15</span>
+
+<span class="nb">hex</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[13]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;0x1d668096af0&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In the second example, we can see that both a and b point to the same memory location, despite having different names.</p>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Object-Mutability-&amp;-Immutability">Object Mutability &amp; Immutability<a class="anchor-link" href="#Object-Mutability-&amp;-Immutability">&#182;</a></h3><hr>
+<p>Changing the data inside the object is called as <strong>modifying the internal state</strong> of the object.</p>
+<p>An object whose internal state can be changed is called as <strong>Mutable Object</strong> whereas an object whose internal state cannot be changed is called as an <strong>Immutable Object.</strong></p>
+<table>
+<thead><tr>
+<th>Immutable</th>
+<th>Mutable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Numbers(int, float, booleans</td>
+<td>Lists</td>
+</tr>
+<tr>
+<td>Strings</td>
+<td>Sets</td>
+</tr>
+<tr>
+<td>Tuples</td>
+<td>Dictionaries</td>
+</tr>
+<tr>
+<td>Frozen Sets</td>
+<td>User-Defined Classes</td>
+</tr>
+<tr>
+<td>User Defined Classes</td>
+</tr>
+</tbody>
+</table>
+<p class="quote">For an immutable collection like tuple, it should be noted that the elements may be mutable or immutable.</p>
+<p class="quote-author"></p><p>So, the immutable object having mutable elements can indeed be modified!</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&#39;&#39;&#39;Immutable elements in a tuple&#39;&#39;&#39;</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+
+<span class="nb">id</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[15]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>2020450227840</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+
+<span class="nb">id</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[16]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>2020450275392</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&#39;&#39;&#39;Mutable elements in a tuple&#39;&#39;&#39;</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
+
+<span class="nb">id</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[17]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>2020449106368</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+
+<span class="nb">id</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[19]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>2020449106368</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Function-Arguments-and-Mutability">Function Arguments and Mutability<a class="anchor-link" href="#Function-Arguments-and-Mutability">&#182;</a></h3><hr>
+<p>Immutable Objects are safe from unintended side effects.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p class="quote">The big picture here is that, immutable objects do not change unless we have mutable elements in that object, say for example list in a tuple. So, we have to be careful when we say immutable objects cannot be changed.</p>
+<p class="quote-author"></p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Shared-References-and-Mutability">Shared References and Mutability<a class="anchor-link" href="#Shared-References-and-Mutability">&#182;</a></h3><hr>
+<p>Python Memory Manager is smart, in the sense that when it creates a shared reference to a memory address, it shares the same location with the immutable objects but creates different memory location for the mutable objects.</p>
+<p>The good reason for doing that is, say we define <code>a=[1, 2, 3]</code> and we the write <code>b=a</code>, and now if we change <code>b</code> by adding or removing any element then it'll affect <code>a</code> as well.</p>
+<p>So when mutable objects are created, the python memory manager creates them at different memory location even if they have the same content.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2699017039232
+2699017039488
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><h3 id="Equality">Equality<a class="anchor-link" href="#Equality">&#182;</a></h3><hr>
+<p>Measuring equality can be done using two different approaches.</p>
+<ol>
+<li>Comparing the object address.</li>
+<li>Comparing the internal state of the object.</li>
+</ol>
+<p>The first one is achieved using the operators <code>is</code> and <code>is not</code>, called the <strong>identity operators</strong>. To measure the internal state of the object we use the <strong>comparison operators</strong> <code>==</code> and <code>!=</code>.</p>
+<p><strong>Magic of None:</strong> It's not that the PMM will create different <code>None</code> objects but will point to same <code>None</code> object everytime we create a None type variable.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><h3 id="Everything-is-an-object!">Everything is an object!<a class="anchor-link" href="#Everything-is-an-object!">&#182;</a></h3><hr>
+<p>In Python everything is an object. So when we declare an integer type varible or a function or anything, then an instance of that particular class is created. That is why it is an object.</p>
+<p>Now, what are the advantages of that being an object? So, when an object is created, the function name or the variable name is just a reference to the object. So, it allows us to achieve the following.</p>
+<ul>
+<li><p>Assign a function to a variable.</p>
+</li>
+<li><p>Have function parameters as function.</p>
+</li>
+<li><p>Return a function through a function.</p>
+</li>
+</ul>
+<p>When you pass the function reference to a variable in python, the variable now works the same as the function.</p>
+<p class="quote">When we use fucntion name without the parenthesis, we are just referring to the object in the memory, but when we use the parenthesis, we're actually invoking a function</p>
+<p class="quote-author"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><h3 id="Interning---The-Power-of-Optimization!">Interning - The Power of Optimization!<a class="anchor-link" href="#Interning---The-Power-of-Optimization!">&#182;</a></h3><hr>
+<p>This is a very cool concept. When we tried creating two variables and checking their memory address using <code>id()</code> function, despite being immutable objects we noticed that for <code>a=500</code> and <code>b=500</code>, we had different memory addresses. Why?</p>
+<p><strong>Interning</strong> - <em>Interning is the process through which python interpreter/memory manager caches some integer or string objects at the start-up. The integer value starts at - 5 to 256, so that when we create an integer, we reduce the memory overhead and the cached object is returned.</em></p>
+<p>That is why when we create something bigger than 256, we get a different memory location even though immutable. Now, what's the use of string interning and how can we do it manually?</p>
+<p><em>The string when we intern it using <code>sys.intern(string)</code>, we're basically caching it. So the fetching and execution becomes a lot faster when we're dealing with a lot of string values. A process indeed helpful in</em> <strong>Natural Language Processing!</strong></p>
+<p>Also <em>interning</em> makes it easy for the string comparison as well because when comparing string we've to compare them character by character. Now, when we intern the strings then we know that if they're same then they will be stored in the same memory location. And the power of interning allows us to compare the string using just their memory address - using the identity operator <code>is</code> or <code>is not</code>!</p>
+<p class="quote">As long as the string looks like an identifier, it'll get interned automatically. Also pointing to an already referenced object is much faster than creating a new object in the memory!</p>
+<p class="quote-author"></p><h3 id="PeepHole-Optimization">PeepHole Optimization<a class="anchor-link" href="#PeepHole-Optimization">&#182;</a></h3><hr>
+<p>This is done in two different ways.</p>
+<ol>
+<li>Constant Expressions</li>
+<li>Transforming mutable objects to immutable.</li>
+</ol>
+<p>Constant Expressions are evaluated at the compilation time. So when there are constant expression that do not change over the whole program is evaluated and then saved for faster reference.</p>
+<p>Also mutable objects like <code>lists</code> are converted to immtable <code>tuple</code>. Similarly sets are converted into frozen sets, which makes the membership operations much faster compared to lists or tuples.</p>
+<p>Remember that for upto 20 chars or 20 elements of any objects, the expression is saved as constant expression. This way the execution time becomes much shorter.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="s2">&quot;Man&quot;</span>
+<span class="n">n</span> <span class="o">=</span> <span class="s2">&quot;Man&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">m</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="o">==</span><span class="n">n</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">m</span> <span class="ow">is</span> <span class="n">n</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2788520442096
+2788520442096
+True
+True
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Types-of-Integers-in-Python">Types of Integers in Python<a class="anchor-link" href="#Types-of-Integers-in-Python">&#182;</a></h3><hr>
+<p>There are five types of integers in Python</p>
+<ul>
+<li>Boolean</li>
+<li>Int</li>
+<li>Float</li>
+<li>Decimal</li>
+<li>Complex</li>
+</ul>
+<p>Note that <code>Boolean c Int c Float c Decimal(Real) c Complex</code></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Integer-Operations">Integer Operations<a class="anchor-link" href="#Integer-Operations">&#182;</a></h3><hr>
+<p>One thing to note about integers in python is that, its a variable sized integer meaning the bits will be added as an when the extra bits are required to store the number!</p>
+<p>So you can store numbers as big as <code>2**1000</code> and it'll still work just fine.</p>
+<p>All the arithmetic operations on integer returns an integer except for the division operator which always returns float.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="mi">10</span><span class="o">/</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[3]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>float</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Floor Value:</strong> The highest integer value less than the given number is called the <code>floor value</code> of that number. We obtain the floor value using floor divison in python.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot; 13//4:  &quot;</span><span class="p">,</span> <span class="mi">13</span><span class="o">//</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-13//4: &quot;</span><span class="p">,</span> <span class="o">-</span><span class="mi">13</span><span class="o">//</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot; 13//-4:&quot;</span><span class="p">,</span> <span class="mi">13</span><span class="o">//-</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-13//-4: &quot;</span><span class="p">,</span> <span class="o">-</span><span class="mi">13</span><span class="o">//-</span><span class="mi">4</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre> 13//4:   3
+-13//4:  -4
+ 13//-4: -4
+-13//-4:  3
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># remember that the result of the modulo operation carries the sign of the denominator</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot; 13%4:  &quot;</span><span class="p">,</span> <span class="mi">13</span><span class="o">%</span><span class="k">4</span>)
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-13%4:  &quot;</span><span class="p">,</span> <span class="o">-</span><span class="mi">13</span><span class="o">%</span><span class="k">4</span>)
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot; 13%-4:&quot;</span><span class="p">,</span> <span class="mi">13</span><span class="o">%-</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-13%-4:&quot;</span><span class="p">,</span> <span class="o">-</span><span class="mi">13</span><span class="o">%-</span><span class="mi">4</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre> 13%4:   1
+-13%4:   3
+ 13%-4: -3
+-13%-4: -1
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Floor-and-Modulo-Division---The-equation!">Floor and Modulo Division - The equation!<a class="anchor-link" href="#Floor-and-Modulo-Division---The-equation!">&#182;</a></h3><hr>
+<p>Now, probably the most important concept. Why does the floor and modulo operation return different numbers on the sign change, while operating on the same number?</p>
+<p>Remember we can break a division operation into an equation like this.</p>
+<div class="highlight"><pre><span></span><span class="n">nominator</span> <span class="o">/</span> <span class="n">denominator</span> <span class="o">=</span> <span class="n">denominator</span> <span class="o">*</span> <span class="n">quotient</span><span class="p">(</span><span class="n">nom</span> <span class="o">//</span> <span class="n">denom</span><span class="p">)</span> <span class="o">+</span> <span class="n">remainder</span><span class="p">(</span><span class="n">nom</span> <span class="o">%</span> <span class="n">denom</span><span class="p">)</span>
+</pre></div>
+<p>So, whenever we do those two operation, it always obeys the equation above. That is why we get different values while doing those operations for the postive and negative operands.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Any-Base--&gt;-Decimal,-Decimal--&gt;-Any-Base">Any Base -&gt; Decimal, Decimal -&gt; Any Base<a class="anchor-link" href="#Any-Base--&gt;-Decimal,-Decimal--&gt;-Any-Base">&#182;</a></h3><hr>
+<p>Now what we're going to see is a program to convert the a number of base upto 36 to integer.</p>
+<p><em>Like I say, decimal is strong and so it expects other bases to multiply and go for the war, so let's do it!</em></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># encoding the numbers from 1-10, A-Z</span>
+
+<span class="k">def</span> <span class="nf">encode_base</span><span class="p">(</span><span class="n">digits</span><span class="p">,</span> <span class="n">base</span><span class="p">):</span>
+    <span class="n">code</span> <span class="o">=</span> <span class="s2">&quot;0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;</span>
+    <span class="k">if</span> <span class="nb">max</span><span class="p">(</span><span class="n">digits</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">base</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;The digit cannot be greater than the base!&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">code</span><span class="p">[</span><span class="n">d</span><span class="p">]</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">digits</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">encode_base</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">15</span><span class="p">],</span> <span class="mi">16</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[16]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;ACF&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># rebasing the other bases to decimal - 10</span>
+
+<span class="k">def</span> <span class="nf">rebase_todecimal</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="n">base</span><span class="p">):</span>
+    <span class="n">decimal</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">number</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">decimal</span> <span class="o">+=</span> <span class="n">number</span><span class="o">%</span><span class="k">10</span> * (base ** count)
+        <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="n">number</span> <span class="o">=</span> <span class="n">number</span> <span class="o">//</span> <span class="mi">10</span>
+    
+    <span class="k">return</span> <span class="n">decimal</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">rebase_todecimal</span><span class="p">(</span><span class="mi">112</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0
+1
+2
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[38]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>274</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">rebase_fromdecimal</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="n">base</span><span class="p">):</span>
+    
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">rebase_todecimal</span><span class="p">(</span><span class="mi">124</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0
+1
+2
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Rational-Numbers">Rational Numbers<a class="anchor-link" href="#Rational-Numbers">&#182;</a></h3><hr>
+<p>Rational Numbers are represented in python using the Fractions module. Fractions aren't that interesting, at least for now.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+
+</div>
+</div>
+</div>
+    </div>
+  </div>
+
+        <hr>
+            <p class="fontq social">
+                    <a target="_blank" href="https://www.linkedin.com/in/pranit-bhujel-29107a15a/" class="fa fa-fw fa-linkedin"></a>
+                    <a target="_blank" href="https://github.com/pranitbhujel/" class="fa fa-fw fa-github"></a>
+                    <a target="_blank" href="https://twitter.com/pranitbhujel" class="fa fa-fw fa-twitter"></a>
+                    <a target="_blank" href="https://www.instagram.com/pranit_bhujel/" class="fa fa-fw fa-instagram"></a>
+                    <a target="_blank" href="https://in.pinterest.com/pranitbhujel" class="fa fa-fw fa-pinterest"></a>
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100009008454021" class="fa fa-fw fa-facebook"></a>
+            </p>
+        <hr>
+        <hr>
+        </div>
+        </body>
+        
+        <script src="../../lib/jquery/jquery.min.js"></script>
+        <script src="../../js/navbar_scroll.js"></script>
+        <script src="../../lib/easing/easing.min.js"></script>
+        <script src="../../lib/counterup/jquery.counterup.js"></script>
+        <script src="../../lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="../../js/main.js"></script>
+    </html>
+    

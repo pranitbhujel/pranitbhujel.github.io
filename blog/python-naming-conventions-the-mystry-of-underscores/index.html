@@ -23,15 +23,15 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Lora&family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Lora&family=Quicksand:wght@300&display=swap" rel="stylesheet">
 
     <!-- Load mathjax -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
+    MathJax.Hub.Config- {
         tex2jax: {
-        inlineMath: [ ['$','$'], ["\(","\)"] ],
+        inlineMath: [ ['$','$'], ["\- ","\"] ],
         displayMath: [ ['$$','$$'], ["\[","\]"] ],
         processEscapes: true,
         processEnvironments: true
@@ -43,7 +43,7 @@
     styles: {'.MathJax_Display': {"margin": 0}},
     linebreaks: { automatic: true }
     }
-    });
+    };
 </script>
            
 <!-- manifest file -->
@@ -98,7 +98,7 @@
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Single-Underscore-in-the-Front">Single Underscore in the Front<a class="anchor-link" href="#Single-Underscore-in-the-Front">&#182;</a></h3><hr>
-<p>This is a convention to indicate that the identifier is to be used for <strong>internal use</strong> or <strong>private objects</strong>. This kind of pbjects will not get imported by an import statement such as <code>from module import *</code>.</p>
+<p>This is a convention to indicate that the identifier is to be used for <strong>internal use</strong> or <strong>private objects</strong>. This kind of objects will not get imported by an import statement such as <code>from module import *</code>.</p>
 <p>However there are other ways of accessing it.</p>
 <h6 id=".-.-.-.-.">. . .<a class="anchor-link" href="#.-.-.-.-.">&#182;</a></h6>
 </div>
@@ -109,7 +109,7 @@
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Double-Underscore-in-the-Front">Double Underscore in the Front<a class="anchor-link" href="#Double-Underscore-in-the-Front">&#182;</a></h3><hr>
 <p>This convention is primarily used for something called as <strong>Name Mangling</strong>. Name Mangling is a process in which an identifier with a double underscore in the front <code>__name</code> is replaced with <code>_ClassName__name</code>, and we can access the variable using that name.</p>
-<p>It allows us to access the class variables outside the class (in sub-classes), mostly used in inheritance.</p>
+<p>It allows us to access the class variables outside the class - in sub-classes, mostly used in inheritance.</p>
 <p>To know more about the Name Mangling, <a href="https://www.geeksforgeeks.org/name-mangling-in-python/," title="Name Mangling">Click here</a></p>
 <h6 id=".-.-.-.-.">. . .<a class="anchor-link" href="#.-.-.-.-.">&#182;</a></h6>
 </div>
@@ -131,9 +131,9 @@
 <h3 id="Other-Naming-Conventions">Other Naming Conventions<a class="anchor-link" href="#Other-Naming-Conventions">&#182;</a></h3><hr>
 <p><strong>Packages:</strong> short, all-lowercase names, preferably no underscores. <em>Eg:</em> <code>package</code></p>
 <p><strong>Modules:</strong> short, all-lowercase names, can have underscores. <em>Eg:</em> <code>a_module amodule</code></p>
-<p><strong>Classes:</strong> CapWords (upper camel case) convention. <em>Eg:</em> <code>BankAccount</code></p>
-<p><strong>Functions:</strong> lowercase, words separated by underscores (snake_case) <em>Eg:</em>  <code>open_account</code></p>
-<p><strong>Variables:</strong> lowercase, words separated by underscores (snake_case) <em>Eg:</em>  <code>my_name, _name, _</code></p>
+<p><strong>Classes:</strong> CapWords - upper camel case convention. <em>Eg:</em> <code>BankAccount</code></p>
+<p><strong>Functions:</strong> lowercase, words separated by underscores - snake_case <em>Eg:</em>  <code>open_account</code></p>
+<p><strong>Variables:</strong> lowercase, words separated by underscores - snake_case <em>Eg:</em>  <code>my_name, _name, _</code></p>
 <p><strong>Constants:</strong> all-uppercase, words separated by underscores <em>Eg:</em>  <code>NEW_CONSTANT</code></p>
 <h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6>
 </div>
@@ -152,7 +152,8 @@
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>If you wish to give me a feedback, feel free to message me anywhere in the given social medias.</strong></p>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6>
+<p>If you wish to give me a feedback, feel free to message me anywhere in the given social media links.</p>
 
 </div>
 </div>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pranit Bhujel</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="../images/icon.png">
+
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/mainblog.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,600,700,800" rel="stylesheet">
+
+        <!-- <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script> -->
+</head>
+
+<body>
+
+    <div class="fixed-side-navbar">
+        <ul class="nav flex-column">
+            <li class="nav-item"><a id="navpy" onclick="showblogs('python', 'navpy')" class="nav-link active" href="#"><span>Python</span></a></li>
+            <li class="nav-item"><a id="navst" onclick="showblogs('statistics', 'navst')" class="nav-link" href="#"><span>Statistics</span></a></li>
+            <li class="nav-item"><a id="navpro" onclick="showblogs('probability', 'navpro')" class="nav-link" href="#"><span>Probability</span></a></li>
+            <li class="nav-item"><a id="navds" onclick="showblogs('datascience', 'navds')" class="nav-link" href="#"><span>Data Science</span></a></li>
+            <li class="nav-item"><a id="navml" onclick="showblogs('machinelearning', 'navml')" class="nav-link" href="#"><span>Machine Learning</span></a></li>
+        </ul>
+    </div>
+
+    <div class="blog-content" id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="left-text">
+                        <h4><a href="../"><i class="fa fw fa-home"></i></a> / BLOGS</h4>
+                        <div class="line-dec"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div style="display: flex;" class="row category" id="python"></div>
+
+                    <div style="display: none;" class="row category" id="datascience"></div>
+                    
+                    <div style="display: none;" class="row category" id="probability"></div>
+                    
+                    <div style="display: none;" class="row category" id="statistics"></div>
+                    
+                    <div style="display: none;" class="row category" id="machinelearning"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <br />
+        <div class="container footer">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="name">Pranit Bhujel</p>
+                    <br />
+                    <ul>
+                        <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/pranitbhujel-29107a15a/"><i class="fa fa-linkedin"></i></a>
+                         </li>
+                        <li><a target="_blank" href="https://www.kaggle.com/pranitbhujel/"><b
+                                style="font-family: Quicksand; padding: 0 0.1em">K</b><i class="fa"></i></a></li>
+                        <li><a target="_blank" href="https://github.com/pranitbhujel/"><i class="fa fa-github"></i></a></li>
+                        <li><a target="_blank" href="https://twitter.com/pranitbhujel" ><i class="fa fa-twitter"></i></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/pranit_bhujel/"><i class="fa fa-instagram"></i></a></li>
+                        <li><a target="_blank" href="https://in.pinterest.com/pranitbhujel""><i class="fa fa-pinterest-p"></i></a></li>
+                        <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100009008454021"><i class="fa fa-facebook"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/blog.js"></script>
+
+    <script>
+        var python = document.getElementById('python');
+        var datascience = document.getElementById('datascience');
+        var probability = document.getElementById('probability');
+        var statistics = document.getElementById('statistics');
+        var machinelearning = document.getElementById('machinelearning');
+
+        for (each in blogs) {
+                var element = document.createElement('div');
+                element.setAttribute('class', 'col-md-4')
+                var intro = `
+                    <a href="../` + blogs[each]['link'] + `">
+                        <div class="blog-item">
+                            <h4>` + blogs[each]['title'] + `</h4>
+                            <div class="line-dec"></div>
+                            <p class="cat">` + blogs[each]['category'] + `</p>
+                            <p>` + blogs[each]['description'] + `</p>
+                        </div>
+                    </a>
+                `
+                element.innerHTML = intro;
+                if (blogs[each].category == 'Python'){
+                    python.appendChild(element);
+                } 
+                else if (blogs[each].category == 'Data Science'){
+                    datascience.appendChild(element);
+                }
+                else if (blogs[each].category == 'Probability') {
+                    probability.appendChild(element);
+                }
+                else if (blogs[each].category == 'Statistics') {
+                    statistics.appendChild(element);
+                } 
+                else if (blogs[each].category == 'Machine Learning') {
+                    machinelearning.appendChild(element);
+                }
+
+            }
+
+            function showblogs(category, active){
+                var categories = document.getElementsByClassName('category');
+                var categorieslength = categories.length;
+                for (var i = 0; i < categorieslength; i++) {
+                    categories[i].style.display = 'none';
+                }
+                document.getElementById(category).style.display = 'flex';
+
+                var nav = document.getElementsByClassName('nav-link');
+                var navlength = nav.length;
+                for (var i = 0; i < navlength; i++) {
+                    nav[i].classList.remove('active');
+                }
+                document.getElementById(active).classList.add('active');
+            }
+    </script>
+
+    <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $(".fixed-side-navbar a, .primary-button a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+    </script>
+
+</body>
+</html>

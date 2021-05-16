@@ -3,6 +3,14 @@ self.addEventListener('install', function (e) {
         caches.open('/').then(function (cache) {
             return cache.addAll([
                 'index.html',
+                'blog/',
+                'css/',
+                'images/',
+                'js/',
+                'lib/',
+                'blog/python-redefined--all-the-basics-that-you-need-to-know',
+                'blog/index.html',
+                'images/app_icon.png'
             ]);
         })
     );
