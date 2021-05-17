@@ -212,7 +212,9 @@
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Iterable">Iterable<a class="anchor-link" href="#Iterable">&#182;</a></h4><p>It is an object capable of returning values one at a time.</p>
+<h4 id="Iterable">Iterable<a class="anchor-link" href="#Iterable">&#182;</a></h4>
+<hr>
+<p>It is an object capable of returning values one at a time.</p>
 
 </div>
 </div>
@@ -220,7 +222,9 @@
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="For-Loops">For Loops<a class="anchor-link" href="#For-Loops">&#182;</a></h4><p>In Python, the for loops are not exactly what we think it is. For loops here are something called as iterables.  When we write the for, the <code>range() function</code> that we define is an iterable, and so every time it runs, it just prints the next element.</p>
+<h4 id="For-Loops">For Loops<a class="anchor-link" href="#For-Loops">&#182;</a></h4>
+<hr>
+<p>In Python, the for loops are not exactly what we think it is. For loops here are something called as iterables.  When we write the for, the <code>range() function</code> that we define is an iterable, and so every time it runs, it just prints the next element.</p>
 <p>This must be clear in the upcoming classes!</p>
 
 </div>
@@ -229,7 +233,9 @@
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Monkey-Patching">Monkey Patching<a class="anchor-link" href="#Monkey-Patching">&#182;</a></h4><p>This is when we're trying to access a variable which is not defined inside of a class and yet we're able to get and set the variable. Have to learn more about it.</p>
+<h4 id="Monkey-Patching">Monkey Patching<a class="anchor-link" href="#Monkey-Patching">&#182;</a></h4>
+<hr>
+<p>This is when we're trying to access a variable which is not defined inside of a class and yet we're able to get and set the variable. Have to learn more about it.</p>
 <p>Something like this: say the variable declared inside of a class is <code>_width</code> and we access a variable like this <code>obj.width</code>. It'll still work and not throw any error!</p>
 
 </div>
@@ -238,7 +244,9 @@
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Classes">Classes<a class="anchor-link" href="#Classes">&#182;</a></h4><p>Let's first define a class. And we'll see some tiny details that happens inside of a class.</p>
+<h4 id="Classes">Classes<a class="anchor-link" href="#Classes">&#182;</a></h4>
+<hr>
+<p>Let's first define a class. And we'll see some tiny details that happens inside of a class.</p>
 
 </div>
 </div>
@@ -371,7 +379,9 @@
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><h4 id="Representation">Representation<a class="anchor-link" href="#Representation">&#182;</a></h4><p>For other data types and variables, we can just type their name and the value that we've initialized for them comes up as the way we defined it.</p>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><h4 id="Representation">Representation<a class="anchor-link" href="#Representation">&#182;</a></h4>
+<hr>
+<p>For other data types and variables, we can just type their name and the value that we've initialized for them comes up as the way we defined it.</p>
 
 </div>
 </div>
@@ -494,7 +504,9 @@
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><h4 id="String-Representation">String Representation<a class="anchor-link" href="#String-Representation">&#182;</a></h4><p>If we try to print the normal string version of the object, then the program will just return the object's memory address and some giberish hex code.</p>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><h4 id="String-Representation">String Representation<a class="anchor-link" href="#String-Representation">&#182;</a></h4>
+<hr>
+<p>If we try to print the normal string version of the object, then the program will just return the object's memory address and some giberish hex code.</p>
 <p>So, if we want to make it presentable, then we use this special function again called <code>__str()__</code> that allows us to make the function presentable while printing it as a string.</p>
 <div class="highlight"><pre><span></span><span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Rectangle(width = </span><span class="si">{self.width}</span><span class="s1">, height = </span><span class="si">{self.height}</span><span class="s1">)&#39;</span><span class="p">)</span>
@@ -540,7 +552,9 @@
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><h4 id="Comparing-Objects">Comparing Objects<a class="anchor-link" href="#Comparing-Objects">&#182;</a></h4><p>So, what if we wanted to compare two or more objects with each other? In this case what we can do is to define a lot of special functions: equal: <code>__eq__()</code>, less than: <code>__lt()__</code>, greater than: <code>__gt()__</code>, greater than equal: <code>__gte()__</code>, less than equal: <code>__lte()__</code> and then we can define our logic inside of those functions.</p>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><h4 id="Comparing-Objects">Comparing Objects<a class="anchor-link" href="#Comparing-Objects">&#182;</a></h4>
+<hr>
+<p>So, what if we wanted to compare two or more objects with each other? In this case what we can do is to define a lot of special functions: equal: <code>__eq__()</code>, less than: <code>__lt()__</code>, greater than: <code>__gt()__</code>, greater than equal: <code>__gte()__</code>, less than equal: <code>__lte()__</code> and then we can define our logic inside of those functions.</p>
 
 </div>
 </div>
@@ -741,7 +755,9 @@
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><h4 id="Getter-and-Setter-methods">Getter and Setter methods<a class="anchor-link" href="#Getter-and-Setter-methods">&#182;</a></h4><p>The purpose of getter and setter methods is to restrict the access to the variables directly. Languages like Java make it compuslory for us to write the methods, while Python gives us the flexibility of writing these methods whenever we want to do so.</p>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><h4 id="Getter-and-Setter-methods">Getter and Setter methods<a class="anchor-link" href="#Getter-and-Setter-methods">&#182;</a></h4>
+<hr>
+<p>The purpose of getter and setter methods is to restrict the access to the variables directly. Languages like Java make it compuslory for us to write the methods, while Python gives us the flexibility of writing these methods whenever we want to do so.</p>
 <p>Explicitly writing getter and setter can be done as well but the approach involving decorators is recommended in Python. While not using the decorators, the problem of backward compatibility occurs. Let's see how it happens.</p>
 
 </div>
@@ -946,7 +962,7 @@
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Multi-Line-Statements-and-Strings">Multi-Line Statements and Strings<a class="anchor-link" href="#Multi-Line-Statements-and-Strings">&#182;</a></h3><hr>
+<h4 id="Multi-Line-Statements-and-Strings">Multi-Line Statements and Strings<a class="anchor-link" href="#Multi-Line-Statements-and-Strings">&#182;</a></h4><hr>
 <p>Understanding Multi-Line statements definitely makes us a better developer. Multi-Line statements/strings are generally used for improving the readability of the code. The interpreter doesn't bother if the given program is cramped in one line or extended to multiple lines, as long as the syntax is right.</p>
 <p>First, we need to understand the difference between physical newline character and logical newline token.</p>
 <h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><p><strong>Physical Newline Character:</strong> '\n' The character which is passed onto the program while we press enter to write a statement in the newline.</p>
@@ -961,7 +977,7 @@
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Implicit-Conversion">Implicit Conversion<a class="anchor-link" href="#Implicit-Conversion">&#182;</a></h3><hr>
+<h4 id="Implicit-Conversion">Implicit Conversion<a class="anchor-link" href="#Implicit-Conversion">&#182;</a></h4><hr>
 <p>This kind of situation is automatically handled by the python interpreter. The following examples depict scenarios where we can use them.</p>
 
 </div>
@@ -1072,7 +1088,7 @@
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Explicit-Conversion">Explicit Conversion<a class="anchor-link" href="#Explicit-Conversion">&#182;</a></h3><hr>
+<h4 id="Explicit-Conversion">Explicit Conversion<a class="anchor-link" href="#Explicit-Conversion">&#182;</a></h4><hr>
 <p>This is where the multi-line statements are not implicitly converted to a single logical line, and that is why we use explicit character <strong>'\'</strong> to make the statements as a multi-line statement.</p>
 
 </div>
@@ -1144,7 +1160,7 @@
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Multi-line-Strings">Multi-line Strings<a class="anchor-link" href="#Multi-line-Strings">&#182;</a></h3><hr>
+<h4 id="Multi-line-Strings">Multi-line Strings<a class="anchor-link" href="#Multi-line-Strings">&#182;</a></h4><hr>
 <p>Multi-line strings can be written using three ' or " characters, both at the beginning and at the end. These strings retain the whitespaces and every other formatting used.</p>
 <p><em>Basically, anything that you write and the way you write is printed as it is.</em> So, they are mainly used for something called as <strong>docstrings.</strong></p>
 
@@ -1202,7 +1218,7 @@ string!
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="The-General-Notion:">The General Notion:<a class="anchor-link" href="#The-General-Notion:">&#182;</a></h3><hr>
+<h4 id="The-General-Notion:">The General Notion:<a class="anchor-link" href="#The-General-Notion:">&#182;</a></h4><hr>
 <p class="quote">Variables/Identifiers are case sensitive and can have letters, _, and digits. It can begin with letters and _, but not with a digit.</p>
 <p class="quote-author"></p>
 </div>
@@ -1211,7 +1227,7 @@ string!
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Single-Underscore-in-the-Front">Single Underscore in the Front<a class="anchor-link" href="#Single-Underscore-in-the-Front">&#182;</a></h3><hr>
+<h4 id="Single-Underscore-in-the-Front">Single Underscore in the Front<a class="anchor-link" href="#Single-Underscore-in-the-Front">&#182;</a></h4><hr>
 <p>This is a convention to indicate that the identifier is to be used for <strong>internal use</strong> or <strong>private objects</strong>. This kind of objects will not get imported by an import statement such as <code>from module import *</code>.</p>
 <p>However there are other ways of accessing it.</p>
 <h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6>
@@ -1221,7 +1237,7 @@ string!
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Double-Underscore-in-the-Front">Double Underscore in the Front<a class="anchor-link" href="#Double-Underscore-in-the-Front">&#182;</a></h3><hr>
+<h4 id="Double-Underscore-in-the-Front">Double Underscore in the Front<a class="anchor-link" href="#Double-Underscore-in-the-Front">&#182;</a></h4><hr>
 <p>This convention is primarily used for something called as <strong>Name Mangling</strong>. Name Mangling is a process in which an identifier with a double underscore in the front <code>__name</code> is replaced with <code>_ClassName__name</code>, and we can access the variable using that name.</p>
 <p>It allows us to access the class variables outside the class (in sub-classes), mostly used in inheritance.</p>
 <p>To know more about the Name Mangling, <a href="https://www.geeksforgeeks.org/name-mangling-in-python/," title="Name Mangling">Click here</a></p>
@@ -1232,7 +1248,7 @@ string!
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Double-Underscore-in-the-Front-and-the-Back">Double Underscore in the Front and the Back<a class="anchor-link" href="#Double-Underscore-in-the-Front-and-the-Back">&#182;</a></h3><hr>
+<h4 id="Double-Underscore-in-the-Front-and-the-Back">Double Underscore in the Front and the Back<a class="anchor-link" href="#Double-Underscore-in-the-Front-and-the-Back">&#182;</a></h4><hr>
 <p>This convention is used for system-defined names that have a special meaning to the interpreter. For an example <code>__init__</code> or <code>__main__</code>. Defining your own name may confuse the interpreter to cause unncecessary errors and should avoid doing that.</p>
 <p>Sticking to the ones pre-defined by Python is certainly a good idea!</p>
 <h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6>
@@ -1242,7 +1258,7 @@ string!
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Other-Naming-Conventions">Other Naming Conventions<a class="anchor-link" href="#Other-Naming-Conventions">&#182;</a></h3><hr>
+<h4 id="Other-Naming-Conventions">Other Naming Conventions<a class="anchor-link" href="#Other-Naming-Conventions">&#182;</a></h4><hr>
 <p><strong>Packages:</strong> short, all-lowercase names, preferably no underscores. <em>Eg:</em> <code>package</code></p>
 <p><strong>Modules:</strong> short, all-lowercase names, can have underscores. <em>Eg:</em> <code>a_module amodule</code></p>
 <p><strong>Classes:</strong> CapWords (upper camel case) convention. <em>Eg:</em> <code>BankAccount</code></p>
@@ -1265,7 +1281,7 @@ string!
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Variables">Variables<a class="anchor-link" href="#Variables">&#182;</a></h3><hr>
+<h4 id="Variables">Variables<a class="anchor-link" href="#Variables">&#182;</a></h4><hr>
 <p>Variables are actually memory references. When an object is stored in the memory, it may occupy more space or less depending on the type of the variable. <strong>Python Memory Manager</strong> handles the object creation in the heap memory.</p>
 <p>We can always find the memory address that the variable is pointing at by using <code>id()</code> function. The hex code of the memory address can be found using <code>hex(id(var_name))</code></p>
 
@@ -1275,7 +1291,7 @@ string!
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><h3 id="Reference-Counting">Reference Counting<a class="anchor-link" href="#Reference-Counting">&#182;</a></h3><hr>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><h4 id="Reference-Counting">Reference Counting<a class="anchor-link" href="#Reference-Counting">&#182;</a></h4><hr>
 <p>How many pointers are pointing to or referencing a particular memory address? This is something called as reference count. For a particular memory address, the total number of variables pointing to it will be stored as counts.</p>
 <p>There are two ways to find out the reference count for a particular variable/memory address. Also to remember that a varibale is just a pointer to the memory address.</p>
 
@@ -1382,7 +1398,7 @@ string!
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><h3 id="Garbage-Collection">Garbage Collection<a class="anchor-link" href="#Garbage-Collection">&#182;</a></h3><hr>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><h4 id="Garbage-Collection">Garbage Collection<a class="anchor-link" href="#Garbage-Collection">&#182;</a></h4><hr>
 <p><strong>Circular Reference:</strong> When there's a circular reference that keeps the reference count greater than 0 and so the reference count mechanism is not always suitable to free the unused objects. In this case the garbage collector does it work.</p>
 <p>It is not recommended to use Python V3.4 and before, as the python interpreter gets confused over this criteria; If <code>__del()__</code> destructor is defined in the class of the object that is stuck in the circular reference, the <strong>gc</strong> would get confused as in what sequence should it follow to destroy those objects and hence would not be able to destroy!</p>
 <p>This causes the object to be marked as <strong>uncollectable</strong> and the objects in the circular reference are not cleaned up - a term called <strong>Memory Leak.</strong></p>
@@ -1395,7 +1411,7 @@ string!
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Statically-Typed-vs-Dynamically-Typed">Statically Typed vs Dynamically Typed<a class="anchor-link" href="#Statically-Typed-vs-Dynamically-Typed">&#182;</a></h3><hr>
+<h4 id="Statically-Typed-vs-Dynamically-Typed">Statically Typed vs Dynamically Typed<a class="anchor-link" href="#Statically-Typed-vs-Dynamically-Typed">&#182;</a></h4><hr>
 <p>If we look at some programming languages like C, C++ and Java, we'll notice that the variable declaration has three parts:</p>
 <p><em>Statically Typed:</em></p>
 <div class="highlight"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
@@ -1413,7 +1429,7 @@ string!
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Variable-Re-assignment">Variable Re-assignment<a class="anchor-link" href="#Variable-Re-assignment">&#182;</a></h3><hr>
+<h4 id="Variable-Re-assignment">Variable Re-assignment<a class="anchor-link" href="#Variable-Re-assignment">&#182;</a></h4><hr>
 <p>When we reassign a value to a variable, then in python we'll see that the variable will now reference to a different object in the heap memory rather than updating the new value in the previous memory location.</p>
 <p>This involves a concept called object mutability and immutability which we'll see further down in the article. Let's see how variable reassignment works.</p>
 
@@ -1572,7 +1588,7 @@ string!
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Object-Mutability-&amp;-Immutability">Object Mutability &amp; Immutability<a class="anchor-link" href="#Object-Mutability-&amp;-Immutability">&#182;</a></h3><hr>
+<h4 id="Object-Mutability-&amp;-Immutability">Object Mutability &amp; Immutability<a class="anchor-link" href="#Object-Mutability-&amp;-Immutability">&#182;</a></h4><hr>
 <p>Changing the data inside the object is called as <strong>modifying the internal state</strong> of the object.</p>
 <p>An object whose internal state can be changed is called as <strong>Mutable Object</strong> whereas an object whose internal state cannot be changed is called as an <strong>Immutable Object.</strong></p>
 <table>
@@ -1763,7 +1779,7 @@ string!
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Function-Arguments-and-Mutability">Function Arguments and Mutability<a class="anchor-link" href="#Function-Arguments-and-Mutability">&#182;</a></h3><hr>
+<h4 id="Function-Arguments-and-Mutability">Function Arguments and Mutability<a class="anchor-link" href="#Function-Arguments-and-Mutability">&#182;</a></h4><hr>
 <p>Immutable Objects are safe from unintended side effects.</p>
 
 </div>
@@ -1780,7 +1796,7 @@ string!
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Shared-References-and-Mutability">Shared References and Mutability<a class="anchor-link" href="#Shared-References-and-Mutability">&#182;</a></h3><hr>
+<h4 id="Shared-References-and-Mutability">Shared References and Mutability<a class="anchor-link" href="#Shared-References-and-Mutability">&#182;</a></h4><hr>
 <p>Python Memory Manager is smart, in the sense that when it creates a shared reference to a memory address, it shares the same location with the immutable objects but creates different memory location for the mutable objects.</p>
 <p>The good reason for doing that is, say we define <code>a=[1, 2, 3]</code> and we the write <code>b=a</code>, and now if we change <code>b</code> by adding or removing any element then it'll affect <code>a</code> as well.</p>
 <p>So when mutable objects are created, the python memory manager creates them at different memory location even if they have the same content.</p>
@@ -1826,7 +1842,7 @@ string!
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><h3 id="Equality">Equality<a class="anchor-link" href="#Equality">&#182;</a></h3><hr>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><h4 id="Equality">Equality<a class="anchor-link" href="#Equality">&#182;</a></h4><hr>
 <p>Measuring equality can be done using two different approaches.</p>
 <ol>
 <li>Comparing the object address.</li>
@@ -1841,7 +1857,7 @@ string!
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><h3 id="Everything-is-an-object!">Everything is an object!<a class="anchor-link" href="#Everything-is-an-object!">&#182;</a></h3><hr>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><h4 id="Everything-is-an-object!">Everything is an object!<a class="anchor-link" href="#Everything-is-an-object!">&#182;</a></h4><hr>
 <p>In Python everything is an object. So when we declare an integer type varible or a function or anything, then an instance of that particular class is created. That is why it is an object.</p>
 <p>Now, what are the advantages of that being an object? So, when an object is created, the function name or the variable name is just a reference to the object. So, it allows us to achieve the following.</p>
 <ul>
@@ -1862,14 +1878,14 @@ string!
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><h3 id="Interning---The-Power-of-Optimization!">Interning - The Power of Optimization!<a class="anchor-link" href="#Interning---The-Power-of-Optimization!">&#182;</a></h3><hr>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><h4 id="Interning---The-Power-of-Optimization!">Interning - The Power of Optimization!<a class="anchor-link" href="#Interning---The-Power-of-Optimization!">&#182;</a></h4><hr>
 <p>This is a very cool concept. When we tried creating two variables and checking their memory address using <code>id()</code> function, despite being immutable objects we noticed that for <code>a=500</code> and <code>b=500</code>, we had different memory addresses. Why?</p>
 <p><strong>Interning</strong> - <em>Interning is the process through which python interpreter/memory manager caches some integer or string objects at the start-up. The integer value starts at - 5 to 256, so that when we create an integer, we reduce the memory overhead and the cached object is returned.</em></p>
 <p>That is why when we create something bigger than 256, we get a different memory location even though immutable. Now, what's the use of string interning and how can we do it manually?</p>
 <p><em>The string when we intern it using <code>sys.intern(string)</code>, we're basically caching it. So the fetching and execution becomes a lot faster when we're dealing with a lot of string values. A process indeed helpful in</em> <strong>Natural Language Processing!</strong></p>
 <p>Also <em>interning</em> makes it easy for the string comparison as well because when comparing string we've to compare them character by character. Now, when we intern the strings then we know that if they're same then they will be stored in the same memory location. And the power of interning allows us to compare the string using just their memory address - using the identity operator <code>is</code> or <code>is not</code>!</p>
 <p class="quote">As long as the string looks like an identifier, it'll get interned automatically. Also pointing to an already referenced object is much faster than creating a new object in the memory!</p>
-<p class="quote-author"></p><h3 id="PeepHole-Optimization">PeepHole Optimization<a class="anchor-link" href="#PeepHole-Optimization">&#182;</a></h3><hr>
+<p class="quote-author"></p><h4 id="PeepHole-Optimization">PeepHole Optimization<a class="anchor-link" href="#PeepHole-Optimization">&#182;</a></h4><hr>
 <p>This is done in two different ways.</p>
 <ol>
 <li>Constant Expressions</li>
@@ -1926,7 +1942,7 @@ True
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Types-of-Integers-in-Python">Types of Integers in Python<a class="anchor-link" href="#Types-of-Integers-in-Python">&#182;</a></h3><hr>
+<h4 id="Types-of-Integers-in-Python">Types of Integers in Python<a class="anchor-link" href="#Types-of-Integers-in-Python">&#182;</a></h4><hr>
 <p>There are five types of integers in Python</p>
 <ul>
 <li>Boolean</li>
@@ -1943,7 +1959,7 @@ True
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Integer-Operations">Integer Operations<a class="anchor-link" href="#Integer-Operations">&#182;</a></h3><hr>
+<h4 id="Integer-Operations">Integer Operations<a class="anchor-link" href="#Integer-Operations">&#182;</a></h4><hr>
 <p>One thing to note about integers in python is that, its a variable sized integer meaning the bits will be added as an when the extra bits are required to store the number!</p>
 <p>So you can store numbers as big as <code>2**1000</code> and it'll still work just fine.</p>
 <p>All the arithmetic operations on integer returns an integer except for the division operator which always returns float.</p>
@@ -2077,7 +2093,7 @@ True
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Floor-and-Modulo-Division---The-equation!">Floor and Modulo Division - The equation!<a class="anchor-link" href="#Floor-and-Modulo-Division---The-equation!">&#182;</a></h3><hr>
+<h4 id="Floor-and-Modulo-Division---The-equation!">Floor and Modulo Division - The equation!<a class="anchor-link" href="#Floor-and-Modulo-Division---The-equation!">&#182;</a></h4><hr>
 <p>Now, probably the most important concept. Why does the floor and modulo operation return different numbers on the sign change, while operating on the same number?</p>
 <p>Remember we can break a division operation into an equation like this.</p>
 <div class="highlight"><pre><span></span><span class="n">nominator</span> <span class="o">/</span> <span class="n">denominator</span> <span class="o">=</span> <span class="n">denominator</span> <span class="o">*</span> <span class="n">quotient</span><span class="p">(</span><span class="n">nom</span> <span class="o">//</span> <span class="n">denom</span><span class="p">)</span> <span class="o">+</span> <span class="n">remainder</span><span class="p">(</span><span class="n">nom</span> <span class="o">%</span> <span class="n">denom</span><span class="p">)</span>
@@ -2090,7 +2106,7 @@ True
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Any-Base--&gt;-Decimal,-Decimal--&gt;-Any-Base">Any Base -&gt; Decimal, Decimal -&gt; Any Base<a class="anchor-link" href="#Any-Base--&gt;-Decimal,-Decimal--&gt;-Any-Base">&#182;</a></h3><hr>
+<h4 id="Any-Base--&gt;-Decimal,-Decimal--&gt;-Any-Base">Any Base -&gt; Decimal, Decimal -&gt; Any Base<a class="anchor-link" href="#Any-Base--&gt;-Decimal,-Decimal--&gt;-Any-Base">&#182;</a></h4><hr>
 <p>Now what we're going to see is a program to convert the a number of base upto 36 to integer.</p>
 <p><em>Like I say, decimal is strong and so it expects other bases to multiply and go for the war, so let's do it!</em></p>
 
@@ -2268,7 +2284,7 @@ True
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Rational-Numbers">Rational Numbers<a class="anchor-link" href="#Rational-Numbers">&#182;</a></h3><hr>
+<h4 id="Rational-Numbers">Rational Numbers<a class="anchor-link" href="#Rational-Numbers">&#182;</a></h4><hr>
 <p>Rational Numbers are represented in python using the Fractions module. Fractions aren't that interesting, at least for now.</p>
 
 </div>
