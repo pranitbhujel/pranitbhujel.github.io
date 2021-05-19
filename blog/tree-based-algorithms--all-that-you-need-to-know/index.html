@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta lang="en">
+    <meta charset="UTF-8">
+    <meta name="description" content= "Learn how the tree based algorithms make decision and compare against the linear counterparts. ">
+    <meta name="author" content="Pranit Bhujel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="keywords"
+    content="Pranit Bhujel, Pranit, Bhujel, Data Science Blogs, Data Scientist from Darjeeling, Data Science, Statistics, Probability, Python, Machine Learning, Natural Language Processing, Interview Questions ">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+            
+    <title> Tree Based Algorithms - All that you need to know! | Pranit Bhujel</title>
+
+    <link rel="icon" href="../../images/icon.PNG">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/w3.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/individual_blog.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Lora&family=Quicksand&display=swap" rel="stylesheet">
+
+    <!-- Load mathjax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
+    <!-- MathJax configuration -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+        inlineMath: [ ['$','$'], ["\(","\)"] ],
+        displayMath: [ ['$$','$$'], ["\[","\]"] ],
+        processEscapes: true,
+        processEnvironments: true
+    },
+    // Center justify equations in code and markdown cells. Elsewhere
+    // we use CSS to left justify single line equations in code cells.
+    displayAlign: 'center',
+    "HTML-CSS": {
+    styles: {'.MathJax_Display': {"margin": 0}},
+    linebreaks: { automatic: true }
+    }
+    });
+</script>
+           
+<!-- manifest file -->
+<link rel="manifest" href="../../pranit.webmanifest">
+</head>
+
+<body>
+<div class="main_body">
+<div>
+    <div class="100 nav w3-card-2" id="navbar">
+        <h5><a href="../../"><img src="../../images/b_icon.png "></a></h5>
+
+        <span style="margin-right: 20px;" class="w3-right">
+        <a target="_blank" href="https://www.linkedin.com/in/pranit-bhujel-29107a15a/" class="fa fa-fw fa-linkedin"></a>
+        <a target="_blank" href="https://github.com/pranitbhujel/" class="fa fa-fw fa-github"></a>
+        <a target="_blank" href="https://twitter.com/pranitbhujel" class="fa fa-fw fa-twitter"></a>
+        <a target="_blank" href="https://www.instagram.com/pranit_bhujel/" class="fa fa-fw fa-instagram"></a>
+        <a target="_blank" href="https://in.pinterest.com/pranitbhujel" class="fa fa-fw fa-pinterest"></a>
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=100009008454021"
+            class="fa fa-fw fa-facebook"></a>
+        </span>
+    </div>
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <div id="preloader"></div> 
+
+    <div id='parent' class='main full_blog'>
+
+    <div class="title">
+    <h2>Tree Based Algorithms - All that you need to know!</h2>
+    <p class="top_description">"Learn how the tree based algorithms make decision and compare against the linear counterparts. "</p>
+    <hr>
+    <div class="card-footer">
+                <div class="post-author">
+                <img src="../../images/me.png" alt="image" class="avatar w3-circle"> <span class="author fontq">May 20, 2021</span>
+
+                <span class="w3-right post-date fontq">
+                <a target="_blank" href="https://www.linkedin.com/in/pranit-bhujel-29107a15a/" class="fa fa-fw fa-linkedin"></a>
+                <a target="_blank" href="https://github.com/pranitbhujel/" class="fa fa-fw fa-github"></a>
+                <a target="_blank" href="https://twitter.com/pranitbhujel" class="fa fa-fw fa-twitter"></a>
+                <a target="_blank" href="https://www.instagram.com/pranit_bhujel/" class="fa fa-fw fa-instagram"></a>
+                <a target="_blank" href="https://in.pinterest.com/pranitbhujel" class="fa fa-fw fa-pinterest"></a>
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100009008454021" class="fa fa-fw fa-facebook"></a></span>
+            </div>
+            </div>
+            </div>
+            <hr>
+            <div class="w3-center">
+                <img class="top" src="../../images/b3.jpg">
+                <p class="w3-center fontq">Photo by Pranit Bhujel</p>
+            </div>
+    <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Intuition-behind-trees!">Intuition behind trees!<a class="anchor-link" href="#Intuition-behind-trees!">&#182;</a></h3><hr>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Generally when we look at tree based algorithms, we start with Decision Trees. Decision Trees are one of the most widely used algorithms used for solving supervised machine learning problems. If we look at it from a layman's perspective, then we can say that decision trees follow similar process of how a human takes their decision.</p>
+<p>In this technique, the given sample or population is divided into One good thing about tree based algorithms is that it performs well for both the classification and regression problems.</p>
+<p>These algorithms follow a top-down greedy approach called <strong>Recursive Binary Splitting.</strong> It is greedy because it looks only for the current best scenario for the split!</p>
+<p>The most relevant attributes are kept on the top as root nodes, and as we go into more depth, the relevance of the attributes is reduced. This is true to the fact that when we're going to buy something, we don't usually by anything and then find it's purpose, what we do is to first try and identify the item that's required and then go shopping.</p>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><p><strong>Important Terminologies in Trees</strong></p>
+<p><strong>Root Node:</strong> The attribute which divides the rest of the sample data into heterogeneous groups of homogeneous set is called as root node.</p>
+<p><strong>Decision Node:</strong> The internal nodes which helps in decision making or routing the path for the new test data to find its label.</p>
+<p><strong>Splitting:</strong> The process of dividing the node into two or more sub-nodes.</p>
+<p><strong>Pruning:</strong> The process opposite of <em>splitting</em> which involves combining two or more sub-nodes to combine into one.</p>
+<p><strong>Leaf/Terminal Node:</strong> The final label node, which cannot be further splitted is called as Leaf Node.</p>
+<p><strong>Parent/Child Node:</strong> The node which has sub-nodes below it is called a parent node, and the nodes below a parent node are called Child Nodes.</p>
+<p><strong>Branch/Sub-Tree:</strong> A section of the entire tree is called as a branch or sub-tree.</p>
+<p><strong>Pure Node:</strong> If a node has all samples belonging to just one class, we say that it's a pure node, or high homogeneity or less entropy.</p>
+<p><strong>Impure Node:</strong> If a node that has mixed samples from a few classes, we say that the node is impure or less homogeneous or high entropy.</p>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><p><strong>How does a Tree based model work?</strong></p>
+<p><strong><em>Decision Trees</em></strong> <em>measure the statistical significance of all the attributes in the dataset w.r.t the label to be predicted. There are a few ways to find out the significance of an attribute. Once the most significant attribute is found, it is made as the root node of the tree which divides the sample into sub-samples which are then again sub-sampled using the remaning attributes. The recursive process is continued until any node can be no further divided!</em></p>
+<p><em>Once that happens, we're left with root node, decision nodes and leaf nodes. The formed tree when fetched with a new data would now be able to decide the final result for us.</em></p>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><p><strong>How are Tree based algorithm better than Linear Regression?</strong></p>
+<p><em>Tree based algorithms perform really well compared to linear models when it comes to <strong>mapping non-linear realtionships in the dataset</strong>. If there's a linear relationship in a data, linear regression / linear models will outlive the tree based models.</em></p>
+<p><em>It's only when the data is non linear, the trees really shine!</em></p>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Working-of-Trees---Example">Working of Trees - Example<a class="anchor-link" href="#Working-of-Trees---Example">&#182;</a></h3><hr>
+<p>What better way to understand than with an automotive example!</p>
+<p>Say that someone's asking a help for buying a bike. So, as someone who's knowledgable in that area, how'd you shape your decisions and how'd you go from the start is very similar to the way <em>Decision Trees</em> or <em>Tree Based algorithms</em> work.</p>
+<p><em>The first question</em> - perhaps the purpose of buying the bike - <strong>Touring, Commuting, Cruising, Sports, Naked, Street Fighter</strong>. This would act as a solid root node as it divides the data into homogeneous sets, with each set being heterogeneous of each other. Each set having a different purpose.</p>
+<p><em>The second question</em> - it could now be divided across multiple price point, so the second question - the <strong>price</strong> would further divide the existing nodes into multiple sub nodes.</p>
+<p><em>By this time we have segregated the price range of the bikes of different category.</em></p>
+<p><em>The third question</em> - Now we may want to ask another question regarding the volume of the engine. What kind of <strong>power</strong> would I want from the engine, which would again divide the nodes into sub-nodes.</p>
+<p>And this way when all the questions are answered - the milegae - the warranty - service cost - resell value - weight and all, we get the final decision, which in this case would be the <strong>bike we're desiring!</strong></p>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><p>And that's Decision Tree in a nutshell. But we're left with much more questions aren't we?</p>
+<ul>
+<li><em>So how does the algorithm determine which attribute to keep as root node?</em></li>
+<li><em>On what basis does the algorithm split the nodes?</em></li>
+<li><em>How do we know which node is a leaf node and which should be further splitted?</em></li>
+<li><em>How do we know when to stop - the depth of the tree?</em></li>
+</ul>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p class="quote">The way we split the node heavily affects a tree's accuracy</p>
+<p class="quote-author"></p><p>The reason is because, each node adds to the final decision. If we split the node without much thought, the decision that'll come out of it will have not much accuracy. So, it's very important for us to decide which node to split and when.</p>
+<p><strong>How does the algorithm figure out which node to split?</strong></p>
+<p>The algorithm uses a few statistical techniques (<em>Gini, Information Gain, Chi Squared, Reduction in variance</em>) to find the significance of an attribute and decides when to split. Different methods are used for splitting the node, based on the target data - if it's <em>continuous</em> (Regression) or <em>discrete</em> (Classification)</p>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p class="quote">The creation of sub-nodes increases the homogeneity of resultant sub-nodes</p>
+<p class="quote-author"></p><p><strong>Homogeneity:</strong> Data points being in the same class. Increase in homogeneity means that most of the data in a node belongs to the same class.</p>
+<p><strong>Entropy:</strong> The measure of randomness in a data is called Entropy. More entropy means that the sample of data contains data elements of multiple class.</p>
+<p><em>'The main goal of splitting the nodes in a tree based model is to reduce the entropy and increase the homogeneity!'</em></p>
+<p>So, whenever we follow any method of split, it always increase the homogeneity with each split, and reduces the entropy!</p>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Perhaps <em>homogeneity</em> and <em>entropy</em> is better understood using an example:</p>
+<p><em>Say, in a class there are 30 students, and we have their data (gender, grades, height, weight...) and also if they play sports or not is given. Now if there's any new entry in the class, we'd want to predict if that student plays sports or not, based on the data that we have.</em></p>
+<p>In this case, just take the <strong>gender</strong> attribute, if we split the data based on gender, then we automatically have males on one side and females in the other. Thus <strong>homogeneity</strong> is increased, and <strong>entropy</strong> in the data is reduced all at once!</p>
+<p>Hence, this continues until the <em>user specified criteria is met</em> or there's no nodes to split further.</p>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Ways-of-building-the-decision-tree">Ways of building the decision tree<a class="anchor-link" href="#Ways-of-building-the-decision-tree">&#182;</a></h3><hr>
+<p>Any version of the decision tree algorithm would result in a tree. The only difference between them is the way in which the tree is constructed. The different ways are selected based on the type of the target variable (discrete or continuous). The main way of constructing a tree is to split the attribute. There are four most widely used methods for the split.</p>
+<ul>
+<li>Information Gain</li>
+<li>Gini</li>
+<li>Chi-Square</li>
+<li>Reduction in Variance</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Information-Gain">Information Gain<a class="anchor-link" href="#Information-Gain">&#182;</a></h3><hr>
+<p>Perhaps we can start with a question - <em>'How relevant is an attribute for the target class? How much information can we gain about the target class/attribute using the given attribute?'</em> - that is Information Gain.</p>
+<p>Information Gain is the increase or decrease in Entropy value when the node is split into sub-nodes!</p>
+<p><strong>Entropy for each sub-node -</strong></p>
+$$H(s) \ / \ E(s) = -\sum_{x=1}^n P(x) \ log_2\ P(x)$$<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><p><strong>Weighted Entropy for the sub-nodes -</strong></p>
+$$E(s) = \sum_{x=1}^n P(x) * Entropy(x)$$<ul>
+<li>Here, the entropy is the entropy of the sub-nodes.</li>
+<li>P(x) is the probability of the child node.</li>
+</ul>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><p><strong>Information Gain by the target variable after the node is split -</strong></p>
+$$IG(Y,X) = E(Y) - E(Y|X) $$<ul>
+<li>This can be read as - Information Gain from X on Y.</li>
+</ul>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><p><strong>Information Gain by the parent node from the sub-nodes -</strong></p>
+$$IG(X) = E(Parent) - E(x)(Weighted Entropy)$$<ul>
+<li>Based on the assumption that the parent node will always have an entropy of 1.</li>
+</ul>
+<h6 id=".-.-.">. . .<a class="anchor-link" href="#.-.-.">&#182;</a></h6><p><strong>Tip 1:</strong> An alternative way of calculating $log_2 x$ from scientific calculator is to divide the $log_{10} x$ by $log_{10} 2$.</p>
+<p><strong>Tip 2:</strong> Both ways of evaluating the Information Gain is valid and will lead us to give the most relevant attributes. So yeah, enjoy!</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Information-Gain---Example">Information Gain - Example<a class="anchor-link" href="#Information-Gain---Example">&#182;</a></h3><hr>
+<p><strong>Question</strong></p>
+<p><em>There are 30 students from Class 9 and 10. Out of those 30 students - 14 are from Class 9 among which 6 play cricket and 16 are from Class 10 among which 9 play cricket. If we look at the gender count, 10 of them are female out of which 2 play cricket and 20 of them are male and 13 of them play cricket.</em></p>
+<p>To find out the Entropy and Information Gain of the nodes.</p>
+<p><strong>Solution</strong></p>
+<p>Gender will have two sub-nodes - <strong>males</strong> and <strong>females</strong>. Total students are 30.</p>
+<p>m = 20, $P(m)$ = 20/30 = 0.66</p>
+<p>f = 10, $P(f)$ = 10/30 = 0.33</p>
+<p>--</p>
+<p><em>Entropy of Males</em></p>
+<p>p = 13, $P(play)$ = 13/20 = 0.65</p>
+<p>np = 7, $P(np)$ = 7/20 = 0.35</p>
+$$E(Males) = -P(p)log_2{P(p)} - P(np)log_2{P(np)}$$$$E(Males) =  0.40 + 0.53$$$$E(Males) =  0.93$$<p>--</p>
+<p><em>Entropy of Females</em></p>
+<p>p = 2, $P(play)$ = 2/10 = 0.2</p>
+<p>np = 8, $P(np)$ = 8/10 = 0.8</p>
+$$E(Females) = -P(p)log_2{P(p)} - P(np)log_2{P(np)}$$$$E(Females) =  0.463 + 0.257$$$$E(Females) =  0.72$$<p>--</p>
+<p><em>Weighted Entropy (Gender)</em></p>
+$$E(gender) = P(males)E(males) + P(females)E(females)$$$$E(gender) = 0.66 * 0.93 + 0.33 * 0.72$$$$E(gender) = 0.6138 + 0.2376$$$$E(gender) = 0.8514$$<p>--</p>
+<p>Similarly, when we calculate the weighted entropy of the split-class, then we get the following value.</p>
+$$E(class) = 0.99$$<p>--</p>
+<p>Now, let's find out the Information Gain w.r.t the parent node. We know that the entropy of the parent node is 1.</p>
+$$IG(parent) = 1 - E(subnodes)$$$$IG(gender) = 0.15$$$$IG(class) = 0.01$$<p>--</p>
+<p>We can see that the information gain of the gender attribute is much higher compared to the class attribute, so it's more relevant. Hence, gender can make as a good root node.</p>
+<p>We can also find the IG w.r.t the entropy of the target variable but that's gonna be for tomorrow, I'm tired af.</p>
+
+</div>
+</div>
+</div>
+    </div>
+  </div>
+
+        <hr>
+            <p class="fontq social">
+                    <a target="_blank" href="https://www.linkedin.com/in/pranit-bhujel-29107a15a/" class="fa fa-fw fa-linkedin"></a>
+                    <a target="_blank" href="https://github.com/pranitbhujel/" class="fa fa-fw fa-github"></a>
+                    <a target="_blank" href="https://twitter.com/pranitbhujel" class="fa fa-fw fa-twitter"></a>
+                    <a target="_blank" href="https://www.instagram.com/pranit_bhujel/" class="fa fa-fw fa-instagram"></a>
+                    <a target="_blank" href="https://in.pinterest.com/pranitbhujel" class="fa fa-fw fa-pinterest"></a>
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100009008454021" class="fa fa-fw fa-facebook"></a>
+            </p>
+        <hr>
+        <hr>
+        </div>
+        </body>
+        
+        <script src="../../lib/jquery/jquery.min.js"></script>
+        <script src="../../js/navbar_scroll.js"></script>
+        <script src="../../lib/easing/easing.min.js"></script>
+        <script src="../../lib/counterup/jquery.counterup.js"></script>
+        <script src="../../lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="../../js/main.js"></script>
+    </html>
+    
