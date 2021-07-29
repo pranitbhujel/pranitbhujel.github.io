@@ -5,6 +5,31 @@ body {
 img {
   pointer-events: none;
 }
+#home{
+  background-image: url(../images/me.jpeg);
+}
+
+footer h3{
+  color: #fff;
+}
+
+/* Experience Section  */
+#experience{
+  background-color: #202020;
+}
+#experience h4{
+  color: #f1f1f1;
+}
+.line-mf {
+  width: 40px;
+  height: 5px;
+  background-color: #444;
+  margin: 0 auto;
+}
+
+.exp_p{
+  color: #f1f1f1;
+}
 .ghostblog {
   background-color: #333;
   color: white;
@@ -16,7 +41,7 @@ img {
   text-align: center;
 }
 #projects{
-  background-color: #fafafa;
+  background-color: #f1f1f1;
 }
 .leftarrow, .rightarrow{
   cursor: pointer;
@@ -34,6 +59,11 @@ h4,
 h5,
 h6 {
   color: #1e1e1e;
+}
+
+.card-title, .author p {
+  font-weight: bold;
+  font-family:Lora;
 }
 
 a {
@@ -65,8 +95,7 @@ a:hover {
 .box-shadow,
 .paralax-mf,
 .service-box,
-.work-box,
-.card-blog {
+.work-box{
   box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
 }
 
@@ -156,7 +185,7 @@ a:hover {
 }
 
 .title-a {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -179,7 +208,7 @@ a:hover {
 }
 
 .title-left {
-  font-size: 2rem;
+  font-size: 1.5rem;
   position: relative;
 }
 
@@ -429,8 +458,8 @@ a:hover {
 .navbar-b.navbar-trans .nav-link,
 .navbar-b.navbar-reduce .nav-link {
   color: #fff;
-  text-transform: uppercase;
-  font-weight: 600;
+  /* text-transform: uppercase; */
+  font-weight: 100;
 }
 
 .navbar-b.navbar-trans .nav-link:before,
@@ -524,8 +553,8 @@ a:hover {
 
 .navbar-b .navbar-brand {
   color: #fff;
-  font-size: 1.6rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .navbar-b .navbar-nav .dropdown-item.show .dropdown-menu,
@@ -685,7 +714,6 @@ a:hover {
 /*======================================
 //--//-->   ABOUT
 ======================================*/
-
 .about-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -939,6 +967,7 @@ a:hover {
 /*======================================
 //--//-->   BLOG
 ======================================*/
+
 .card{
   margin: 10px;
 }
@@ -948,6 +977,10 @@ a:hover {
   border: none;
 }
 
+.card-blog{
+  /* box-shadow: 0 2px 6px rgb(0 0 0 / 0.2); */
+  padding: 0%;
+}
 
 .card-blog .card-category-box {
   position: absolute;
@@ -979,11 +1012,10 @@ a:hover {
 
 .card-blog .card-title {
   font-size: 1.3rem;
-  margin-top: .6rem;
 }
 
 .card-blog .card-description {
-  color: #4e4e4e;
+  color: #202020;
 }
 
 .card-blog .post-author {
@@ -991,7 +1023,7 @@ a:hover {
 }
 
 .card-blog .post-date {
-  color: #4e4e4e;
+  color: #202020;
   display: block;
   float: right;
 }

@@ -1,3 +1,4 @@
+
 // Quotes Section 
 var quote = document.getElementsByClassName('quote');
 var author = document.getElementsByClassName('quote-author');

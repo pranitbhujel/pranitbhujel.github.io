@@ -1,5 +1,5 @@
 
-body{font-family:Lora; font-size:16px;margin-top:80px;color: #333;}h1,h3,h4,h5,h6{font-weight: 300; font-family: 'Quicksand';color:#333;}h2{color:#333;}@media(min-width:767px){body{font-size:18px; padding:0px 25%;}}#navbar{background-color:#fff;position:fixed;top:0;left:0;width:100%;transition:top 0.3s;z-index:1000;border-bottom:1px solid #333;}#navbar a{float:left;display:block;color:white;text-align:center;padding:12px;margin-left:10px;text-decoration:none;}.w3-tag{background-color:#333;}.title{margin-left:10px;font-family: 'Quicksand';}.post-date{margin-right:10px;margin-top:10px;}.author{text-decoration:underline;}.overlay-mf{background-color:#333;bottom:0;left:0;width:100%;}.nav img{width:25px;height: 23px;}.top{width: 100%;} .fontq{font-family: 'Quicksand'; font-size: 16px;}
+body{font-family:Lora; font-size:16px;margin-top:80px;color: #333;}h1,h3,h4,h5,h6{font-weight: 300; font-family: 'Quicksand';color:#333;}h2{color:#333;}@media(min-width:767px){body{font-size:18px; padding:0px 25%;}}#navbar{background-color:#fff;position:sticky;top:0;left:0;width:100%;transition:top 0.3s;z-index:1000;border-bottom:1px solid #333;}#navbar a{float:left;display:block;color:white;text-align:center;padding:12px;margin-left:10px;text-decoration:none;}.w3-tag{background-color:#333;}.title{margin-left:10px;font-family: 'Quicksand';}.post-date{margin-right:10px;margin-top:10px;}.author{text-decoration:underline;}.overlay-mf{background-color:#333;bottom:0;left:0;width:100%;}.nav img{width:25px;height: 23px;}.top{width: 100%;} .fontq{font-family: 'Quicksand'; font-size: 16px;}
 
 
 html {
@@ -9593,9 +9593,10 @@ div.inner_cell {
 div.input_area {
   font-size: 12px;
   border: 1px solid #cfcfcf;
-  border-radius: 2px;
-  background: #272822;
+  border-radius: 5px;
+  background: #353535;
   line-height: 1.21429em;
+  overflow-x: auto;
   padding: 10px;
 }
 /* This is needed so that empty prompt areas can collapse to zero height when there
@@ -11666,7 +11667,7 @@ ul.typeahead-list > li > a {
 .highlight .sr { color: #BB6688 } /* Literal.String.Regex */
 .highlight .s1 { color: #ffc404 } /* Literal.String.Single */
 .highlight .ss { color: #19177C } /* Literal.String.Symbol */
-.highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight .bp { color: #ffc404 } /* Name.Builtin.Pseudo */
 .highlight .fm { color: #A6E22E } /* Name.Function.Magic */
 .highlight .vc { color: #19177C } /* Name.Variable.Class */
 .highlight .vg { color: #19177C } /* Name.Variable.Global */

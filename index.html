@@ -29,16 +29,27 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:wght@300&display=swap">
   <link href="css/style.css" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="css/lightslider.min.css" />
+  <link type="text/css" rel="stylesheet" href="css/timeline.css" />
 
   <!-- manifest file -->
   <link rel="manifest" href="pranit.webmanifest">
 
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-M9GPJ6H');</script>
+  <!-- End Google Tag Manager -->
 </head>
 
 <body>
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M9GPJ6H"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M9GPJ6H" height="0" width="0"
+    style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <!-- Nav Bar -->
@@ -64,6 +75,9 @@
               <a class="nav-link js-scroll" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link js-scroll" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link js-scroll" href="#blogs">Blogs</a>
             </li>
             <li class="nav-item">
@@ -76,13 +90,13 @@
   </div>
 
 <!-- Intro Section -->
-  <section id="home" class="intro route bg-image" style="background-image:url(images/me.jpeg)">
+  <section id="home" class="intro route bg-image">
     <div class="overlay-itro"></div>
     <div class="intro-content display-table">
       <div class="table-cell">
         <div class="container">
           <h1 class="intro-title mb-4">I am Pranit Bhujel</h1>
-          <p class="intro-subtitle"><span class="text-slider-items">A Full Stack Data Scientist, Future Sherlock Holmes of Data Science</span><strong class="text-slider"></strong><span class="typed-cursor" style="animation-iteration-count: 0;"></span></p>
+          <p class="intro-subtitle"><span class="text-slider-items">Aspiring Data Scientist</span><strong class="text-slider"></strong><span class="typed-cursor" style="animation-iteration-count: 0;"></span></p>
         </div>
       </div>
     </div>
@@ -111,14 +125,15 @@
 
                   <p class="lead">Hello World! I am Pranit Bhujel, an IT undergrad from Darjeeling, India.</p>
 
-                  <p class="lead">I'm a passionate learner, and so I put my feet into almost everything that triggers a question in my mind. I have always been fascinated by technology, so much so that I used to break all brand new toy cars, that my parents would get for me, just so that I could understand how it works! (Fact: Not everytime it went as planned)</p>
+                  <p class="lead">I'm a passionate learner, and so I put my feet into almost everything that triggers a question in my mind. I have always been fascinated by technology, so much so that I used to break all brand new toy cars, that my parents would get for me, just so that I could understand how it works! (Fun Fact: I would break it everytime but not build it back!)</p>
 
-                  <p>I also have destroyed multiple colonies of ants, and made them homeless just with a bottle of water and a lolipop stick, while I was 7! {<span style="color: rgb(248, 95, 120);">while</span> <span style="color: rgb(202, 3, 202);">true:</span> <span style="color: rgb(6, 221, 6);">print</span>(<span style="color: rgb(255, 166, 0);">'evil'</span>)}</p>
+                  <p>I firmly believe that the future is strongly coupled with intelligent machines. So, I persevere to understand and learn more about Machine Learning and AI, with a hope that one day I'll be able to contribute to a society of human and machines!</p>
 
-                  <p class="lead">Oh! By the way, I was the organizer of the TEDx event and not a speaker. [Well! Technically... I was speaking. Wasn't I?]</p>
-                  <p><i> #BreakingtheNorm!</i></p>
+                  <p>Also to mention, I have destroyed multiple colonies of ants, and made them homeless, with just a bottle of water and a lolipop stick, while I was 7! {<span style="color: rgb(248, 95, 120);">while</span> <span style="color: rgb(202, 3, 202);">true:</span> <span style="color: rgb(6, 221, 6);">print</span>(<span style="color: rgb(255, 166, 0);">'stupid'</span>)}</p>
+
+                  <p class="lead">Oh! By the way, I was the organizer of the TEDx event and not a speaker. (Well! Technically... I was speaking. Wasn't I?)</p>
                   <br />
-                  <p class="w3-center">Stay Connected: 
+                  <p class="w3-center">Connect with me @
                     <span class="w3-center post-date fontq">
                     <a target="_blank" href="https://www.linkedin.com/in/pranit-bhujel-29107a15a/" class="fa fa-fw fa-linkedin"></a>
                     <a target="_blank" href="https://github.com/pranitbhujel/" class="fa fa-fw fa-github"></a>
@@ -138,11 +153,11 @@
     </div>
   </section>
 
-<!-- Projects Section -->
+  <!-- Projects Section -->
   <section id="projects" class="portfolio-mf sect-pt4 route">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-md-12">
           <div class="title-box text-center">
             <h3 class="title-a">PROJECTS</h3>
             <p class="subtitle-a">Some of the challenging problems that I've worked with.</p>
@@ -150,11 +165,85 @@
           </div>
         </div>
       </div>
-
+  
       <!-- Section for Projects -->
       <ul id="parent_project" class="row lightSlider">
-
+  
       </ul>
+  
+      <br /><br />
+    </div>
+  </section>
+
+<!-- Experience Section -->
+  <section id="experience" class="portfolio-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-box text-center">
+            <h4 class="title-a">Work Experience</h4>
+            <p class="exp_p">The diversity of experience I have gathered so far.</p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-sm-12">
+        <div class="timeline-area wow fadeInUp">
+            <div id="award-timeline" class="all-timelines wow fadeInUp">
+
+              <div class="single-timeline d-flex-2">
+                <div class="timeline-blank"></div>
+                <div class="timeline-text d-flex-2">
+                  <span>
+                    <b>Programmer Analyst Trainee, Cognizant (August 2020 - Present)</b>, <i>CDB-AIA (Artificial Intelligence & Analytics)</i>
+                    <hr>
+                    As a part of the Data Development Team, I was a core member for implementing CIPs (Continuous Improvement Plan) in SAP MDG Customer Master.
+                    <br><br>
+                    Jun '21 - Jul '21: Got nominated for (FSIE Hackathon-II) Full Stack Intelligence Engineer-II, and built end to end ML/NLP models for the given problem statements.
+                    <br><br>
+                    Dec '20 - Jan '21: Participated, lead a team and created a MVP in the Global Innovation Challenge (GIC), a challenge meant to foster innovation across various domains inside the organization. <a href="https://drive.google.com/file/d/1pv8cAoc8s9m0n_OKNoTtcD06qU1p1Dwx/view?usp=sharing">See credential.</a>
+                    <br><br>
+                    Well-versed with SQL, ABAP, and ETL Tools - Informatica MDM, SAP OData & Master Data Governance.
+                  </span>
+                  <div class="t-square"></div>
+                </div>
+              </div>
+
+              <div class="single-timeline d-flex-2">
+                <div class="timeline-blank"></div>
+                <div class="timeline-text d-flex-2">
+                  <span>
+                    <b>Expert, Kaggle (April 2020 - Present)</b>
+                    <hr>
+                    Became a Kaggle Discussion Expert and ranked 173 out of 200,000+ Kagglers. 
+                    <br><br>
+                    I'm now working towards building end-to-end ML projects & Kaggle Competitions.
+                    </span>
+                  <div class="t-square"></div>
+                </div>
+              </div>
+
+              <div class="single-timeline d-flex-2">
+                <div class="timeline-blank"></div>
+                <div class="timeline-text d-flex-2">
+                  <span>
+                    <b>Team Member, Smart India Hackathon (March 2019)</b><i>, Ministry of Culture, India</i>
+                    <hr>
+                    Developed a machine-learning-based application to find a child’s aptitude, using the responses from subject targeted questions.
+                    <br>
+                    <br>
+                    Displayed the areas of intelligence based on the child’s response.
+
+                    </span>
+                  <div class="t-square"></div>
+                </div>
+              </div>
+
+            </div>
+        </div>
+      
+      </div>
 
       <br /><br />
     </div>
@@ -163,8 +252,9 @@
   <!-- Blogs Section -->
   <section id="blogs" class="blog-mf sect-pt4 route">
     <div class="container">
+
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-md-12">
           <div class="title-box text-center">
             <a href="blog/"><h3 class="title-a">Blogs</h3>
             <p class="subtitle-a">Sharing my experience with the world.</p></a>
@@ -173,22 +263,23 @@
         </div>
       </div>
 
+
       <ul id="parent_blog" class="row lightSlider">
-        
       </ul>
 
-      <br />
-      <br />
+      <a href="blog/"><button class="w3-btn w3-black">All Blogs</button></a>
+      <br /><br /><br /><br />
     </div>
   </section>
 
   <div class="homescreen-button"></div>
 
 <!--/ Footer Section /-->
-  <section id="contact" class="parallax-mf footer-paralax bg-image route" style="background-image: url(images/on-02.jpg)">
+  <section id="contact" class="parallax-mf footer-paralax bg-image route" style="background-image: url(images/bg.jpg)">
     <div class="overlay-mf"></div>
     <footer>
       <div class="container">
+        <h3>Connect with me</h3>
       <hr>
         <div class="row">
           <div class="col-sm-12">
@@ -214,7 +305,7 @@
 
 <!-- Back to top -->
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-  <!-- <div id="preloader"></div> -->
+  <!-- -->
 
 <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
@@ -233,10 +324,9 @@
   <script src="js/projects.js"></script>
   <script src="js/fetchall.js"></script>
   <script src="js/lightslider.min.js"></script>
-
   <script type="text/javascript">
-  if (screen.orientation.type !== 'portrait-primary') {
-    $(".lightSlider").lightSlider({
+    if (screen.orientation.type !== 'portrait-primary') {
+      $(".lightSlider").lightSlider({
         item: 3,
         autoWidth: false,
         slideMove: 1, // slidemove will be 1 if loop is true
@@ -288,61 +378,62 @@
         onBeforeNextSlide: function (el) { },
         onBeforePrevSlide: function (el) { }
       });
-  }
-  else{
-     $(".lightSlider").lightSlider({
-      item: 1,
-      autoWidth: false,
-      slideMove: 1, // slidemove will be 1 if loop is true
-      slideMargin: 20,
-      pauseOnHover: true,
+    }
+    else {
+      $(".lightSlider").lightSlider({
+        item: 1,
+        autoWidth: false,
+        slideMove: 1, // slidemove will be 1 if loop is true
+        slideMargin: 20,
+        pauseOnHover: true,
 
-      addClass: '',
-      mode: "slide",
-      useCSS: true,
-      cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
-      easing: 'linear', //'for jquery animation',////
+        addClass: '',
+        mode: "slide",
+        useCSS: true,
+        cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
+        easing: 'linear', //'for jquery animation',////
 
-      speed: 500, //ms'
-      auto: true,
-      loop: true,
-      slideEndAnimation: true,
-      pause: 2000,
+        speed: 500, //ms'
+        auto: true,
+        loop: true,
+        slideEndAnimation: true,
+        pause: 2000,
 
-      keyPress: false,
-      controls: true,
-      prevHtml: '',
-      nextHtml: '',
+        keyPress: false,
+        controls: true,
+        prevHtml: '',
+        nextHtml: '',
 
-      rtl: false,
-      adaptiveHeight: false,
+        rtl: false,
+        adaptiveHeight: false,
 
-      vertical: false,
-      verticalHeight: 500,
-      vThumbWidth: 100,
+        vertical: false,
+        verticalHeight: 500,
+        vThumbWidth: 100,
 
-      thumbItem: 10,
-      pager: false,
-      gallery: false,
-      galleryMargin: 5,
-      thumbMargin: 5,
-      currentPagerPosition: 'middle',
+        thumbItem: 10,
+        pager: false,
+        gallery: false,
+        galleryMargin: 5,
+        thumbMargin: 5,
+        currentPagerPosition: 'middle',
 
-      enableTouch: true,
-      enableDrag: true,
-      freeMove: true,
-      swipeThreshold: 40,
+        enableTouch: true,
+        enableDrag: true,
+        freeMove: true,
+        swipeThreshold: 40,
 
-      responsive: [],
+        responsive: [],
 
-      onBeforeStart: function (el) { },
-      onSliderLoad: function (el) { },
-      onBeforeSlide: function (el) { },
-      onAfterSlide: function (el) { },
-      onBeforeNextSlide: function (el) { },
-      onBeforePrevSlide: function (el) { }
-    });
-  }
+        onBeforeStart: function (el) { },
+        onSliderLoad: function (el) { },
+        onBeforeSlide: function (el) { },
+        onAfterSlide: function (el) { },
+        onBeforeNextSlide: function (el) { },
+        onBeforePrevSlide: function (el) { }
+      });
+    }
   </script>
+
 </body>
 </html>
