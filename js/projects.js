@@ -3,7 +3,7 @@ var projects = {
         "title": "Insights-X", "image_url": "insightsx.png", "date": "2020-04-30", "description": "Scraped data of over 19000 videos posted on the TEDx YouTube Channel and performed analysis to gain insights for the videos of TEDxChowrasta.", "tags": "Data Analysis", "link": "#", "github": "#"
     },
     "2": {
-        "title": "Fit-X, Candidate's Fitness for a Job Role", "category": "Machine Learning", "image_url": "fitx.jpg", "date": "2020-04-30", "description": "Trained a regressor with an AUC Score of 80% to determine the fitness of a candidate for a given job role.", "tags": "Image Classification, Python", "link": "#", "github": "#"
+        "title": "Fit-X, Candidate's Fitness for a Job Role", "category": "Machine Learning", "image_url": "fitx.JPG", "date": "2020-04-30", "description": "Trained a regressor with an AUC Score of 80% to determine the fitness of a candidate for a given job role.", "tags": "Image Classification, Python", "link": "#", "github": "#"
     },
     "3": {
         "title": "Cr-LEAD, Credit Card Lead Prediction", "category": "Machine Learning", "image_url": "credit.jpg", "date": "2020-04-30", "description": "From the historical data of the customers, trained a classifier with 87% AUC Score to predict the people who would opt for a Credit Card.", "tags": "Image Classification, Python", "link": "#", "github": "#"
