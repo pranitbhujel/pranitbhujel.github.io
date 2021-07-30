@@ -12,6 +12,6 @@ var projects = {
         "title": "Website - TEDxChowrasta", "image_url": "tedx.png", "date": "2020-04-30", "description": "TEDxChowrasta was the first ever TEDx event in the history of Darjeeling. This is the official website of TEDxChowrasta.", "tags": "Web Development", "link": "https://tedxchowrasta.com/", "github": "#"
     },
     "5": {
-        "title": "ML Application to find the aptitude of a child", "category": "Data Science", "image_url": "pragati.JPG", "date": "2020-04-30", "description": "Interactive Quiz based application, to find the aptitude and areas of intelligence of a child.", "tags": "Image Classification, Python", "link": "#", "github": "#"
+        "title": "ML Application to find the aptitude of a child", "category": "Data Science", "image_url": "pragati.jpg", "date": "2020-04-30", "description": "Interactive Quiz based application, to find the aptitude and areas of intelligence of a child.", "tags": "Image Classification, Python", "link": "#", "github": "#"
     },
 }
