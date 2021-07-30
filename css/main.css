@@ -11383,38 +11383,6 @@ li.pulse.open > a.dropdown-toggle {
  * have some strange css to have the scroll bar on
  * the left with fix button on the top right of the tooltip
  */
-@-moz-keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-@-webkit-keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-@-moz-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 /*properties of tooltip after "expand"*/
 .bigtooltip {
   overflow: auto;
@@ -11502,6 +11470,7 @@ li.pulse.open > a.dropdown-toggle {
   top: 10px;
   width: 25px;
   height: 25px;
+  transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
